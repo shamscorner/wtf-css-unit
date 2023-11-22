@@ -62,6 +62,14 @@ type RootTranslation = {
 		 * N​o
 		 */
 		no: string
+		/**
+		 * R​e​s​e​t
+		 */
+		reset: string
+		/**
+		 * B​a​c​k
+		 */
+		back: string
 	}
 	appLogo: {
 		/**
@@ -537,6 +545,14 @@ export type TranslationFunctions = {
 		 * No
 		 */
 		no: () => LocalizedString
+		/**
+		 * Reset
+		 */
+		reset: () => LocalizedString
+		/**
+		 * Back
+		 */
+		back: () => LocalizedString
 	}
 	appLogo: {
 		/**

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import LL from '$lib/i18n/i18n-svelte';
 	import Answer from './answer.svelte';
 	import Question from './question.svelte';
@@ -8,6 +9,17 @@
 		'';
 	let htmlSetHere: 'yes' | 'no' | '' = '';
 	let responsive: 'yes' | 'no' | '' = '';
+
+	function reset() {
+		fontSize = '';
+		htmlSetHere = '';
+		responsive = '';
+
+		$page.url.searchParams.delete('fontSize');
+		$page.url.searchParams.delete('htmlSetHere');
+		$page.url.searchParams.delete('responsive');
+		history.replaceState(history.state, '', $page.url);
+	}
 </script>
 
 <div class="mb-5">
@@ -57,6 +69,7 @@
 				$LL.questionaries.whichFontSize.question.items[0].question.items[0]
 					.answer
 			)}
+			on:reset={reset}
 		/>
 	{/if}
 
@@ -83,6 +96,7 @@
 					$LL.questionaries.whichFontSize.question.items[0].question.items[1]
 						.question.items[0].answer
 				)}
+				on:reset={reset}
 			/>
 		{/if}
 
@@ -92,6 +106,7 @@
 					$LL.questionaries.whichFontSize.question.items[0].question.items[1]
 						.question.items[1].answer
 				)}
+				on:reset={reset}
 			/>
 		{/if}
 	{/if}

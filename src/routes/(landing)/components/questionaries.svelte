@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
+	// import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 	import FontSize from './font-size.svelte';
 	import { RadioMultiOption } from '$lib/components/ui/radio-multi-option';
 	import { page } from '$app/stores';
@@ -31,13 +31,13 @@
 </script>
 
 <div class="h-full overflow-y-auto">
-	<div class="pb-5">
+	<!-- <div class="pb-5">
 		<SuperDebug
 			data={{
 				whatDeclaring
 			}}
 		/>
-	</div>
+	</div> -->
 
 	{#if !whatDeclaring}
 		<RadioMultiOption

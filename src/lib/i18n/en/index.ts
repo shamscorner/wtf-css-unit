@@ -13,7 +13,9 @@ const common = {
 	show: 'Show',
 	hide: 'Hide',
 	yes: 'Yes',
-	no: 'No'
+	no: 'No',
+	reset: 'Reset',
+	back: 'Back'
 };
 
 const en: BaseTranslation = {

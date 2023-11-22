@@ -15,3 +15,10 @@ export type WhatDeclaringType =
 	| 'details-effects'
 	| 'flex-grid'
 	| 'width-height';
+
+export type FontSizeType =
+	| 'html'
+	| 'body'
+	| 'text-related'
+	| 'inline'
+	| 'layout';

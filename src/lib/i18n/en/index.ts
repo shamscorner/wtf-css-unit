@@ -106,7 +106,7 @@ const en: BaseTranslation = {
 		},
 		fontSize: {
 			title: 'Which of these are you selecting to declare the font-size?',
-			item: [
+			items: [
 				{
 					title: 'The <html> element',
 					value: 'html',

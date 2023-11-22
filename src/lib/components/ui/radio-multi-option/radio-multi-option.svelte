@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { Heading } from '$lib/components/ui/heading';
-	import LL from '$lib/i18n/i18n-svelte';
 	import * as RadioGroup from '$lib/components/ui/radio-group';
 	import { Label } from '$lib/components/ui/label';
 	import { cn } from '$lib/utils';
@@ -15,13 +14,14 @@
 	let className: $$Props['class'] = undefined;
 	export let items: $$Props['items'] = [];
 	export let value: $$Props['value'];
+	export let title: $$Props['title'];
 
 	export { className as class };
 </script>
 
 <div {...$$restProps} class={cn(className)}>
 	<Heading element="h2">
-		{$LL.questionaries.whatDeclaring.title()}
+		{title}
 	</Heading>
 
 	<div class="pt-8">

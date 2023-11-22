@@ -243,7 +243,7 @@ type RootTranslation = {
 			 * W​h​i​c​h​ ​o​f​ ​t​h​e​s​e​ ​a​r​e​ ​y​o​u​ ​s​e​l​e​c​t​i​n​g​ ​t​o​ ​d​e​c​l​a​r​e​ ​t​h​e​ ​f​o​n​t​-​s​i​z​e​?
 			 */
 			title: string
-			item: {
+			items: {
 				'0': {
 					/**
 					 * T​h​e​ ​<​h​t​m​l​>​ ​e​l​e​m​e​n​t
@@ -550,7 +550,7 @@ export type TranslationFunctions = {
 			 * Which of these are you selecting to declare the font-size?
 			 */
 			title: () => LocalizedString
-			item: {
+			items: {
 				'0': {
 					/**
 					 * The <html> element

@@ -1,15 +1,14 @@
 import Root from './radio-multi-option.svelte';
-import type { WhatDeclaringType } from '$lib/types';
 
 type ItemType = {
 	title: string;
-	value: WhatDeclaringType | '';
+	value: string;
 	hint: string;
 };
 
 type Props = {
 	title: string;
-	value: WhatDeclaringType | '';
+	value: string;
 	items: ItemType[];
 };
 

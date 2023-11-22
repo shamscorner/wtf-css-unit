@@ -1,21 +1,10 @@
 <script lang="ts">
-	import type { FontSizeType, WhatDeclaringType } from '$lib/types';
+	import type { WhatDeclaringType } from '$lib/types';
 	import WhatDeclaring from './what-declaring.svelte';
-	import FontSize from './font-size.svelte';
+	import { whatDeclaringComponents } from './components';
 	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 
 	let whatDeclaring: WhatDeclaringType | '' = '';
-
-	const whatDeclaringComponents: Record<WhatDeclaringType, any> = {
-		'font-size': FontSize,
-		spacing: FontSize,
-		positioning: FontSize,
-		'details-effects': FontSize,
-		'flex-grid': FontSize,
-		'width-height': FontSize
-	};
-
-	let fontSize: FontSizeType | '' = '';
 </script>
 
 <div class="h-full overflow-y-auto">
@@ -32,9 +21,6 @@
 	{/if}
 
 	{#if whatDeclaring}
-		<svelte:component
-			this={whatDeclaringComponents[whatDeclaring]}
-			bind:value={fontSize}
-		/>
+		<svelte:component this={whatDeclaringComponents[whatDeclaring]} />
 	{/if}
 </div>

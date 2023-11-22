@@ -1,23 +1,23 @@
 <script lang="ts">
 	import LL from '$lib/i18n/i18n-svelte';
-	import type { FontSizeType } from '$lib/types';
+	import type { FontSizeHtmlSetHereType } from '$lib/types';
 	import { RadioMultiOption } from '$lib/components/ui/radio-multi-option';
 	import { page } from '$app/stores';
 	import { fontSizeComponents } from './components';
 	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 
-	let value: FontSizeType | '';
+	let value: FontSizeHtmlSetHereType | '';
 
-	const fontSizeItems = Object.values($LL.questionaries.fontSize.items).map(
+	const items = Object.values($LL.questionaries.fontSize.setHere.items).map(
 		(i) => ({
 			title: i.title(),
-			value: i.value() as FontSizeType,
+			value: i.value() as FontSizeHtmlSetHereType,
 			hint: i.hint()
 		})
 	);
 
-	function setValue(e: CustomEvent<FontSizeType>) {
-		$page.url.searchParams.set('fontSize', e.detail);
+	function setValue(e: CustomEvent<FontSizeHtmlSetHereType>) {
+		$page.url.searchParams.set('fontSizeHtml', e.detail);
 		history.replaceState(history.state, '', $page.url);
 	}
 </script>
@@ -34,13 +34,13 @@
 	{#if !value}
 		<RadioMultiOption
 			bind:value
-			items={fontSizeItems}
-			title={$LL.questionaries.fontSize.title()}
+			{items}
+			title={$LL.questionaries.fontSize.setHere.title()}
 			on:click={setValue}
 		/>
 	{/if}
 
 	{#if value}
-		<svelte:component this={fontSizeComponents[value].component} />
+		<svelte:component this={fontSizeComponents.html.options[value]} />
 	{/if}
 </div>

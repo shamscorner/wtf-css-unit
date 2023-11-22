@@ -11,7 +11,9 @@ const common = {
 	andManyMore: 'and many more...',
 	slogan,
 	show: 'Show',
-	hide: 'Hide'
+	hide: 'Hide',
+	yes: 'Yes',
+	no: 'No'
 };
 
 const en: BaseTranslation = {
@@ -132,7 +134,25 @@ const en: BaseTranslation = {
 					value: 'layout',
 					hint: '<div>, <nav>, <main>, <aside>, <footer>, etc.'
 				}
-			]
+			],
+
+			setHere: {
+				title: 'Do you need to set a font-size here?',
+				items: [
+					{
+						title: 'Yes!',
+						value: 'yes',
+						hint: ''
+					},
+					{
+						title: 'No, I guess not.',
+						value: 'no',
+						hint: ''
+					}
+				],
+				noFinal:
+					"You probably don't need to bother (and the 62.5% tends to be something you should avoid.)"
+			}
 		}
 	},
 

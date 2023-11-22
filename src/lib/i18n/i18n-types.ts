@@ -54,6 +54,14 @@ type RootTranslation = {
 		 * H​i​d​e
 		 */
 		hide: string
+		/**
+		 * Y​e​s
+		 */
+		yes: string
+		/**
+		 * N​o
+		 */
+		no: string
 	}
 	appLogo: {
 		/**
@@ -309,6 +317,40 @@ type RootTranslation = {
 					hint: string
 				}
 			}
+			setHere: {
+				/**
+				 * D​o​ ​y​o​u​ ​n​e​e​d​ ​t​o​ ​s​e​t​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​h​e​r​e​?
+				 */
+				title: string
+				items: {
+					'0': {
+						/**
+						 * Y​e​s​!
+						 */
+						title: string
+						/**
+						 * y​e​s
+						 */
+						value: string
+						hint: string
+					}
+					'1': {
+						/**
+						 * N​o​,​ ​I​ ​g​u​e​s​s​ ​n​o​t​.
+						 */
+						title: string
+						/**
+						 * n​o
+						 */
+						value: string
+						hint: string
+					}
+				}
+				/**
+				 * Y​o​u​ ​p​r​o​b​a​b​l​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​ ​(​a​n​d​ ​t​h​e​ ​6​2​.​5​%​ ​t​e​n​d​s​ ​t​o​ ​b​e​ ​s​o​m​e​t​h​i​n​g​ ​y​o​u​ ​s​h​o​u​l​d​ ​a​v​o​i​d​.​)
+				 */
+				noFinal: string
+			}
 		}
 	}
 	errors: {
@@ -361,6 +403,14 @@ export type TranslationFunctions = {
 		 * Hide
 		 */
 		hide: () => LocalizedString
+		/**
+		 * Yes
+		 */
+		yes: () => LocalizedString
+		/**
+		 * No
+		 */
+		no: () => LocalizedString
 	}
 	appLogo: {
 		/**
@@ -615,6 +665,40 @@ export type TranslationFunctions = {
 					 */
 					hint: () => LocalizedString
 				}
+			}
+			setHere: {
+				/**
+				 * Do you need to set a font-size here?
+				 */
+				title: () => LocalizedString
+				items: {
+					'0': {
+						/**
+						 * Yes!
+						 */
+						title: () => LocalizedString
+						/**
+						 * yes
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+					}
+					'1': {
+						/**
+						 * No, I guess not.
+						 */
+						title: () => LocalizedString
+						/**
+						 * no
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+					}
+				}
+				/**
+				 * You probably don't need to bother (and the 62.5% tends to be something you should avoid.)
+				 */
+				noFinal: () => LocalizedString
 			}
 		}
 	}

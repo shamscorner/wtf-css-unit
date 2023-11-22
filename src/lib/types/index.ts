@@ -22,3 +22,5 @@ export type FontSizeType =
 	| 'text-related'
 	| 'inline'
 	| 'layout';
+
+export type FontSizeHtmlSetHereType = 'yes' | 'no';

@@ -3,7 +3,7 @@
 	import LL from '$lib/i18n/i18n-svelte';
 	import Answer from './answer.svelte';
 	import Question from './question.svelte';
-	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
+	// import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 
 	let fontSize: 'html' | 'body' | 'text-related' | 'inline' | 'layout' | '' =
 		'';
@@ -22,7 +22,7 @@
 	}
 </script>
 
-<div class="mb-5">
+<!-- <div class="mb-5">
 	<SuperDebug
 		data={{
 			fontSize,
@@ -30,7 +30,7 @@
 			responsive
 		}}
 	/>
-</div>
+</div> -->
 
 {#if !fontSize}
 	<Question
@@ -52,9 +52,10 @@
 		<Question
 			bind:value={htmlSetHere}
 			key="htmlSetHere"
-			title={$LL.questionaries.whichFontSize.question.items[0].question.title()}
+			title={$LL.questionaries.whichFontSize.question.items.htmlSetHere.question.title()}
 			items={Object.values(
-				$LL.questionaries.whichFontSize.question.items[0].question.items
+				$LL.questionaries.whichFontSize.question.items.htmlSetHere.question
+					.items
 			).map((i) => ({
 				title: i.title(),
 				value: i.value(),
@@ -66,8 +67,8 @@
 	{#if htmlSetHere === 'no'}
 		<Answer
 			answers={Object.values(
-				$LL.questionaries.whichFontSize.question.items[0].question.items[0]
-					.answer
+				$LL.questionaries.whichFontSize.question.items.htmlSetHere.question
+					.items.no.answer
 			)}
 			on:reset={reset}
 		/>
@@ -78,10 +79,10 @@
 			<Question
 				bind:value={responsive}
 				key="responsive"
-				title={$LL.questionaries.whichFontSize.question.items[0].question.items[1].question.title()}
+				title={$LL.questionaries.whichFontSize.question.items.htmlSetHere.question.items.yes.question.title()}
 				items={Object.values(
-					$LL.questionaries.whichFontSize.question.items[0].question.items[1]
-						.question.items
+					$LL.questionaries.whichFontSize.question.items.htmlSetHere.question
+						.items.yes.question.items
 				).map((i) => ({
 					title: i.title(),
 					value: i.value(),
@@ -93,8 +94,8 @@
 		{#if responsive === 'no'}
 			<Answer
 				answers={Object.values(
-					$LL.questionaries.whichFontSize.question.items[0].question.items[1]
-						.question.items[0].answer
+					$LL.questionaries.whichFontSize.question.items.htmlSetHere.question
+						.items.yes.question.items.no.answer
 				)}
 				on:reset={reset}
 			/>
@@ -103,8 +104,8 @@
 		{#if responsive === 'yes'}
 			<Answer
 				answers={Object.values(
-					$LL.questionaries.whichFontSize.question.items[0].question.items[1]
-						.question.items[1].answer
+					$LL.questionaries.whichFontSize.question.items.htmlSetHere.question
+						.items.yes.question.items.yes.answer
 				)}
 				on:reset={reset}
 			/>

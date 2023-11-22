@@ -254,112 +254,6 @@ type RootTranslation = {
 				}
 			}
 		}
-		fontSize: {
-			/**
-			 * W​h​i​c​h​ ​o​f​ ​t​h​e​s​e​ ​a​r​e​ ​y​o​u​ ​s​e​l​e​c​t​i​n​g​ ​t​o​ ​d​e​c​l​a​r​e​ ​t​h​e​ ​f​o​n​t​-​s​i​z​e​?
-			 */
-			title: string
-			items: {
-				'0': {
-					/**
-					 * T​h​e​ ​<​h​t​m​l​>​ ​e​l​e​m​e​n​t
-					 */
-					title: string
-					/**
-					 * h​t​m​l
-					 */
-					value: string
-					hint: string
-				}
-				'1': {
-					/**
-					 * T​h​e​ ​<​b​o​d​y​>​ ​e​l​e​m​e​n​t
-					 */
-					title: string
-					/**
-					 * b​o​d​y
-					 */
-					value: string
-					hint: string
-				}
-				'2': {
-					/**
-					 * T​e​x​t​ ​r​e​l​a​t​e​d​ ​e​l​e​m​e​n​t
-					 */
-					title: string
-					/**
-					 * t​e​x​t​-​r​e​l​a​t​e​d
-					 */
-					value: string
-					/**
-					 * <​h​1​>​ ​-​ ​<​h​6​>​,​ ​<​p​>​,​ ​<​o​l​>​,​ ​<​u​l​>​,​ ​e​t​c​.
-					 */
-					hint: string
-				}
-				'3': {
-					/**
-					 * I​n​l​i​n​e​ ​e​l​e​m​e​n​t
-					 */
-					title: string
-					/**
-					 * i​n​l​i​n​e
-					 */
-					value: string
-					/**
-					 * <​a​>​,​ ​<​s​p​a​n​>​,​ ​<​s​t​r​o​n​g​>​,​ ​e​t​c​.
-					 */
-					hint: string
-				}
-				'4': {
-					/**
-					 * L​a​y​o​u​t​ ​e​l​e​m​e​n​t
-					 */
-					title: string
-					/**
-					 * l​a​y​o​u​t
-					 */
-					value: string
-					/**
-					 * <​d​i​v​>​,​ ​<​n​a​v​>​,​ ​<​m​a​i​n​>​,​ ​<​a​s​i​d​e​>​,​ ​<​f​o​o​t​e​r​>​,​ ​e​t​c​.
-					 */
-					hint: string
-				}
-			}
-			setHere: {
-				/**
-				 * D​o​ ​y​o​u​ ​n​e​e​d​ ​t​o​ ​s​e​t​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​h​e​r​e​?
-				 */
-				title: string
-				items: {
-					'0': {
-						/**
-						 * Y​e​s​!
-						 */
-						title: string
-						/**
-						 * y​e​s
-						 */
-						value: string
-						hint: string
-					}
-					'1': {
-						/**
-						 * N​o​,​ ​I​ ​g​u​e​s​s​ ​n​o​t​.
-						 */
-						title: string
-						/**
-						 * n​o
-						 */
-						value: string
-						hint: string
-					}
-				}
-				/**
-				 * Y​o​u​ ​p​r​o​b​a​b​l​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​ ​(​a​n​d​ ​t​h​e​ ​6​2​.​5​%​ ​t​e​n​d​s​ ​t​o​ ​b​e​ ​s​o​m​e​t​h​i​n​g​ ​y​o​u​ ​s​h​o​u​l​d​ ​a​v​o​i​d​.​)
-				 */
-				noFinal: string
-			}
-		}
 		whichFontSize: {
 			/**
 			 * W​h​i​c​h​ ​o​f​ ​t​h​e​s​e​ ​a​r​e​ ​y​o​u​ ​s​e​l​e​c​t​i​n​g​ ​t​o​ ​d​e​c​l​a​r​e​ ​t​h​e​ ​f​o​n​t​-​s​i​z​e​?
@@ -367,7 +261,7 @@ type RootTranslation = {
 			title: string
 			question: {
 				items: {
-					'0': {
+					htmlSetHere: {
 						/**
 						 * T​h​e​ ​<​h​t​m​l​>​ ​e​l​e​m​e​n​t
 						 */
@@ -383,7 +277,7 @@ type RootTranslation = {
 							 */
 							title: string
 							items: {
-								'0': {
+								no: {
 									/**
 									 * N​o​,​ ​I​ ​g​u​e​s​s​ ​n​o​t​.
 									 */
@@ -403,7 +297,7 @@ type RootTranslation = {
 										}
 									}
 								}
-								'1': {
+								yes: {
 									/**
 									 * Y​e​s​!
 									 */
@@ -419,7 +313,7 @@ type RootTranslation = {
 										 */
 										title: string
 										items: {
-											'0': {
+											no: {
 												/**
 												 * N​o​!
 												 */
@@ -442,7 +336,7 @@ type RootTranslation = {
 													}
 												}
 											}
-											'1': {
+											yes: {
 												/**
 												 * Y​e​s​!
 												 */
@@ -737,112 +631,6 @@ export type TranslationFunctions = {
 				}
 			}
 		}
-		fontSize: {
-			/**
-			 * Which of these are you selecting to declare the font-size?
-			 */
-			title: () => LocalizedString
-			items: {
-				'0': {
-					/**
-					 * The <html> element
-					 */
-					title: () => LocalizedString
-					/**
-					 * html
-					 */
-					value: () => LocalizedString
-					hint: () => LocalizedString
-				}
-				'1': {
-					/**
-					 * The <body> element
-					 */
-					title: () => LocalizedString
-					/**
-					 * body
-					 */
-					value: () => LocalizedString
-					hint: () => LocalizedString
-				}
-				'2': {
-					/**
-					 * Text related element
-					 */
-					title: () => LocalizedString
-					/**
-					 * text-related
-					 */
-					value: () => LocalizedString
-					/**
-					 * <h1> - <h6>, <p>, <ol>, <ul>, etc.
-					 */
-					hint: () => LocalizedString
-				}
-				'3': {
-					/**
-					 * Inline element
-					 */
-					title: () => LocalizedString
-					/**
-					 * inline
-					 */
-					value: () => LocalizedString
-					/**
-					 * <a>, <span>, <strong>, etc.
-					 */
-					hint: () => LocalizedString
-				}
-				'4': {
-					/**
-					 * Layout element
-					 */
-					title: () => LocalizedString
-					/**
-					 * layout
-					 */
-					value: () => LocalizedString
-					/**
-					 * <div>, <nav>, <main>, <aside>, <footer>, etc.
-					 */
-					hint: () => LocalizedString
-				}
-			}
-			setHere: {
-				/**
-				 * Do you need to set a font-size here?
-				 */
-				title: () => LocalizedString
-				items: {
-					'0': {
-						/**
-						 * Yes!
-						 */
-						title: () => LocalizedString
-						/**
-						 * yes
-						 */
-						value: () => LocalizedString
-						hint: () => LocalizedString
-					}
-					'1': {
-						/**
-						 * No, I guess not.
-						 */
-						title: () => LocalizedString
-						/**
-						 * no
-						 */
-						value: () => LocalizedString
-						hint: () => LocalizedString
-					}
-				}
-				/**
-				 * You probably don't need to bother (and the 62.5% tends to be something you should avoid.)
-				 */
-				noFinal: () => LocalizedString
-			}
-		}
 		whichFontSize: {
 			/**
 			 * Which of these are you selecting to declare the font-size?
@@ -850,7 +638,7 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			question: {
 				items: {
-					'0': {
+					htmlSetHere: {
 						/**
 						 * The <html> element
 						 */
@@ -866,7 +654,7 @@ export type TranslationFunctions = {
 							 */
 							title: () => LocalizedString
 							items: {
-								'0': {
+								no: {
 									/**
 									 * No, I guess not.
 									 */
@@ -886,7 +674,7 @@ export type TranslationFunctions = {
 										}
 									}
 								}
-								'1': {
+								yes: {
 									/**
 									 * Yes!
 									 */
@@ -902,7 +690,7 @@ export type TranslationFunctions = {
 										 */
 										title: () => LocalizedString
 										items: {
-											'0': {
+											no: {
 												/**
 												 * No!
 												 */
@@ -925,7 +713,7 @@ export type TranslationFunctions = {
 													}
 												}
 											}
-											'1': {
+											yes: {
 												/**
 												 * Yes!
 												 */

@@ -21,7 +21,7 @@
 	<Alert.Root class="mb-5">
 		<Alert.Title>{answer.title()}</Alert.Title>
 		<Alert.Description>
-			{answer.description()}
+			{@html answer.description()}
 		</Alert.Description>
 	</Alert.Root>
 {/each}

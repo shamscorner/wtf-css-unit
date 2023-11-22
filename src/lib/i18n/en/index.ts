@@ -108,66 +108,18 @@ const en: BaseTranslation = {
 				}
 			]
 		},
-		fontSize: {
-			title: 'Which of these are you selecting to declare the font-size?',
-			items: [
-				{
-					title: 'The <html> element',
-					value: 'html',
-					hint: ''
-				},
-				{
-					title: 'The <body> element',
-					value: 'body',
-					hint: ''
-				},
-				{
-					title: 'Text related element',
-					value: 'text-related',
-					hint: '<h1> - <h6>, <p>, <ol>, <ul>, etc.'
-				},
-				{
-					title: 'Inline element',
-					value: 'inline',
-					hint: '<a>, <span>, <strong>, etc.'
-				},
-				{
-					title: 'Layout element',
-					value: 'layout',
-					hint: '<div>, <nav>, <main>, <aside>, <footer>, etc.'
-				}
-			],
-
-			setHere: {
-				title: 'Do you need to set a font-size here?',
-				items: [
-					{
-						title: 'Yes!',
-						value: 'yes',
-						hint: ''
-					},
-					{
-						title: 'No, I guess not.',
-						value: 'no',
-						hint: ''
-					}
-				],
-				noFinal:
-					"You probably don't need to bother (and the 62.5% tends to be something you should avoid.)"
-			}
-		},
 		whichFontSize: {
 			title: 'Which of these are you selecting to declare the font-size?',
 			question: {
-				items: [
-					{
+				items: {
+					htmlSetHere: {
 						title: 'The <html> element',
 						value: 'html',
 						hint: '',
 						question: {
 							title: 'Do you need to set a font-size here?',
-							items: [
-								{
+							items: {
+								no: {
 									title: 'No, I guess not.',
 									value: 'no',
 									hint: '',
@@ -179,14 +131,14 @@ const en: BaseTranslation = {
 										}
 									]
 								},
-								{
+								yes: {
 									title: 'Yes!',
 									value: 'yes',
 									hint: '',
 									question: {
 										title: 'Do you want it to be responsive?',
-										items: [
-											{
+										items: {
+											no: {
 												title: 'No!',
 												value: 'no',
 												hint: '',
@@ -198,7 +150,7 @@ const en: BaseTranslation = {
 													}
 												]
 											},
-											{
+											yes: {
 												title: 'Yes!',
 												value: 'yes',
 												hint: '',
@@ -215,14 +167,14 @@ const en: BaseTranslation = {
 													}
 												]
 											}
-										]
+										}
 									}
 								}
-							]
+							}
 						},
 						answers: []
 					}
-				]
+				}
 			}
 		}
 	},

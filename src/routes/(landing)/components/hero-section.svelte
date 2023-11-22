@@ -6,7 +6,7 @@
 </script>
 
 <section
-	class="grid h-full grid-cols-1 gap-8 md:grid-cols-2"
+	class="grid h-full grid-cols-1 gap-8 bg-accent md:grid-cols-2"
 	aria-describedby="onboarding-title"
 >
 	<!-- greeting -->
@@ -25,7 +25,7 @@
 	</div>
 
 	<!-- quick statistics -->
-	<div class="bg-accent px-6 py-10">
+	<div class="bg-background px-6 py-10">
 		<div class="md:mr-auto md:max-w-xl">
 			<Questionaries />
 		</div>

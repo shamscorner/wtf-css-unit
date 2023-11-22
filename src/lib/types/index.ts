@@ -7,3 +7,11 @@ export type FpType = {
 	ua: string;
 	rc: string;
 };
+
+export type WhatDeclaringType =
+	| 'font-size'
+	| 'spacing'
+	| 'positioning'
+	| 'details-effects'
+	| 'flex-grid'
+	| 'width-height';

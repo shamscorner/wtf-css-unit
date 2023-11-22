@@ -69,7 +69,71 @@ const en: BaseTranslation = {
 	},
 
 	questionaries: {
-		title: 'What are you declaring?'
+		whatDeclaring: {
+			title: 'What are you declaring?',
+			items: [
+				{
+					title: 'Font size',
+					value: 'font-size',
+					hint: ''
+				},
+				{
+					title: 'Spacing',
+					value: 'spacing',
+					hint: 'Margin, padding, gap, etc.'
+				},
+				{
+					title: 'Positioning',
+					value: 'positioning',
+					hint: 'Top, right, bottom, left, etc.'
+				},
+				{
+					title: 'Details/effects',
+					value: 'details-effects',
+					hint: 'Border, box-shadow, outlines, etc.'
+				},
+				{
+					title: 'Flex or grid',
+					value: 'flex-grid',
+					hint: ''
+				},
+				{
+					title: 'Width or height on an element',
+					value: 'width-height',
+					hint: ''
+				}
+			]
+		},
+		fontSize: {
+			title: 'Which of these are you selecting to declare the font-size?',
+			item: [
+				{
+					title: 'The <html> element',
+					value: 'html',
+					hint: ''
+				},
+				{
+					title: 'The <body> element',
+					value: 'body',
+					hint: ''
+				},
+				{
+					title: 'Text related element',
+					value: 'text-related',
+					hint: '<h1> - <h6>, <p>, <ol>, <ul>, etc.'
+				},
+				{
+					title: 'Inline element',
+					value: 'inline',
+					hint: '<a>, <span>, <strong>, etc.'
+				},
+				{
+					title: 'Layout element',
+					value: 'layout',
+					hint: '<div>, <nav>, <main>, <aside>, <footer>, etc.'
+				}
+			]
+		}
 	},
 
 	errors: {

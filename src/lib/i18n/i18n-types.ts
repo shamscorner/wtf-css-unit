@@ -155,10 +155,161 @@ type RootTranslation = {
 		}
 	}
 	questionaries: {
-		/**
-		 * W​h​a​t​ ​a​r​e​ ​y​o​u​ ​d​e​c​l​a​r​i​n​g​?
-		 */
-		title: string
+		whatDeclaring: {
+			/**
+			 * W​h​a​t​ ​a​r​e​ ​y​o​u​ ​d​e​c​l​a​r​i​n​g​?
+			 */
+			title: string
+			items: {
+				'0': {
+					/**
+					 * F​o​n​t​ ​s​i​z​e
+					 */
+					title: string
+					/**
+					 * f​o​n​t​-​s​i​z​e
+					 */
+					value: string
+					hint: string
+				}
+				'1': {
+					/**
+					 * S​p​a​c​i​n​g
+					 */
+					title: string
+					/**
+					 * s​p​a​c​i​n​g
+					 */
+					value: string
+					/**
+					 * M​a​r​g​i​n​,​ ​p​a​d​d​i​n​g​,​ ​g​a​p​,​ ​e​t​c​.
+					 */
+					hint: string
+				}
+				'2': {
+					/**
+					 * P​o​s​i​t​i​o​n​i​n​g
+					 */
+					title: string
+					/**
+					 * p​o​s​i​t​i​o​n​i​n​g
+					 */
+					value: string
+					/**
+					 * T​o​p​,​ ​r​i​g​h​t​,​ ​b​o​t​t​o​m​,​ ​l​e​f​t​,​ ​e​t​c​.
+					 */
+					hint: string
+				}
+				'3': {
+					/**
+					 * D​e​t​a​i​l​s​/​e​f​f​e​c​t​s
+					 */
+					title: string
+					/**
+					 * d​e​t​a​i​l​s​-​e​f​f​e​c​t​s
+					 */
+					value: string
+					/**
+					 * B​o​r​d​e​r​,​ ​b​o​x​-​s​h​a​d​o​w​,​ ​o​u​t​l​i​n​e​s​,​ ​e​t​c​.
+					 */
+					hint: string
+				}
+				'4': {
+					/**
+					 * F​l​e​x​ ​o​r​ ​g​r​i​d
+					 */
+					title: string
+					/**
+					 * f​l​e​x​-​g​r​i​d
+					 */
+					value: string
+					hint: string
+				}
+				'5': {
+					/**
+					 * W​i​d​t​h​ ​o​r​ ​h​e​i​g​h​t​ ​o​n​ ​a​n​ ​e​l​e​m​e​n​t
+					 */
+					title: string
+					/**
+					 * w​i​d​t​h​-​h​e​i​g​h​t
+					 */
+					value: string
+					hint: string
+				}
+			}
+		}
+		fontSize: {
+			/**
+			 * W​h​i​c​h​ ​o​f​ ​t​h​e​s​e​ ​a​r​e​ ​y​o​u​ ​s​e​l​e​c​t​i​n​g​ ​t​o​ ​d​e​c​l​a​r​e​ ​t​h​e​ ​f​o​n​t​-​s​i​z​e​?
+			 */
+			title: string
+			item: {
+				'0': {
+					/**
+					 * T​h​e​ ​<​h​t​m​l​>​ ​e​l​e​m​e​n​t
+					 */
+					title: string
+					/**
+					 * h​t​m​l
+					 */
+					value: string
+					hint: string
+				}
+				'1': {
+					/**
+					 * T​h​e​ ​<​b​o​d​y​>​ ​e​l​e​m​e​n​t
+					 */
+					title: string
+					/**
+					 * b​o​d​y
+					 */
+					value: string
+					hint: string
+				}
+				'2': {
+					/**
+					 * T​e​x​t​ ​r​e​l​a​t​e​d​ ​e​l​e​m​e​n​t
+					 */
+					title: string
+					/**
+					 * t​e​x​t​-​r​e​l​a​t​e​d
+					 */
+					value: string
+					/**
+					 * <​h​1​>​ ​-​ ​<​h​6​>​,​ ​<​p​>​,​ ​<​o​l​>​,​ ​<​u​l​>​,​ ​e​t​c​.
+					 */
+					hint: string
+				}
+				'3': {
+					/**
+					 * I​n​l​i​n​e​ ​e​l​e​m​e​n​t
+					 */
+					title: string
+					/**
+					 * i​n​l​i​n​e
+					 */
+					value: string
+					/**
+					 * <​a​>​,​ ​<​s​p​a​n​>​,​ ​<​s​t​r​o​n​g​>​,​ ​e​t​c​.
+					 */
+					hint: string
+				}
+				'4': {
+					/**
+					 * L​a​y​o​u​t​ ​e​l​e​m​e​n​t
+					 */
+					title: string
+					/**
+					 * l​a​y​o​u​t
+					 */
+					value: string
+					/**
+					 * <​d​i​v​>​,​ ​<​n​a​v​>​,​ ​<​m​a​i​n​>​,​ ​<​a​s​i​d​e​>​,​ ​<​f​o​o​t​e​r​>​,​ ​e​t​c​.
+					 */
+					hint: string
+				}
+			}
+		}
 	}
 	errors: {
 		/**
@@ -311,10 +462,161 @@ export type TranslationFunctions = {
 		}
 	}
 	questionaries: {
-		/**
-		 * What are you declaring?
-		 */
-		title: () => LocalizedString
+		whatDeclaring: {
+			/**
+			 * What are you declaring?
+			 */
+			title: () => LocalizedString
+			items: {
+				'0': {
+					/**
+					 * Font size
+					 */
+					title: () => LocalizedString
+					/**
+					 * font-size
+					 */
+					value: () => LocalizedString
+					hint: () => LocalizedString
+				}
+				'1': {
+					/**
+					 * Spacing
+					 */
+					title: () => LocalizedString
+					/**
+					 * spacing
+					 */
+					value: () => LocalizedString
+					/**
+					 * Margin, padding, gap, etc.
+					 */
+					hint: () => LocalizedString
+				}
+				'2': {
+					/**
+					 * Positioning
+					 */
+					title: () => LocalizedString
+					/**
+					 * positioning
+					 */
+					value: () => LocalizedString
+					/**
+					 * Top, right, bottom, left, etc.
+					 */
+					hint: () => LocalizedString
+				}
+				'3': {
+					/**
+					 * Details/effects
+					 */
+					title: () => LocalizedString
+					/**
+					 * details-effects
+					 */
+					value: () => LocalizedString
+					/**
+					 * Border, box-shadow, outlines, etc.
+					 */
+					hint: () => LocalizedString
+				}
+				'4': {
+					/**
+					 * Flex or grid
+					 */
+					title: () => LocalizedString
+					/**
+					 * flex-grid
+					 */
+					value: () => LocalizedString
+					hint: () => LocalizedString
+				}
+				'5': {
+					/**
+					 * Width or height on an element
+					 */
+					title: () => LocalizedString
+					/**
+					 * width-height
+					 */
+					value: () => LocalizedString
+					hint: () => LocalizedString
+				}
+			}
+		}
+		fontSize: {
+			/**
+			 * Which of these are you selecting to declare the font-size?
+			 */
+			title: () => LocalizedString
+			item: {
+				'0': {
+					/**
+					 * The <html> element
+					 */
+					title: () => LocalizedString
+					/**
+					 * html
+					 */
+					value: () => LocalizedString
+					hint: () => LocalizedString
+				}
+				'1': {
+					/**
+					 * The <body> element
+					 */
+					title: () => LocalizedString
+					/**
+					 * body
+					 */
+					value: () => LocalizedString
+					hint: () => LocalizedString
+				}
+				'2': {
+					/**
+					 * Text related element
+					 */
+					title: () => LocalizedString
+					/**
+					 * text-related
+					 */
+					value: () => LocalizedString
+					/**
+					 * <h1> - <h6>, <p>, <ol>, <ul>, etc.
+					 */
+					hint: () => LocalizedString
+				}
+				'3': {
+					/**
+					 * Inline element
+					 */
+					title: () => LocalizedString
+					/**
+					 * inline
+					 */
+					value: () => LocalizedString
+					/**
+					 * <a>, <span>, <strong>, etc.
+					 */
+					hint: () => LocalizedString
+				}
+				'4': {
+					/**
+					 * Layout element
+					 */
+					title: () => LocalizedString
+					/**
+					 * layout
+					 */
+					value: () => LocalizedString
+					/**
+					 * <div>, <nav>, <main>, <aside>, <footer>, etc.
+					 */
+					hint: () => LocalizedString
+				}
+			}
+		}
 	}
 	errors: {
 		/**

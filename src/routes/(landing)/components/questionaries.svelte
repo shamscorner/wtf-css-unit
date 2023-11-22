@@ -1,8 +1,21 @@
 <script lang="ts">
-	import { Heading } from '$lib/components/ui/heading';
-	import LL from '$lib/i18n/i18n-svelte';
+	import type { WhatDeclaringType } from '$lib/types';
+	import WhatDeclaring from './what-declaring.svelte';
+	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
+
+	let whatDeclaring: WhatDeclaringType | '' = '';
 </script>
 
-<Heading element="h2">
-	{$LL.questionaries.title()}
-</Heading>
+<div class="h-full overflow-y-auto">
+	<div class="pb-5">
+		<SuperDebug
+			data={{
+				whatDeclaring
+			}}
+		/>
+	</div>
+
+	{#if !whatDeclaring}
+		<WhatDeclaring bind:value={whatDeclaring} />
+	{/if}
+</div>

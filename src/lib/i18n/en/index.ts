@@ -153,6 +153,75 @@ const en: BaseTranslation = {
 				noFinal:
 					"You probably don't need to bother (and the 62.5% tends to be something you should avoid.)"
 			}
+		},
+		whichFontSize: {
+			title: 'Which of these are you selecting to declare the font-size?',
+			question: {
+				items: [
+					{
+						title: 'The <html> element',
+						value: 'html',
+						hint: '',
+						question: {
+							title: 'Do you need to set a font-size here?',
+							items: [
+								{
+									title: 'No, I guess not.',
+									value: 'no',
+									hint: '',
+									answer: [
+										{
+											title: '',
+											description:
+												"You probably don't need to bother (and the 62.5% tends to be something you should avoid.)"
+										}
+									]
+								},
+								{
+									title: 'Yes!',
+									value: 'yes',
+									hint: '',
+									question: {
+										title: 'Do you want it to be responsive?',
+										items: [
+											{
+												title: 'No!',
+												value: 'no',
+												hint: '',
+												answer: [
+													{
+														title: 'rem',
+														description:
+															"Most of the time, you will probably use rem when declaring font sizes. It's easy to use, predictable, and very importantly, respects the users choice if they have made changes to their default font size at the OS or browser level."
+													}
+												]
+											},
+											{
+												title: 'Yes!',
+												value: 'yes',
+												hint: '',
+												answer: [
+													{
+														title: 'Clamp()',
+														description:
+															'You need 3 values for clamp, a minimum, "growth factor", and maximum. The minimum and maximum should probably be in rem and the growth factor a viewport unit, but also with rem added to it. For example: clamp(1.25rem, 7.5vw + .5rem, 2rem).<br><br>You can learn more about it <a href="https://www.youtube.com/watch?v=U9VF-4euyRo" target="_blank" rel="noopener noreferrer">in this video</a>. There is also a fantastic tool called <a href="https://utopia.fyi/type/calculator/" target="_blank" rel="noopener noreferrer">Utopia</a> that you can use to generate a responsive type scale.'
+													},
+													{
+														title: 'cqi',
+														description:
+															'If you don\'t mind trying something that doesn\'t have the best browser support, you could substitute the `vw` unit with a `cqi`, which is a container query unit that gets the inline size of it\'s container. This does mean you need a container though. You can learn more about it <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank" rel="noopener noreferrer">in this video</a>.'
+													}
+												]
+											}
+										]
+									}
+								}
+							]
+						},
+						answers: []
+					}
+				]
+			}
 		}
 	},
 

@@ -352,6 +352,132 @@ type RootTranslation = {
 				noFinal: string
 			}
 		}
+		whichFontSize: {
+			/**
+			 * W​h​i​c​h​ ​o​f​ ​t​h​e​s​e​ ​a​r​e​ ​y​o​u​ ​s​e​l​e​c​t​i​n​g​ ​t​o​ ​d​e​c​l​a​r​e​ ​t​h​e​ ​f​o​n​t​-​s​i​z​e​?
+			 */
+			title: string
+			question: {
+				items: {
+					'0': {
+						/**
+						 * T​h​e​ ​<​h​t​m​l​>​ ​e​l​e​m​e​n​t
+						 */
+						title: string
+						/**
+						 * h​t​m​l
+						 */
+						value: string
+						hint: string
+						question: {
+							/**
+							 * D​o​ ​y​o​u​ ​n​e​e​d​ ​t​o​ ​s​e​t​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​h​e​r​e​?
+							 */
+							title: string
+							items: {
+								'0': {
+									/**
+									 * N​o​,​ ​I​ ​g​u​e​s​s​ ​n​o​t​.
+									 */
+									title: string
+									/**
+									 * n​o
+									 */
+									value: string
+									hint: string
+									answer: {
+										'0': {
+											title: string
+											/**
+											 * Y​o​u​ ​p​r​o​b​a​b​l​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​ ​(​a​n​d​ ​t​h​e​ ​6​2​.​5​%​ ​t​e​n​d​s​ ​t​o​ ​b​e​ ​s​o​m​e​t​h​i​n​g​ ​y​o​u​ ​s​h​o​u​l​d​ ​a​v​o​i​d​.​)
+											 */
+											description: string
+										}
+									}
+								}
+								'1': {
+									/**
+									 * Y​e​s​!
+									 */
+									title: string
+									/**
+									 * y​e​s
+									 */
+									value: string
+									hint: string
+									question: {
+										/**
+										 * D​o​ ​y​o​u​ ​w​a​n​t​ ​i​t​ ​t​o​ ​b​e​ ​r​e​s​p​o​n​s​i​v​e​?
+										 */
+										title: string
+										items: {
+											'0': {
+												/**
+												 * N​o​!
+												 */
+												title: string
+												/**
+												 * n​o
+												 */
+												value: string
+												hint: string
+												answer: {
+													'0': {
+														/**
+														 * r​e​m
+														 */
+														title: string
+														/**
+														 * M​o​s​t​ ​o​f​ ​t​h​e​ ​t​i​m​e​,​ ​y​o​u​ ​w​i​l​l​ ​p​r​o​b​a​b​l​y​ ​u​s​e​ ​r​e​m​ ​w​h​e​n​ ​d​e​c​l​a​r​i​n​g​ ​f​o​n​t​ ​s​i​z​e​s​.​ ​I​t​'​s​ ​e​a​s​y​ ​t​o​ ​u​s​e​,​ ​p​r​e​d​i​c​t​a​b​l​e​,​ ​a​n​d​ ​v​e​r​y​ ​i​m​p​o​r​t​a​n​t​l​y​,​ ​r​e​s​p​e​c​t​s​ ​t​h​e​ ​u​s​e​r​s​ ​c​h​o​i​c​e​ ​i​f​ ​t​h​e​y​ ​h​a​v​e​ ​m​a​d​e​ ​c​h​a​n​g​e​s​ ​t​o​ ​t​h​e​i​r​ ​d​e​f​a​u​l​t​ ​f​o​n​t​ ​s​i​z​e​ ​a​t​ ​t​h​e​ ​O​S​ ​o​r​ ​b​r​o​w​s​e​r​ ​l​e​v​e​l​.
+														 */
+														description: string
+													}
+												}
+											}
+											'1': {
+												/**
+												 * Y​e​s​!
+												 */
+												title: string
+												/**
+												 * y​e​s
+												 */
+												value: string
+												hint: string
+												answer: {
+													'0': {
+														/**
+														 * C​l​a​m​p​(​)
+														 */
+														title: string
+														/**
+														 * Y​o​u​ ​n​e​e​d​ ​3​ ​v​a​l​u​e​s​ ​f​o​r​ ​c​l​a​m​p​,​ ​a​ ​m​i​n​i​m​u​m​,​ ​"​g​r​o​w​t​h​ ​f​a​c​t​o​r​"​,​ ​a​n​d​ ​m​a​x​i​m​u​m​.​ ​T​h​e​ ​m​i​n​i​m​u​m​ ​a​n​d​ ​m​a​x​i​m​u​m​ ​s​h​o​u​l​d​ ​p​r​o​b​a​b​l​y​ ​b​e​ ​i​n​ ​r​e​m​ ​a​n​d​ ​t​h​e​ ​g​r​o​w​t​h​ ​f​a​c​t​o​r​ ​a​ ​v​i​e​w​p​o​r​t​ ​u​n​i​t​,​ ​b​u​t​ ​a​l​s​o​ ​w​i​t​h​ ​r​e​m​ ​a​d​d​e​d​ ​t​o​ ​i​t​.​ ​F​o​r​ ​e​x​a​m​p​l​e​:​ ​c​l​a​m​p​(​1​.​2​5​r​e​m​,​ ​7​.​5​v​w​ ​+​ ​.​5​r​e​m​,​ ​2​r​e​m​)​.​<​b​r​>​<​b​r​>​Y​o​u​ ​c​a​n​ ​l​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​i​t​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​U​9​V​F​-​4​e​u​y​R​o​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​i​n​ ​t​h​i​s​ ​v​i​d​e​o​<​/​a​>​.​ ​T​h​e​r​e​ ​i​s​ ​a​l​s​o​ ​a​ ​f​a​n​t​a​s​t​i​c​ ​t​o​o​l​ ​c​a​l​l​e​d​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​u​t​o​p​i​a​.​f​y​i​/​t​y​p​e​/​c​a​l​c​u​l​a​t​o​r​/​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​U​t​o​p​i​a​<​/​a​>​ ​t​h​a​t​ ​y​o​u​ ​c​a​n​ ​u​s​e​ ​t​o​ ​g​e​n​e​r​a​t​e​ ​a​ ​r​e​s​p​o​n​s​i​v​e​ ​t​y​p​e​ ​s​c​a​l​e​.
+														 */
+														description: string
+													}
+													'1': {
+														/**
+														 * c​q​i
+														 */
+														title: string
+														/**
+														 * I​f​ ​y​o​u​ ​d​o​n​'​t​ ​m​i​n​d​ ​t​r​y​i​n​g​ ​s​o​m​e​t​h​i​n​g​ ​t​h​a​t​ ​d​o​e​s​n​'​t​ ​h​a​v​e​ ​t​h​e​ ​b​e​s​t​ ​b​r​o​w​s​e​r​ ​s​u​p​p​o​r​t​,​ ​y​o​u​ ​c​o​u​l​d​ ​s​u​b​s​t​i​t​u​t​e​ ​t​h​e​ ​`​v​w​`​ ​u​n​i​t​ ​w​i​t​h​ ​a​ ​`​c​q​i​`​,​ ​w​h​i​c​h​ ​i​s​ ​a​ ​c​o​n​t​a​i​n​e​r​ ​q​u​e​r​y​ ​u​n​i​t​ ​t​h​a​t​ ​g​e​t​s​ ​t​h​e​ ​i​n​l​i​n​e​ ​s​i​z​e​ ​o​f​ ​i​t​'​s​ ​c​o​n​t​a​i​n​e​r​.​ ​T​h​i​s​ ​d​o​e​s​ ​m​e​a​n​ ​y​o​u​ ​n​e​e​d​ ​a​ ​c​o​n​t​a​i​n​e​r​ ​t​h​o​u​g​h​.​ ​Y​o​u​ ​c​a​n​ ​l​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​i​t​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​Z​S​a​A​H​b​5​d​R​w​Q​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​i​n​ ​t​h​i​s​ ​v​i​d​e​o​<​/​a​>​.
+														 */
+														description: string
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						answers: {
+						}
+					}
+				}
+			}
+		}
 	}
 	errors: {
 		/**
@@ -699,6 +825,132 @@ export type TranslationFunctions = {
 				 * You probably don't need to bother (and the 62.5% tends to be something you should avoid.)
 				 */
 				noFinal: () => LocalizedString
+			}
+		}
+		whichFontSize: {
+			/**
+			 * Which of these are you selecting to declare the font-size?
+			 */
+			title: () => LocalizedString
+			question: {
+				items: {
+					'0': {
+						/**
+						 * The <html> element
+						 */
+						title: () => LocalizedString
+						/**
+						 * html
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						question: {
+							/**
+							 * Do you need to set a font-size here?
+							 */
+							title: () => LocalizedString
+							items: {
+								'0': {
+									/**
+									 * No, I guess not.
+									 */
+									title: () => LocalizedString
+									/**
+									 * no
+									 */
+									value: () => LocalizedString
+									hint: () => LocalizedString
+									answer: {
+										'0': {
+											title: () => LocalizedString
+											/**
+											 * You probably don't need to bother (and the 62.5% tends to be something you should avoid.)
+											 */
+											description: () => LocalizedString
+										}
+									}
+								}
+								'1': {
+									/**
+									 * Yes!
+									 */
+									title: () => LocalizedString
+									/**
+									 * yes
+									 */
+									value: () => LocalizedString
+									hint: () => LocalizedString
+									question: {
+										/**
+										 * Do you want it to be responsive?
+										 */
+										title: () => LocalizedString
+										items: {
+											'0': {
+												/**
+												 * No!
+												 */
+												title: () => LocalizedString
+												/**
+												 * no
+												 */
+												value: () => LocalizedString
+												hint: () => LocalizedString
+												answer: {
+													'0': {
+														/**
+														 * rem
+														 */
+														title: () => LocalizedString
+														/**
+														 * Most of the time, you will probably use rem when declaring font sizes. It's easy to use, predictable, and very importantly, respects the users choice if they have made changes to their default font size at the OS or browser level.
+														 */
+														description: () => LocalizedString
+													}
+												}
+											}
+											'1': {
+												/**
+												 * Yes!
+												 */
+												title: () => LocalizedString
+												/**
+												 * yes
+												 */
+												value: () => LocalizedString
+												hint: () => LocalizedString
+												answer: {
+													'0': {
+														/**
+														 * Clamp()
+														 */
+														title: () => LocalizedString
+														/**
+														 * You need 3 values for clamp, a minimum, "growth factor", and maximum. The minimum and maximum should probably be in rem and the growth factor a viewport unit, but also with rem added to it. For example: clamp(1.25rem, 7.5vw + .5rem, 2rem).<br><br>You can learn more about it <a href="https://www.youtube.com/watch?v=U9VF-4euyRo" target="_blank" rel="noopener noreferrer">in this video</a>. There is also a fantastic tool called <a href="https://utopia.fyi/type/calculator/" target="_blank" rel="noopener noreferrer">Utopia</a> that you can use to generate a responsive type scale.
+														 */
+														description: () => LocalizedString
+													}
+													'1': {
+														/**
+														 * cqi
+														 */
+														title: () => LocalizedString
+														/**
+														 * If you don't mind trying something that doesn't have the best browser support, you could substitute the `vw` unit with a `cqi`, which is a container query unit that gets the inline size of it's container. This does mean you need a container though. You can learn more about it <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank" rel="noopener noreferrer">in this video</a>.
+														 */
+														description: () => LocalizedString
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						answers: {
+						}
+					}
+				}
 			}
 		}
 	}

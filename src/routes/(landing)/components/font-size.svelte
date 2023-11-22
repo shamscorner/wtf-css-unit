@@ -1,46 +1,98 @@
 <script lang="ts">
 	import LL from '$lib/i18n/i18n-svelte';
-	import type { FontSizeType } from '$lib/types';
-	import { RadioMultiOption } from '$lib/components/ui/radio-multi-option';
-	import { page } from '$app/stores';
-	import { fontSizeComponents } from './components';
+	import Answer from './answer.svelte';
+	import Question from './question.svelte';
 	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 
-	let value: FontSizeType | '';
-
-	const fontSizeItems = Object.values($LL.questionaries.fontSize.items).map(
-		(i) => ({
-			title: i.title(),
-			value: i.value() as FontSizeType,
-			hint: i.hint()
-		})
-	);
-
-	function setValue(e: CustomEvent<FontSizeType>) {
-		$page.url.searchParams.set('fontSize', e.detail);
-		history.replaceState(history.state, '', $page.url);
-	}
+	let fontSize: 'html' | 'body' | 'text-related' | 'inline' | 'layout' | '' =
+		'';
+	let htmlSetHere: 'yes' | 'no' | '' = '';
+	let responsive: 'yes' | 'no' | '' = '';
 </script>
 
-<div>
-	<div class="pb-5">
-		<SuperDebug
-			data={{
-				value
-			}}
-		/>
-	</div>
-
-	{#if !value}
-		<RadioMultiOption
-			bind:value
-			items={fontSizeItems}
-			title={$LL.questionaries.fontSize.title()}
-			on:click={setValue}
-		/>
-	{/if}
-
-	{#if value}
-		<svelte:component this={fontSizeComponents[value].component} />
-	{/if}
+<div class="mb-5">
+	<SuperDebug
+		data={{
+			fontSize,
+			htmlSetHere,
+			responsive
+		}}
+	/>
 </div>
+
+{#if !fontSize}
+	<Question
+		bind:value={fontSize}
+		key="fontSize"
+		title={$LL.questionaries.whichFontSize.title()}
+		items={Object.values($LL.questionaries.whichFontSize.question.items).map(
+			(i) => ({
+				title: i.title(),
+				value: i.value(),
+				hint: i.hint()
+			})
+		)}
+	/>
+{/if}
+
+{#if fontSize === 'html'}
+	{#if !htmlSetHere}
+		<Question
+			bind:value={htmlSetHere}
+			key="htmlSetHere"
+			title={$LL.questionaries.whichFontSize.question.items[0].question.title()}
+			items={Object.values(
+				$LL.questionaries.whichFontSize.question.items[0].question.items
+			).map((i) => ({
+				title: i.title(),
+				value: i.value(),
+				hint: i.hint()
+			}))}
+		/>
+	{/if}
+
+	{#if htmlSetHere === 'no'}
+		<Answer
+			answers={Object.values(
+				$LL.questionaries.whichFontSize.question.items[0].question.items[0]
+					.answer
+			)}
+		/>
+	{/if}
+
+	{#if htmlSetHere === 'yes'}
+		{#if !responsive}
+			<Question
+				bind:value={responsive}
+				key="responsive"
+				title={$LL.questionaries.whichFontSize.question.items[0].question.items[1].question.title()}
+				items={Object.values(
+					$LL.questionaries.whichFontSize.question.items[0].question.items[1]
+						.question.items
+				).map((i) => ({
+					title: i.title(),
+					value: i.value(),
+					hint: i.hint()
+				}))}
+			/>
+		{/if}
+
+		{#if responsive === 'no'}
+			<Answer
+				answers={Object.values(
+					$LL.questionaries.whichFontSize.question.items[0].question.items[1]
+						.question.items[0].answer
+				)}
+			/>
+		{/if}
+
+		{#if responsive === 'yes'}
+			<Answer
+				answers={Object.values(
+					$LL.questionaries.whichFontSize.question.items[0].question.items[1]
+						.question.items[1].answer
+				)}
+			/>
+		{/if}
+	{/if}
+{/if}

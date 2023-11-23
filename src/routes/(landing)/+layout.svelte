@@ -6,16 +6,16 @@
 	import { Icons } from '$lib/components/icons';
 </script>
 
-<div class="h-full md:flex md:flex-col">
+<div class="flex h-full flex-col">
 	<Navbar />
 
-	<main class="md:flex-1">
+	<main class="flex-1">
 		<section
-			class="grid h-full grid-cols-1 gap-8 bg-accent md:grid-cols-2"
+			class="grid h-full grid-cols-1 grid-rows-[auto,1fr] gap-8 bg-accent md:grid-cols-2 md:grid-rows-none"
 			aria-describedby="onboarding-title"
 		>
 			<!-- greeting -->
-			<div class="space-y-4 px-6 pb-20 pt-10 md:ml-auto md:max-w-xl">
+			<div class="space-y-4 px-6 pb-10 pt-10 md:ml-auto md:max-w-xl md:pb-20">
 				<p>{@html $LL.onboarding.greeting()}</p>
 				<h1 id="onboarding-title" class="max-w-md text-2xl font-bold">
 					{$LL.onboarding.title()}

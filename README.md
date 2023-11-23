@@ -8,6 +8,15 @@ This project is highly inspired by [whatunit.com](https://whatunit.com/). Check 
 
 This project is created from this awesome [sveltekit starter template](https://github.com/shamscorner/sveltekit-stackter)
 
+## TODOs
+
+- [x] Font size
+- [ ] Spacing
+- [ ] Positioning
+- [ ] Details/effects
+- [ ] Flex or grid
+- [ ] Width or height on an element
+
 ## Run on your local?
 
 Rename `.env-example` to `.env` or `.env.local`

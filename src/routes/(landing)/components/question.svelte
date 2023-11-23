@@ -1,29 +1,37 @@
 <script lang="ts">
-	import {
-		RadioMultiOption,
-		type RadioMultiOptionItemType
-	} from '$lib/components/ui/radio-multi-option';
-	import { page } from '$app/stores';
-	// import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
+	import { Heading } from '$lib/components/ui/heading';
+	import { cn } from '$lib/utils';
 
-	export let items: RadioMultiOptionItemType[];
-	export let key: string;
-	export let title: string;
+	type ItemType = {
+		title: string;
+		value: string;
+		hint: string;
+		to: string;
+	};
 
-	export let value;
-
-	function setValue(e: CustomEvent<string>) {
-		$page.url.searchParams.set(key, e.detail);
-		history.replaceState(history.state, '', $page.url);
-	}
+	export let items: ItemType[];
+	export let title = '';
 </script>
 
-<!-- <div class="pb-5">
-	<SuperDebug
-		data={{
-			value
-		}}
-	/>
-</div> -->
-
-<RadioMultiOption bind:value {items} {title} on:click={setValue} />
+<div {...$$restProps} class={cn($$restProps.class)}>
+	<Heading element="h2">
+		{title}
+	</Heading>
+	<ul class="mt-5 max-w-sm space-y-4">
+		{#each items as item (item.title)}
+			<li>
+				<a
+					href={item.to}
+					class="block border border-primary px-4 py-2 transition hover:bg-primary hover:text-primary-foreground"
+				>
+					{item.title} <br />
+					{#if item.hint}
+						<span class="text-sm text-muted">
+							{item.hint}
+						</span>
+					{/if}
+				</a>
+			</li>
+		{/each}
+	</ul>
+</div>

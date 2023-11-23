@@ -187,6 +187,10 @@ type RootTranslation = {
 					 */
 					value: string
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e
+					 */
+					to: string
 				}
 				'1': {
 					/**
@@ -201,6 +205,10 @@ type RootTranslation = {
 					 * M​a​r​g​i​n​,​ ​p​a​d​d​i​n​g​,​ ​g​a​p​,​ ​e​t​c​.
 					 */
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​s​p​a​c​i​n​g
+					 */
+					to: string
 				}
 				'2': {
 					/**
@@ -215,6 +223,10 @@ type RootTranslation = {
 					 * T​o​p​,​ ​r​i​g​h​t​,​ ​b​o​t​t​o​m​,​ ​l​e​f​t​,​ ​e​t​c​.
 					 */
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​p​o​s​i​t​i​o​n​i​n​g
+					 */
+					to: string
 				}
 				'3': {
 					/**
@@ -229,6 +241,10 @@ type RootTranslation = {
 					 * B​o​r​d​e​r​,​ ​b​o​x​-​s​h​a​d​o​w​,​ ​o​u​t​l​i​n​e​s​,​ ​e​t​c​.
 					 */
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​d​e​t​a​i​l​s​-​e​f​f​e​c​t​s
+					 */
+					to: string
 				}
 				'4': {
 					/**
@@ -240,6 +256,10 @@ type RootTranslation = {
 					 */
 					value: string
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​l​e​x​-​g​r​i​d
+					 */
+					to: string
 				}
 				'5': {
 					/**
@@ -251,6 +271,10 @@ type RootTranslation = {
 					 */
 					value: string
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​h​e​i​g​h​t
+					 */
+					to: string
 				}
 			}
 		}
@@ -261,7 +285,7 @@ type RootTranslation = {
 			title: string
 			question: {
 				items: {
-					htmlSetHere: {
+					htmlElement: {
 						/**
 						 * T​h​e​ ​<​h​t​m​l​>​ ​e​l​e​m​e​n​t
 						 */
@@ -271,9 +295,46 @@ type RootTranslation = {
 						 */
 						value: string
 						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e
+						 */
+						to: string
+					}
+					bodyElement: {
+						/**
+						 * T​h​e​ ​<​b​o​d​y​>​ ​e​l​e​m​e​n​t
+						 */
+						title: string
+						/**
+						 * b​o​d​y
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e
+						 */
+						to: string
+					}
+					textRelatedElement: {
+						/**
+						 * T​e​x​t​ ​r​e​l​a​t​e​d​ ​e​l​e​m​e​n​t
+						 */
+						title: string
+						/**
+						 * t​e​x​t​-​r​e​l​a​t​e​d
+						 */
+						value: string
+						/**
+						 * <​h​1​>​ ​-​ ​<​h​6​>​,​ ​<​p​>​,​ ​<​o​l​>​,​ ​<​u​l​>​,​ ​e​t​c​.
+						 */
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​t​e​x​t​-​r​e​l​a​t​e​d
+						 */
+						to: string
 						question: {
 							/**
-							 * D​o​ ​y​o​u​ ​n​e​e​d​ ​t​o​ ​s​e​t​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​h​e​r​e​?
+							 * D​o​e​s​ ​t​h​e​ ​f​o​n​t​-​s​i​z​e​ ​n​e​e​d​ ​t​o​ ​b​e​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​a​n​o​t​h​e​r​ ​e​l​e​m​e​n​t​?
 							 */
 							title: string
 							items: {
@@ -287,15 +348,10 @@ type RootTranslation = {
 									 */
 									value: string
 									hint: string
-									answer: {
-										'0': {
-											title: string
-											/**
-											 * Y​o​u​ ​p​r​o​b​a​b​l​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​ ​(​a​n​d​ ​t​h​e​ ​6​2​.​5​%​ ​t​e​n​d​s​ ​t​o​ ​b​e​ ​s​o​m​e​t​h​i​n​g​ ​y​o​u​ ​s​h​o​u​l​d​ ​a​v​o​i​d​.​)
-											 */
-											description: string
-										}
-									}
+									/**
+									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e
+									 */
+									to: string
 								}
 								yes: {
 									/**
@@ -307,74 +363,255 @@ type RootTranslation = {
 									 */
 									value: string
 									hint: string
-									question: {
-										/**
-										 * D​o​ ​y​o​u​ ​w​a​n​t​ ​i​t​ ​t​o​ ​b​e​ ​r​e​s​p​o​n​s​i​v​e​?
-										 */
-										title: string
-										items: {
-											no: {
-												/**
-												 * N​o​!
-												 */
-												title: string
-												/**
-												 * n​o
-												 */
-												value: string
-												hint: string
-												answer: {
-													'0': {
-														/**
-														 * r​e​m
-														 */
-														title: string
-														/**
-														 * M​o​s​t​ ​o​f​ ​t​h​e​ ​t​i​m​e​,​ ​y​o​u​ ​w​i​l​l​ ​p​r​o​b​a​b​l​y​ ​u​s​e​ ​r​e​m​ ​w​h​e​n​ ​d​e​c​l​a​r​i​n​g​ ​f​o​n​t​ ​s​i​z​e​s​.​ ​I​t​'​s​ ​e​a​s​y​ ​t​o​ ​u​s​e​,​ ​p​r​e​d​i​c​t​a​b​l​e​,​ ​a​n​d​ ​v​e​r​y​ ​i​m​p​o​r​t​a​n​t​l​y​,​ ​r​e​s​p​e​c​t​s​ ​t​h​e​ ​u​s​e​r​s​ ​c​h​o​i​c​e​ ​i​f​ ​t​h​e​y​ ​h​a​v​e​ ​m​a​d​e​ ​c​h​a​n​g​e​s​ ​t​o​ ​t​h​e​i​r​ ​d​e​f​a​u​l​t​ ​f​o​n​t​ ​s​i​z​e​ ​a​t​ ​t​h​e​ ​O​S​ ​o​r​ ​b​r​o​w​s​e​r​ ​l​e​v​e​l​.
-														 */
-														description: string
-													}
-												}
-											}
-											yes: {
-												/**
-												 * Y​e​s​!
-												 */
-												title: string
-												/**
-												 * y​e​s
-												 */
-												value: string
-												hint: string
-												answer: {
-													'0': {
-														/**
-														 * C​l​a​m​p​(​)
-														 */
-														title: string
-														/**
-														 * Y​o​u​ ​n​e​e​d​ ​3​ ​v​a​l​u​e​s​ ​f​o​r​ ​c​l​a​m​p​,​ ​a​ ​m​i​n​i​m​u​m​,​ ​"​g​r​o​w​t​h​ ​f​a​c​t​o​r​"​,​ ​a​n​d​ ​m​a​x​i​m​u​m​.​ ​T​h​e​ ​m​i​n​i​m​u​m​ ​a​n​d​ ​m​a​x​i​m​u​m​ ​s​h​o​u​l​d​ ​p​r​o​b​a​b​l​y​ ​b​e​ ​i​n​ ​r​e​m​ ​a​n​d​ ​t​h​e​ ​g​r​o​w​t​h​ ​f​a​c​t​o​r​ ​a​ ​v​i​e​w​p​o​r​t​ ​u​n​i​t​,​ ​b​u​t​ ​a​l​s​o​ ​w​i​t​h​ ​r​e​m​ ​a​d​d​e​d​ ​t​o​ ​i​t​.​ ​F​o​r​ ​e​x​a​m​p​l​e​:​ ​c​l​a​m​p​(​1​.​2​5​r​e​m​,​ ​7​.​5​v​w​ ​+​ ​.​5​r​e​m​,​ ​2​r​e​m​)​.​<​b​r​>​<​b​r​>​Y​o​u​ ​c​a​n​ ​l​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​i​t​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​U​9​V​F​-​4​e​u​y​R​o​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​i​n​ ​t​h​i​s​ ​v​i​d​e​o​<​/​a​>​.​ ​T​h​e​r​e​ ​i​s​ ​a​l​s​o​ ​a​ ​f​a​n​t​a​s​t​i​c​ ​t​o​o​l​ ​c​a​l​l​e​d​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​u​t​o​p​i​a​.​f​y​i​/​t​y​p​e​/​c​a​l​c​u​l​a​t​o​r​/​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​U​t​o​p​i​a​<​/​a​>​ ​t​h​a​t​ ​y​o​u​ ​c​a​n​ ​u​s​e​ ​t​o​ ​g​e​n​e​r​a​t​e​ ​a​ ​r​e​s​p​o​n​s​i​v​e​ ​t​y​p​e​ ​s​c​a​l​e​.
-														 */
-														description: string
-													}
-													'1': {
-														/**
-														 * c​q​i
-														 */
-														title: string
-														/**
-														 * I​f​ ​y​o​u​ ​d​o​n​'​t​ ​m​i​n​d​ ​t​r​y​i​n​g​ ​s​o​m​e​t​h​i​n​g​ ​t​h​a​t​ ​d​o​e​s​n​'​t​ ​h​a​v​e​ ​t​h​e​ ​b​e​s​t​ ​b​r​o​w​s​e​r​ ​s​u​p​p​o​r​t​,​ ​y​o​u​ ​c​o​u​l​d​ ​s​u​b​s​t​i​t​u​t​e​ ​t​h​e​ ​`​v​w​`​ ​u​n​i​t​ ​w​i​t​h​ ​a​ ​`​c​q​i​`​,​ ​w​h​i​c​h​ ​i​s​ ​a​ ​c​o​n​t​a​i​n​e​r​ ​q​u​e​r​y​ ​u​n​i​t​ ​t​h​a​t​ ​g​e​t​s​ ​t​h​e​ ​i​n​l​i​n​e​ ​s​i​z​e​ ​o​f​ ​i​t​'​s​ ​c​o​n​t​a​i​n​e​r​.​ ​T​h​i​s​ ​d​o​e​s​ ​m​e​a​n​ ​y​o​u​ ​n​e​e​d​ ​a​ ​c​o​n​t​a​i​n​e​r​ ​t​h​o​u​g​h​.​ ​Y​o​u​ ​c​a​n​ ​l​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​i​t​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​Z​S​a​A​H​b​5​d​R​w​Q​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​i​n​ ​t​h​i​s​ ​v​i​d​e​o​<​/​a​>​.
-														 */
-														description: string
-													}
-												}
-											}
-										}
-									}
+									/**
+									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​l​a​t​i​v​e​-​t​o​-​p​a​r​e​n​t
+									 */
+									to: string
 								}
 							}
 						}
-						answers: {
+					}
+					inlineElement: {
+						/**
+						 * I​n​l​i​n​e​ ​e​l​e​m​e​n​t
+						 */
+						title: string
+						/**
+						 * i​n​l​i​n​e
+						 */
+						value: string
+						/**
+						 * <​a​>​,​ ​<​s​p​a​n​>​,​ ​<​s​t​r​o​n​g​>​,​ ​e​t​c​.
+						 */
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​l​a​t​i​v​e​-​t​o​-​p​a​r​e​n​t
+						 */
+						to: string
+					}
+					layoutElement: {
+						/**
+						 * L​a​y​o​u​t​ ​e​l​e​m​e​n​t
+						 */
+						title: string
+						/**
+						 * l​a​y​o​u​t
+						 */
+						value: string
+						/**
+						 * <​d​i​v​>​,​ ​<​n​a​v​>​,​ ​<​m​a​i​n​>​,​ ​<​a​s​i​d​e​>​,​ ​<​f​o​o​t​e​r​>​,​ ​e​t​c​.
+						 */
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e
+						 */
+						to: string
+					}
+				}
+			}
+			htmlSetHere: {
+				question: {
+					/**
+					 * D​o​ ​y​o​u​ ​n​e​e​d​ ​t​o​ ​s​e​t​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​h​e​r​e​?
+					 */
+					title: string
+					items: {
+						no: {
+							/**
+							 * N​o​,​ ​I​ ​g​u​e​s​s​ ​n​o​t​.
+							 */
+							title: string
+							/**
+							 * n​o
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e​/​n​o
+							 */
+							to: string
+							answer: {
+								'0': {
+									title: string
+									/**
+									 * Y​o​u​ ​p​r​o​b​a​b​l​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​ ​(​a​n​d​ ​t​h​e​ ​6​2​.​5​%​ ​t​e​n​d​s​ ​t​o​ ​b​e​ ​s​o​m​e​t​h​i​n​g​ ​y​o​u​ ​s​h​o​u​l​d​ ​a​v​o​i​d​.​)
+									 */
+									description: string
+								}
+							}
+						}
+						yes: {
+							/**
+							 * Y​e​s​!
+							 */
+							title: string
+							/**
+							 * y​e​s
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e
+							 */
+							to: string
+						}
+					}
+				}
+			}
+			responsive: {
+				question: {
+					/**
+					 * D​o​ ​y​o​u​ ​w​a​n​t​ ​i​t​ ​t​o​ ​b​e​ ​r​e​s​p​o​n​s​i​v​e​?
+					 */
+					title: string
+					items: {
+						no: {
+							/**
+							 * N​o​!
+							 */
+							title: string
+							/**
+							 * n​o
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e​/​n​o
+							 */
+							to: string
+							answer: {
+								'0': {
+									/**
+									 * r​e​m
+									 */
+									title: string
+									/**
+									 * M​o​s​t​ ​o​f​ ​t​h​e​ ​t​i​m​e​,​ ​y​o​u​ ​w​i​l​l​ ​p​r​o​b​a​b​l​y​ ​u​s​e​ ​r​e​m​ ​w​h​e​n​ ​d​e​c​l​a​r​i​n​g​ ​f​o​n​t​ ​s​i​z​e​s​.​ ​I​t​'​s​ ​e​a​s​y​ ​t​o​ ​u​s​e​,​ ​p​r​e​d​i​c​t​a​b​l​e​,​ ​a​n​d​ ​v​e​r​y​ ​i​m​p​o​r​t​a​n​t​l​y​,​ ​r​e​s​p​e​c​t​s​ ​t​h​e​ ​u​s​e​r​s​ ​c​h​o​i​c​e​ ​i​f​ ​t​h​e​y​ ​h​a​v​e​ ​m​a​d​e​ ​c​h​a​n​g​e​s​ ​t​o​ ​t​h​e​i​r​ ​d​e​f​a​u​l​t​ ​f​o​n​t​ ​s​i​z​e​ ​a​t​ ​t​h​e​ ​O​S​ ​o​r​ ​b​r​o​w​s​e​r​ ​l​e​v​e​l​.
+									 */
+									description: string
+								}
+							}
+						}
+						yes: {
+							/**
+							 * Y​e​s​!
+							 */
+							title: string
+							/**
+							 * y​e​s
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e​/​y​e​s
+							 */
+							to: string
+							answer: {
+								'0': {
+									/**
+									 * C​l​a​m​p​(​)
+									 */
+									title: string
+									/**
+									 * Y​o​u​ ​n​e​e​d​ ​3​ ​v​a​l​u​e​s​ ​f​o​r​ ​c​l​a​m​p​,​ ​a​ ​m​i​n​i​m​u​m​,​ ​"​g​r​o​w​t​h​ ​f​a​c​t​o​r​"​,​ ​a​n​d​ ​m​a​x​i​m​u​m​.​ ​T​h​e​ ​m​i​n​i​m​u​m​ ​a​n​d​ ​m​a​x​i​m​u​m​ ​s​h​o​u​l​d​ ​p​r​o​b​a​b​l​y​ ​b​e​ ​i​n​ ​r​e​m​ ​a​n​d​ ​t​h​e​ ​g​r​o​w​t​h​ ​f​a​c​t​o​r​ ​a​ ​v​i​e​w​p​o​r​t​ ​u​n​i​t​,​ ​b​u​t​ ​a​l​s​o​ ​w​i​t​h​ ​r​e​m​ ​a​d​d​e​d​ ​t​o​ ​i​t​.​ ​F​o​r​ ​e​x​a​m​p​l​e​:​ ​c​l​a​m​p​(​1​.​2​5​r​e​m​,​ ​7​.​5​v​w​ ​+​ ​.​5​r​e​m​,​ ​2​r​e​m​)​.​<​b​r​>​<​b​r​>​Y​o​u​ ​c​a​n​ ​l​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​i​t​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​U​9​V​F​-​4​e​u​y​R​o​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​i​n​ ​t​h​i​s​ ​v​i​d​e​o​<​/​a​>​.​ ​T​h​e​r​e​ ​i​s​ ​a​l​s​o​ ​a​ ​f​a​n​t​a​s​t​i​c​ ​t​o​o​l​ ​c​a​l​l​e​d​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​u​t​o​p​i​a​.​f​y​i​/​t​y​p​e​/​c​a​l​c​u​l​a​t​o​r​/​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​U​t​o​p​i​a​<​/​a​>​ ​t​h​a​t​ ​y​o​u​ ​c​a​n​ ​u​s​e​ ​t​o​ ​g​e​n​e​r​a​t​e​ ​a​ ​r​e​s​p​o​n​s​i​v​e​ ​t​y​p​e​ ​s​c​a​l​e​.
+									 */
+									description: string
+								}
+								'1': {
+									/**
+									 * c​q​i
+									 */
+									title: string
+									/**
+									 * I​f​ ​y​o​u​ ​d​o​n​'​t​ ​m​i​n​d​ ​t​r​y​i​n​g​ ​s​o​m​e​t​h​i​n​g​ ​t​h​a​t​ ​d​o​e​s​n​'​t​ ​h​a​v​e​ ​t​h​e​ ​b​e​s​t​ ​b​r​o​w​s​e​r​ ​s​u​p​p​o​r​t​,​ ​y​o​u​ ​c​o​u​l​d​ ​s​u​b​s​t​i​t​u​t​e​ ​t​h​e​ ​`​v​w​`​ ​u​n​i​t​ ​w​i​t​h​ ​a​ ​`​c​q​i​`​,​ ​w​h​i​c​h​ ​i​s​ ​a​ ​c​o​n​t​a​i​n​e​r​ ​q​u​e​r​y​ ​u​n​i​t​ ​t​h​a​t​ ​g​e​t​s​ ​t​h​e​ ​i​n​l​i​n​e​ ​s​i​z​e​ ​o​f​ ​i​t​'​s​ ​c​o​n​t​a​i​n​e​r​.​ ​T​h​i​s​ ​d​o​e​s​ ​m​e​a​n​ ​y​o​u​ ​n​e​e​d​ ​a​ ​c​o​n​t​a​i​n​e​r​ ​t​h​o​u​g​h​.​ ​Y​o​u​ ​c​a​n​ ​l​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​i​t​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​Z​S​a​A​H​b​5​d​R​w​Q​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​i​n​ ​t​h​i​s​ ​v​i​d​e​o​<​/​a​>​.
+									 */
+									description: string
+								}
+							}
+						}
+					}
+				}
+			}
+			relativeToParent: {
+				question: {
+					/**
+					 * D​o​ ​y​o​u​ ​w​a​n​t​ ​i​t​ ​t​o​ ​b​e​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​t​h​e​ ​f​o​n​t​-​s​i​z​e​ ​o​f​ ​t​h​e​ ​p​a​r​e​n​t​ ​e​l​e​m​e​n​t​,​ ​o​r​ ​s​o​m​e​t​h​i​n​g​ ​m​o​r​e​ ​p​r​e​c​i​s​e​?
+					 */
+					title: string
+					items: {
+						fontSize: {
+							/**
+							 * T​h​e​ ​f​o​n​t​-​s​i​z​e
+							 */
+							title: string
+							/**
+							 * f​o​n​t​-​s​i​z​e
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​l​a​t​i​v​e​-​t​o​-​p​a​r​e​n​t​/​f​o​n​t​-​s​i​z​e
+							 */
+							to: string
+							answer: {
+								'0': {
+									/**
+									 * e​m
+									 */
+									title: string
+									/**
+									 * T​h​e​ ​`​e​m​`​ ​u​n​i​t​,​ ​w​h​e​n​ ​u​s​e​d​ ​t​o​ ​d​e​c​l​a​r​e​ ​f​o​n​t​-​s​i​z​e​,​ ​w​i​l​l​ ​b​e​ ​r​e​l​a​t​i​v​e​ ​i​t​'​s​ ​a​n​c​e​s​t​o​r​'​s​ ​f​o​n​t​-​s​i​z​e​.​<​b​r​>​<​b​r​>​F​o​r​ ​e​x​a​m​p​l​e​,​ ​i​f​ ​y​o​u​ ​h​a​v​e​ ​a​ ​h​e​a​d​i​n​g​ ​w​i​t​h​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​o​f​ ​3​r​e​m​,​ ​a​n​d​ ​a​ ​s​p​a​n​ ​i​n​s​i​d​e​ ​w​i​t​h​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​o​f​ ​.​5​r​e​m​,​ ​t​h​e​ ​s​p​a​n​ ​w​i​l​l​ ​h​a​v​e​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​o​f​ ​1​.​5​r​e​m​ ​(​3​r​e​m​ ​x​ ​.​5​)​.
+									 */
+									description: string
+								}
+							}
+						}
+						morePrecise: {
+							/**
+							 * S​o​m​e​t​h​i​n​g​ ​m​o​r​e​ ​p​r​e​c​i​s​e
+							 */
+							title: string
+							/**
+							 * m​o​r​e​-​p​r​e​c​i​s​e
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​l​a​t​i​v​e​-​t​o​-​p​a​r​e​n​t​/​m​o​r​e​-​p​r​e​c​i​s​e
+							 */
+							to: string
+							answer: {
+								'0': {
+									/**
+									 * l​h
+									 */
+									title: string
+									/**
+									 * L​i​n​e​-​h​e​i​g​h​t
+									 */
+									description: string
+								}
+								'1': {
+									/**
+									 * e​x
+									 */
+									title: string
+									/**
+									 * E​x​ ​h​e​i​g​h​t
+									 */
+									description: string
+								}
+								'2': {
+									/**
+									 * c​a​p
+									 */
+									title: string
+									/**
+									 * C​a​p​ ​h​e​i​g​h​t
+									 */
+									description: string
+								}
+							}
 						}
 					}
 				}
@@ -564,6 +801,10 @@ export type TranslationFunctions = {
 					 */
 					value: () => LocalizedString
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/font-size
+					 */
+					to: () => LocalizedString
 				}
 				'1': {
 					/**
@@ -578,6 +819,10 @@ export type TranslationFunctions = {
 					 * Margin, padding, gap, etc.
 					 */
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/spacing
+					 */
+					to: () => LocalizedString
 				}
 				'2': {
 					/**
@@ -592,6 +837,10 @@ export type TranslationFunctions = {
 					 * Top, right, bottom, left, etc.
 					 */
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/positioning
+					 */
+					to: () => LocalizedString
 				}
 				'3': {
 					/**
@@ -606,6 +855,10 @@ export type TranslationFunctions = {
 					 * Border, box-shadow, outlines, etc.
 					 */
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/details-effects
+					 */
+					to: () => LocalizedString
 				}
 				'4': {
 					/**
@@ -617,6 +870,10 @@ export type TranslationFunctions = {
 					 */
 					value: () => LocalizedString
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/flex-grid
+					 */
+					to: () => LocalizedString
 				}
 				'5': {
 					/**
@@ -628,6 +885,10 @@ export type TranslationFunctions = {
 					 */
 					value: () => LocalizedString
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/width-height
+					 */
+					to: () => LocalizedString
 				}
 			}
 		}
@@ -638,7 +899,7 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			question: {
 				items: {
-					htmlSetHere: {
+					htmlElement: {
 						/**
 						 * The <html> element
 						 */
@@ -648,9 +909,46 @@ export type TranslationFunctions = {
 						 */
 						value: () => LocalizedString
 						hint: () => LocalizedString
+						/**
+						 * /questionaries/font-size/html-set-here
+						 */
+						to: () => LocalizedString
+					}
+					bodyElement: {
+						/**
+						 * The <body> element
+						 */
+						title: () => LocalizedString
+						/**
+						 * body
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/font-size/responsive
+						 */
+						to: () => LocalizedString
+					}
+					textRelatedElement: {
+						/**
+						 * Text related element
+						 */
+						title: () => LocalizedString
+						/**
+						 * text-related
+						 */
+						value: () => LocalizedString
+						/**
+						 * <h1> - <h6>, <p>, <ol>, <ul>, etc.
+						 */
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/font-size/text-related
+						 */
+						to: () => LocalizedString
 						question: {
 							/**
-							 * Do you need to set a font-size here?
+							 * Does the font-size need to be relative to another element?
 							 */
 							title: () => LocalizedString
 							items: {
@@ -664,15 +962,10 @@ export type TranslationFunctions = {
 									 */
 									value: () => LocalizedString
 									hint: () => LocalizedString
-									answer: {
-										'0': {
-											title: () => LocalizedString
-											/**
-											 * You probably don't need to bother (and the 62.5% tends to be something you should avoid.)
-											 */
-											description: () => LocalizedString
-										}
-									}
+									/**
+									 * /questionaries/font-size/responsive
+									 */
+									to: () => LocalizedString
 								}
 								yes: {
 									/**
@@ -684,74 +977,255 @@ export type TranslationFunctions = {
 									 */
 									value: () => LocalizedString
 									hint: () => LocalizedString
-									question: {
-										/**
-										 * Do you want it to be responsive?
-										 */
-										title: () => LocalizedString
-										items: {
-											no: {
-												/**
-												 * No!
-												 */
-												title: () => LocalizedString
-												/**
-												 * no
-												 */
-												value: () => LocalizedString
-												hint: () => LocalizedString
-												answer: {
-													'0': {
-														/**
-														 * rem
-														 */
-														title: () => LocalizedString
-														/**
-														 * Most of the time, you will probably use rem when declaring font sizes. It's easy to use, predictable, and very importantly, respects the users choice if they have made changes to their default font size at the OS or browser level.
-														 */
-														description: () => LocalizedString
-													}
-												}
-											}
-											yes: {
-												/**
-												 * Yes!
-												 */
-												title: () => LocalizedString
-												/**
-												 * yes
-												 */
-												value: () => LocalizedString
-												hint: () => LocalizedString
-												answer: {
-													'0': {
-														/**
-														 * Clamp()
-														 */
-														title: () => LocalizedString
-														/**
-														 * You need 3 values for clamp, a minimum, "growth factor", and maximum. The minimum and maximum should probably be in rem and the growth factor a viewport unit, but also with rem added to it. For example: clamp(1.25rem, 7.5vw + .5rem, 2rem).<br><br>You can learn more about it <a href="https://www.youtube.com/watch?v=U9VF-4euyRo" target="_blank" rel="noopener noreferrer">in this video</a>. There is also a fantastic tool called <a href="https://utopia.fyi/type/calculator/" target="_blank" rel="noopener noreferrer">Utopia</a> that you can use to generate a responsive type scale.
-														 */
-														description: () => LocalizedString
-													}
-													'1': {
-														/**
-														 * cqi
-														 */
-														title: () => LocalizedString
-														/**
-														 * If you don't mind trying something that doesn't have the best browser support, you could substitute the `vw` unit with a `cqi`, which is a container query unit that gets the inline size of it's container. This does mean you need a container though. You can learn more about it <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank" rel="noopener noreferrer">in this video</a>.
-														 */
-														description: () => LocalizedString
-													}
-												}
-											}
-										}
-									}
+									/**
+									 * /questionaries/font-size/relative-to-parent
+									 */
+									to: () => LocalizedString
 								}
 							}
 						}
-						answers: {
+					}
+					inlineElement: {
+						/**
+						 * Inline element
+						 */
+						title: () => LocalizedString
+						/**
+						 * inline
+						 */
+						value: () => LocalizedString
+						/**
+						 * <a>, <span>, <strong>, etc.
+						 */
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/font-size/relative-to-parent
+						 */
+						to: () => LocalizedString
+					}
+					layoutElement: {
+						/**
+						 * Layout element
+						 */
+						title: () => LocalizedString
+						/**
+						 * layout
+						 */
+						value: () => LocalizedString
+						/**
+						 * <div>, <nav>, <main>, <aside>, <footer>, etc.
+						 */
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/font-size/html-set-here
+						 */
+						to: () => LocalizedString
+					}
+				}
+			}
+			htmlSetHere: {
+				question: {
+					/**
+					 * Do you need to set a font-size here?
+					 */
+					title: () => LocalizedString
+					items: {
+						no: {
+							/**
+							 * No, I guess not.
+							 */
+							title: () => LocalizedString
+							/**
+							 * no
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/font-size/html-set-here/no
+							 */
+							to: () => LocalizedString
+							answer: {
+								'0': {
+									title: () => LocalizedString
+									/**
+									 * You probably don't need to bother (and the 62.5% tends to be something you should avoid.)
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
+						yes: {
+							/**
+							 * Yes!
+							 */
+							title: () => LocalizedString
+							/**
+							 * yes
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/font-size/responsive
+							 */
+							to: () => LocalizedString
+						}
+					}
+				}
+			}
+			responsive: {
+				question: {
+					/**
+					 * Do you want it to be responsive?
+					 */
+					title: () => LocalizedString
+					items: {
+						no: {
+							/**
+							 * No!
+							 */
+							title: () => LocalizedString
+							/**
+							 * no
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/font-size/responsive/no
+							 */
+							to: () => LocalizedString
+							answer: {
+								'0': {
+									/**
+									 * rem
+									 */
+									title: () => LocalizedString
+									/**
+									 * Most of the time, you will probably use rem when declaring font sizes. It's easy to use, predictable, and very importantly, respects the users choice if they have made changes to their default font size at the OS or browser level.
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
+						yes: {
+							/**
+							 * Yes!
+							 */
+							title: () => LocalizedString
+							/**
+							 * yes
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/font-size/responsive/yes
+							 */
+							to: () => LocalizedString
+							answer: {
+								'0': {
+									/**
+									 * Clamp()
+									 */
+									title: () => LocalizedString
+									/**
+									 * You need 3 values for clamp, a minimum, "growth factor", and maximum. The minimum and maximum should probably be in rem and the growth factor a viewport unit, but also with rem added to it. For example: clamp(1.25rem, 7.5vw + .5rem, 2rem).<br><br>You can learn more about it <a href="https://www.youtube.com/watch?v=U9VF-4euyRo" target="_blank" rel="noopener noreferrer">in this video</a>. There is also a fantastic tool called <a href="https://utopia.fyi/type/calculator/" target="_blank" rel="noopener noreferrer">Utopia</a> that you can use to generate a responsive type scale.
+									 */
+									description: () => LocalizedString
+								}
+								'1': {
+									/**
+									 * cqi
+									 */
+									title: () => LocalizedString
+									/**
+									 * If you don't mind trying something that doesn't have the best browser support, you could substitute the `vw` unit with a `cqi`, which is a container query unit that gets the inline size of it's container. This does mean you need a container though. You can learn more about it <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank" rel="noopener noreferrer">in this video</a>.
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
+					}
+				}
+			}
+			relativeToParent: {
+				question: {
+					/**
+					 * Do you want it to be relative to the font-size of the parent element, or something more precise?
+					 */
+					title: () => LocalizedString
+					items: {
+						fontSize: {
+							/**
+							 * The font-size
+							 */
+							title: () => LocalizedString
+							/**
+							 * font-size
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/font-size/relative-to-parent/font-size
+							 */
+							to: () => LocalizedString
+							answer: {
+								'0': {
+									/**
+									 * em
+									 */
+									title: () => LocalizedString
+									/**
+									 * The `em` unit, when used to declare font-size, will be relative it's ancestor's font-size.<br><br>For example, if you have a heading with a font-size of 3rem, and a span inside with a font-size of .5rem, the span will have a font-size of 1.5rem (3rem x .5).
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
+						morePrecise: {
+							/**
+							 * Something more precise
+							 */
+							title: () => LocalizedString
+							/**
+							 * more-precise
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/font-size/relative-to-parent/more-precise
+							 */
+							to: () => LocalizedString
+							answer: {
+								'0': {
+									/**
+									 * lh
+									 */
+									title: () => LocalizedString
+									/**
+									 * Line-height
+									 */
+									description: () => LocalizedString
+								}
+								'1': {
+									/**
+									 * ex
+									 */
+									title: () => LocalizedString
+									/**
+									 * Ex height
+									 */
+									description: () => LocalizedString
+								}
+								'2': {
+									/**
+									 * cap
+									 */
+									title: () => LocalizedString
+									/**
+									 * Cap height
+									 */
+									description: () => LocalizedString
+								}
+							}
 						}
 					}
 				}

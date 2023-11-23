@@ -79,32 +79,38 @@ const en: BaseTranslation = {
 				{
 					title: 'Font size',
 					value: 'font-size',
-					hint: ''
+					hint: '',
+					to: '/questionaries/font-size'
 				},
 				{
 					title: 'Spacing',
 					value: 'spacing',
-					hint: 'Margin, padding, gap, etc.'
+					hint: 'Margin, padding, gap, etc.',
+					to: '/questionaries/spacing'
 				},
 				{
 					title: 'Positioning',
 					value: 'positioning',
-					hint: 'Top, right, bottom, left, etc.'
+					hint: 'Top, right, bottom, left, etc.',
+					to: '/questionaries/positioning'
 				},
 				{
 					title: 'Details/effects',
 					value: 'details-effects',
-					hint: 'Border, box-shadow, outlines, etc.'
+					hint: 'Border, box-shadow, outlines, etc.',
+					to: '/questionaries/details-effects'
 				},
 				{
 					title: 'Flex or grid',
 					value: 'flex-grid',
-					hint: ''
+					hint: '',
+					to: '/questionaries/flex-grid'
 				},
 				{
 					title: 'Width or height on an element',
 					value: 'width-height',
-					hint: ''
+					hint: '',
+					to: '/questionaries/width-height'
 				}
 			]
 		},
@@ -112,67 +118,158 @@ const en: BaseTranslation = {
 			title: 'Which of these are you selecting to declare the font-size?',
 			question: {
 				items: {
-					htmlSetHere: {
+					htmlElement: {
 						title: 'The <html> element',
 						value: 'html',
 						hint: '',
+						to: '/questionaries/font-size/html-set-here'
+					},
+					bodyElement: {
+						title: 'The <body> element',
+						value: 'body',
+						hint: '',
+						to: '/questionaries/font-size/responsive'
+					},
+					textRelatedElement: {
+						title: 'Text related element',
+						value: 'text-related',
+						hint: '<h1> - <h6>, <p>, <ol>, <ul>, etc.',
+						to: '/questionaries/font-size/text-related',
 						question: {
-							title: 'Do you need to set a font-size here?',
+							title:
+								'Does the font-size need to be relative to another element?',
 							items: {
 								no: {
 									title: 'No, I guess not.',
 									value: 'no',
 									hint: '',
-									answer: [
-										{
-											title: '',
-											description:
-												"You probably don't need to bother (and the 62.5% tends to be something you should avoid.)"
-										}
-									]
+									to: '/questionaries/font-size/responsive'
 								},
 								yes: {
 									title: 'Yes!',
 									value: 'yes',
 									hint: '',
-									question: {
-										title: 'Do you want it to be responsive?',
-										items: {
-											no: {
-												title: 'No!',
-												value: 'no',
-												hint: '',
-												answer: [
-													{
-														title: 'rem',
-														description:
-															"Most of the time, you will probably use rem when declaring font sizes. It's easy to use, predictable, and very importantly, respects the users choice if they have made changes to their default font size at the OS or browser level."
-													}
-												]
-											},
-											yes: {
-												title: 'Yes!',
-												value: 'yes',
-												hint: '',
-												answer: [
-													{
-														title: 'Clamp()',
-														description:
-															'You need 3 values for clamp, a minimum, "growth factor", and maximum. The minimum and maximum should probably be in rem and the growth factor a viewport unit, but also with rem added to it. For example: clamp(1.25rem, 7.5vw + .5rem, 2rem).<br><br>You can learn more about it <a href="https://www.youtube.com/watch?v=U9VF-4euyRo" target="_blank" rel="noopener noreferrer">in this video</a>. There is also a fantastic tool called <a href="https://utopia.fyi/type/calculator/" target="_blank" rel="noopener noreferrer">Utopia</a> that you can use to generate a responsive type scale.'
-													},
-													{
-														title: 'cqi',
-														description:
-															'If you don\'t mind trying something that doesn\'t have the best browser support, you could substitute the `vw` unit with a `cqi`, which is a container query unit that gets the inline size of it\'s container. This does mean you need a container though. You can learn more about it <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank" rel="noopener noreferrer">in this video</a>.'
-													}
-												]
-											}
-										}
-									}
+									to: '/questionaries/font-size/relative-to-parent'
 								}
 							}
+						}
+					},
+					inlineElement: {
+						title: 'Inline element',
+						value: 'inline',
+						hint: '<a>, <span>, <strong>, etc.',
+						to: '/questionaries/font-size/relative-to-parent'
+					},
+					layoutElement: {
+						title: 'Layout element',
+						value: 'layout',
+						hint: '<div>, <nav>, <main>, <aside>, <footer>, etc.',
+						to: '/questionaries/font-size/html-set-here'
+					}
+				}
+			},
+			htmlSetHere: {
+				question: {
+					title: 'Do you need to set a font-size here?',
+					items: {
+						no: {
+							title: 'No, I guess not.',
+							value: 'no',
+							hint: '',
+							to: '/questionaries/font-size/html-set-here/no',
+							answer: [
+								{
+									title: '',
+									description:
+										"You probably don't need to bother (and the 62.5% tends to be something you should avoid.)"
+								}
+							]
 						},
-						answers: []
+						yes: {
+							title: 'Yes!',
+							value: 'yes',
+							hint: '',
+							to: '/questionaries/font-size/responsive'
+						}
+					}
+				}
+			},
+			responsive: {
+				question: {
+					title: 'Do you want it to be responsive?',
+					items: {
+						no: {
+							title: 'No!',
+							value: 'no',
+							hint: '',
+							to: '/questionaries/font-size/responsive/no',
+							answer: [
+								{
+									title: 'rem',
+									description:
+										"Most of the time, you will probably use rem when declaring font sizes. It's easy to use, predictable, and very importantly, respects the users choice if they have made changes to their default font size at the OS or browser level."
+								}
+							]
+						},
+						yes: {
+							title: 'Yes!',
+							value: 'yes',
+							hint: '',
+							to: '/questionaries/font-size/responsive/yes',
+							answer: [
+								{
+									title: 'Clamp()',
+									description:
+										'You need 3 values for clamp, a minimum, "growth factor", and maximum. The minimum and maximum should probably be in rem and the growth factor a viewport unit, but also with rem added to it. For example: clamp(1.25rem, 7.5vw + .5rem, 2rem).<br><br>You can learn more about it <a href="https://www.youtube.com/watch?v=U9VF-4euyRo" target="_blank" rel="noopener noreferrer">in this video</a>. There is also a fantastic tool called <a href="https://utopia.fyi/type/calculator/" target="_blank" rel="noopener noreferrer">Utopia</a> that you can use to generate a responsive type scale.'
+								},
+								{
+									title: 'cqi',
+									description:
+										'If you don\'t mind trying something that doesn\'t have the best browser support, you could substitute the `vw` unit with a `cqi`, which is a container query unit that gets the inline size of it\'s container. This does mean you need a container though. You can learn more about it <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank" rel="noopener noreferrer">in this video</a>.'
+								}
+							]
+						}
+					}
+				}
+			},
+			relativeToParent: {
+				question: {
+					title:
+						'Do you want it to be relative to the font-size of the parent element, or something more precise?',
+					items: {
+						fontSize: {
+							title: 'The font-size',
+							value: 'font-size',
+							hint: '',
+							to: '/questionaries/font-size/relative-to-parent/font-size',
+							answer: [
+								{
+									title: 'em',
+									description:
+										"The `em` unit, when used to declare font-size, will be relative it's ancestor's font-size.<br><br>For example, if you have a heading with a font-size of 3rem, and a span inside with a font-size of .5rem, the span will have a font-size of 1.5rem (3rem x .5)."
+								}
+							]
+						},
+						morePrecise: {
+							title: 'Something more precise',
+							value: 'more-precise',
+							hint: '',
+							to: '/questionaries/font-size/relative-to-parent/more-precise',
+							answer: [
+								{
+									title: 'lh',
+									description: 'Line-height'
+								},
+								{
+									title: 'ex',
+									description: 'Ex height'
+								},
+								{
+									title: 'cap',
+									description: 'Cap height'
+								}
+							]
+						}
 					}
 				}
 			}

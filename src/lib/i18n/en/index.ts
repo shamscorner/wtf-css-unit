@@ -143,47 +143,55 @@ const en: BaseTranslation = {
 									title: 'Yes!',
 									value: 'yes',
 									hint: '',
-									to: '/questionaries/font-size/html/yes',
-									question: {
-										title: 'Do you want it to be responsive?',
-										items: {
-											no: {
-												title: 'No!',
-												value: 'no',
-												hint: '',
-												to: '/questionaries/font-size/html/yes/no',
-												answer: [
-													{
-														title: 'rem',
-														description:
-															"Most of the time, you will probably use rem when declaring font sizes. It's easy to use, predictable, and very importantly, respects the users choice if they have made changes to their default font size at the OS or browser level."
-													}
-												]
-											},
-											yes: {
-												title: 'Yes!',
-												value: 'yes',
-												hint: '',
-												to: '/questionaries/font-size/html/yes/yes',
-												answer: [
-													{
-														title: 'Clamp()',
-														description:
-															'You need 3 values for clamp, a minimum, "growth factor", and maximum. The minimum and maximum should probably be in rem and the growth factor a viewport unit, but also with rem added to it. For example: clamp(1.25rem, 7.5vw + .5rem, 2rem).<br><br>You can learn more about it <a href="https://www.youtube.com/watch?v=U9VF-4euyRo" target="_blank" rel="noopener noreferrer">in this video</a>. There is also a fantastic tool called <a href="https://utopia.fyi/type/calculator/" target="_blank" rel="noopener noreferrer">Utopia</a> that you can use to generate a responsive type scale.'
-													},
-													{
-														title: 'cqi',
-														description:
-															'If you don\'t mind trying something that doesn\'t have the best browser support, you could substitute the `vw` unit with a `cqi`, which is a container query unit that gets the inline size of it\'s container. This does mean you need a container though. You can learn more about it <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank" rel="noopener noreferrer">in this video</a>.'
-													}
-												]
-											}
-										}
-									}
+									to: '/questionaries/responsive'
 								}
 							}
 						},
 						answers: []
+					},
+					bodyElement: {
+						title: 'The <body> element',
+						value: 'body',
+						hint: '',
+						to: '/questionaries/font-size/body'
+					}
+				}
+			},
+			responsive: {
+				question: {
+					title: 'Do you want it to be responsive?',
+					items: {
+						no: {
+							title: 'No!',
+							value: 'no',
+							hint: '',
+							to: '/questionaries/responsive/no',
+							answer: [
+								{
+									title: 'rem',
+									description:
+										"Most of the time, you will probably use rem when declaring font sizes. It's easy to use, predictable, and very importantly, respects the users choice if they have made changes to their default font size at the OS or browser level."
+								}
+							]
+						},
+						yes: {
+							title: 'Yes!',
+							value: 'yes',
+							hint: '',
+							to: '/questionaries/responsive/yes',
+							answer: [
+								{
+									title: 'Clamp()',
+									description:
+										'You need 3 values for clamp, a minimum, "growth factor", and maximum. The minimum and maximum should probably be in rem and the growth factor a viewport unit, but also with rem added to it. For example: clamp(1.25rem, 7.5vw + .5rem, 2rem).<br><br>You can learn more about it <a href="https://www.youtube.com/watch?v=U9VF-4euyRo" target="_blank" rel="noopener noreferrer">in this video</a>. There is also a fantastic tool called <a href="https://utopia.fyi/type/calculator/" target="_blank" rel="noopener noreferrer">Utopia</a> that you can use to generate a responsive type scale.'
+								},
+								{
+									title: 'cqi',
+									description:
+										'If you don\'t mind trying something that doesn\'t have the best browser support, you could substitute the `vw` unit with a `cqi`, which is a container query unit that gets the inline size of it\'s container. This does mean you need a container though. You can learn more about it <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank" rel="noopener noreferrer">in this video</a>.'
+								}
+							]
+						}
 					}
 				}
 			}

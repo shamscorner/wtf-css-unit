@@ -146,14 +146,76 @@ const en: BaseTranslation = {
 									to: '/questionaries/responsive'
 								}
 							}
-						},
-						answers: []
+						}
 					},
 					bodyElement: {
 						title: 'The <body> element',
 						value: 'body',
 						hint: '',
-						to: '/questionaries/font-size/body'
+						to: '/questionaries/responsive'
+					},
+					textRelatedElement: {
+						title: 'Text related element',
+						value: 'text-related',
+						hint: '<h1> - <h6>, <p>, <ol>, <ul>, etc.',
+						to: '/questionaries/font-size/text-related',
+						question: {
+							title:
+								'Does the font-size need to be relative to another element?',
+							items: {
+								no: {
+									title: 'No, I guess not.',
+									value: 'no',
+									hint: '',
+									to: '/questionaries/responsive'
+								},
+								yes: {
+									title: 'Yes!',
+									value: 'yes',
+									hint: '',
+									to: '/questionaries/font-size/text-related/yes',
+									question: {
+										title:
+											'Do you want it to be relative to the font-size of the parent element, or something more precise?',
+										items: {
+											fontSize: {
+												title: 'The font-size',
+												value: 'font-size',
+												hint: '',
+												to: '/questionaries/font-size/text-related/yes/font-size',
+												answer: [
+													{
+														title: 'em',
+														description:
+															"The `em` unit, when used to declare font-size, will be relative it's ancestor's font-size.<br><br>For example, if you have a heading with a font-size of 3rem, and a span inside with a font-size of .5rem, the span will have a font-size of 1.5rem (3rem x .5)."
+													}
+												]
+											},
+											morePrecise: {
+												title: 'Something more precise',
+												value: 'more-precise',
+												hint: '',
+												to: '/questionaries/font-size/text-related/yes/more-precise',
+												answer: [
+													{
+														title: 'lh',
+														description: 'Line-height'
+													},
+													{
+														title: 'ex',
+														description: 'Ex height'
+													},
+													{
+														title: 'cap',
+														description: 'Cap height'
+													}
+												]
+											}
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			},

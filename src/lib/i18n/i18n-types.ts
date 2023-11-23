@@ -346,8 +346,6 @@ type RootTranslation = {
 								}
 							}
 						}
-						answers: {
-						}
 					}
 					bodyElement: {
 						/**
@@ -360,9 +358,147 @@ type RootTranslation = {
 						value: string
 						hint: string
 						/**
-						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​b​o​d​y
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​r​e​s​p​o​n​s​i​v​e
 						 */
 						to: string
+					}
+					textRelatedElement: {
+						/**
+						 * T​e​x​t​ ​r​e​l​a​t​e​d​ ​e​l​e​m​e​n​t
+						 */
+						title: string
+						/**
+						 * t​e​x​t​-​r​e​l​a​t​e​d
+						 */
+						value: string
+						/**
+						 * <​h​1​>​ ​-​ ​<​h​6​>​,​ ​<​p​>​,​ ​<​o​l​>​,​ ​<​u​l​>​,​ ​e​t​c​.
+						 */
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​t​e​x​t​-​r​e​l​a​t​e​d
+						 */
+						to: string
+						question: {
+							/**
+							 * D​o​e​s​ ​t​h​e​ ​f​o​n​t​-​s​i​z​e​ ​n​e​e​d​ ​t​o​ ​b​e​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​a​n​o​t​h​e​r​ ​e​l​e​m​e​n​t​?
+							 */
+							title: string
+							items: {
+								no: {
+									/**
+									 * N​o​,​ ​I​ ​g​u​e​s​s​ ​n​o​t​.
+									 */
+									title: string
+									/**
+									 * n​o
+									 */
+									value: string
+									hint: string
+									/**
+									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​r​e​s​p​o​n​s​i​v​e
+									 */
+									to: string
+								}
+								yes: {
+									/**
+									 * Y​e​s​!
+									 */
+									title: string
+									/**
+									 * y​e​s
+									 */
+									value: string
+									hint: string
+									/**
+									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​t​e​x​t​-​r​e​l​a​t​e​d​/​y​e​s
+									 */
+									to: string
+									question: {
+										/**
+										 * D​o​ ​y​o​u​ ​w​a​n​t​ ​i​t​ ​t​o​ ​b​e​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​t​h​e​ ​f​o​n​t​-​s​i​z​e​ ​o​f​ ​t​h​e​ ​p​a​r​e​n​t​ ​e​l​e​m​e​n​t​,​ ​o​r​ ​s​o​m​e​t​h​i​n​g​ ​m​o​r​e​ ​p​r​e​c​i​s​e​?
+										 */
+										title: string
+										items: {
+											fontSize: {
+												/**
+												 * T​h​e​ ​f​o​n​t​-​s​i​z​e
+												 */
+												title: string
+												/**
+												 * f​o​n​t​-​s​i​z​e
+												 */
+												value: string
+												hint: string
+												/**
+												 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​t​e​x​t​-​r​e​l​a​t​e​d​/​y​e​s​/​f​o​n​t​-​s​i​z​e
+												 */
+												to: string
+												answer: {
+													'0': {
+														/**
+														 * e​m
+														 */
+														title: string
+														/**
+														 * T​h​e​ ​`​e​m​`​ ​u​n​i​t​,​ ​w​h​e​n​ ​u​s​e​d​ ​t​o​ ​d​e​c​l​a​r​e​ ​f​o​n​t​-​s​i​z​e​,​ ​w​i​l​l​ ​b​e​ ​r​e​l​a​t​i​v​e​ ​i​t​'​s​ ​a​n​c​e​s​t​o​r​'​s​ ​f​o​n​t​-​s​i​z​e​.​<​b​r​>​<​b​r​>​F​o​r​ ​e​x​a​m​p​l​e​,​ ​i​f​ ​y​o​u​ ​h​a​v​e​ ​a​ ​h​e​a​d​i​n​g​ ​w​i​t​h​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​o​f​ ​3​r​e​m​,​ ​a​n​d​ ​a​ ​s​p​a​n​ ​i​n​s​i​d​e​ ​w​i​t​h​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​o​f​ ​.​5​r​e​m​,​ ​t​h​e​ ​s​p​a​n​ ​w​i​l​l​ ​h​a​v​e​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​o​f​ ​1​.​5​r​e​m​ ​(​3​r​e​m​ ​x​ ​.​5​)​.
+														 */
+														description: string
+													}
+												}
+											}
+											morePrecise: {
+												/**
+												 * S​o​m​e​t​h​i​n​g​ ​m​o​r​e​ ​p​r​e​c​i​s​e
+												 */
+												title: string
+												/**
+												 * m​o​r​e​-​p​r​e​c​i​s​e
+												 */
+												value: string
+												hint: string
+												/**
+												 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​t​e​x​t​-​r​e​l​a​t​e​d​/​y​e​s​/​m​o​r​e​-​p​r​e​c​i​s​e
+												 */
+												to: string
+												answer: {
+													'0': {
+														/**
+														 * l​h
+														 */
+														title: string
+														/**
+														 * L​i​n​e​-​h​e​i​g​h​t
+														 */
+														description: string
+													}
+													'1': {
+														/**
+														 * e​x
+														 */
+														title: string
+														/**
+														 * E​x​ ​h​e​i​g​h​t
+														 */
+														description: string
+													}
+													'2': {
+														/**
+														 * c​a​p
+														 */
+														title: string
+														/**
+														 * C​a​p​ ​h​e​i​g​h​t
+														 */
+														description: string
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -784,8 +920,6 @@ export type TranslationFunctions = {
 								}
 							}
 						}
-						answers: {
-						}
 					}
 					bodyElement: {
 						/**
@@ -798,9 +932,147 @@ export type TranslationFunctions = {
 						value: () => LocalizedString
 						hint: () => LocalizedString
 						/**
-						 * /questionaries/font-size/body
+						 * /questionaries/responsive
 						 */
 						to: () => LocalizedString
+					}
+					textRelatedElement: {
+						/**
+						 * Text related element
+						 */
+						title: () => LocalizedString
+						/**
+						 * text-related
+						 */
+						value: () => LocalizedString
+						/**
+						 * <h1> - <h6>, <p>, <ol>, <ul>, etc.
+						 */
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/font-size/text-related
+						 */
+						to: () => LocalizedString
+						question: {
+							/**
+							 * Does the font-size need to be relative to another element?
+							 */
+							title: () => LocalizedString
+							items: {
+								no: {
+									/**
+									 * No, I guess not.
+									 */
+									title: () => LocalizedString
+									/**
+									 * no
+									 */
+									value: () => LocalizedString
+									hint: () => LocalizedString
+									/**
+									 * /questionaries/responsive
+									 */
+									to: () => LocalizedString
+								}
+								yes: {
+									/**
+									 * Yes!
+									 */
+									title: () => LocalizedString
+									/**
+									 * yes
+									 */
+									value: () => LocalizedString
+									hint: () => LocalizedString
+									/**
+									 * /questionaries/font-size/text-related/yes
+									 */
+									to: () => LocalizedString
+									question: {
+										/**
+										 * Do you want it to be relative to the font-size of the parent element, or something more precise?
+										 */
+										title: () => LocalizedString
+										items: {
+											fontSize: {
+												/**
+												 * The font-size
+												 */
+												title: () => LocalizedString
+												/**
+												 * font-size
+												 */
+												value: () => LocalizedString
+												hint: () => LocalizedString
+												/**
+												 * /questionaries/font-size/text-related/yes/font-size
+												 */
+												to: () => LocalizedString
+												answer: {
+													'0': {
+														/**
+														 * em
+														 */
+														title: () => LocalizedString
+														/**
+														 * The `em` unit, when used to declare font-size, will be relative it's ancestor's font-size.<br><br>For example, if you have a heading with a font-size of 3rem, and a span inside with a font-size of .5rem, the span will have a font-size of 1.5rem (3rem x .5).
+														 */
+														description: () => LocalizedString
+													}
+												}
+											}
+											morePrecise: {
+												/**
+												 * Something more precise
+												 */
+												title: () => LocalizedString
+												/**
+												 * more-precise
+												 */
+												value: () => LocalizedString
+												hint: () => LocalizedString
+												/**
+												 * /questionaries/font-size/text-related/yes/more-precise
+												 */
+												to: () => LocalizedString
+												answer: {
+													'0': {
+														/**
+														 * lh
+														 */
+														title: () => LocalizedString
+														/**
+														 * Line-height
+														 */
+														description: () => LocalizedString
+													}
+													'1': {
+														/**
+														 * ex
+														 */
+														title: () => LocalizedString
+														/**
+														 * Ex height
+														 */
+														description: () => LocalizedString
+													}
+													'2': {
+														/**
+														 * cap
+														 */
+														title: () => LocalizedString
+														/**
+														 * Cap height
+														 */
+														description: () => LocalizedString
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}

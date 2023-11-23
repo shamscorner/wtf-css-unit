@@ -24,5 +24,11 @@
 		"tests/**",
 		"src/lib/i18n/**"
 	],
-	"cSpell.words": ["Prefs", "questionaries", "superforms", "typesafe"]
+	"cSpell.words": [
+		"Prefs",
+		"questionaries",
+		"superforms",
+		"typesafe",
+		"whatunit"
+	]
 }

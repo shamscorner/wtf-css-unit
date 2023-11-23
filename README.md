@@ -1,6 +1,10 @@
 # WTF is CSS Units Anyway?
 
+**🚜 Under Active Construction (not finished yet)**
+
 Sometimes finding the right css units can be a pain. This tool will help you to figure out the right css units for your project. Figure out your CSS unit with ease. All you need to do is just answer some questions.
+
+This project is highly inspired by [whatunit.com](https://whatunit.com/). Check the awesome flowchart there.
 
 This project is created from this awesome [sveltekit starter template](https://github.com/shamscorner/sveltekit-stackter)
 

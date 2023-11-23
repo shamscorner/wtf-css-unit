@@ -173,49 +173,16 @@ const en: BaseTranslation = {
 									title: 'Yes!',
 									value: 'yes',
 									hint: '',
-									to: '/questionaries/font-size/text-related/yes',
-									question: {
-										title:
-											'Do you want it to be relative to the font-size of the parent element, or something more precise?',
-										items: {
-											fontSize: {
-												title: 'The font-size',
-												value: 'font-size',
-												hint: '',
-												to: '/questionaries/font-size/text-related/yes/font-size',
-												answer: [
-													{
-														title: 'em',
-														description:
-															"The `em` unit, when used to declare font-size, will be relative it's ancestor's font-size.<br><br>For example, if you have a heading with a font-size of 3rem, and a span inside with a font-size of .5rem, the span will have a font-size of 1.5rem (3rem x .5)."
-													}
-												]
-											},
-											morePrecise: {
-												title: 'Something more precise',
-												value: 'more-precise',
-												hint: '',
-												to: '/questionaries/font-size/text-related/yes/more-precise',
-												answer: [
-													{
-														title: 'lh',
-														description: 'Line-height'
-													},
-													{
-														title: 'ex',
-														description: 'Ex height'
-													},
-													{
-														title: 'cap',
-														description: 'Cap height'
-													}
-												]
-											}
-										}
-									}
+									to: '/questionaries/font-size/relative-to-parent'
 								}
 							}
 						}
+					},
+					inlineElement: {
+						title: 'Inline element',
+						value: 'inline-element',
+						hint: '<a>, <span>, <strong>, etc.',
+						to: '/questionaries/font-size/relative-to-parent'
 					}
 				}
 			},
@@ -251,6 +218,47 @@ const en: BaseTranslation = {
 									title: 'cqi',
 									description:
 										'If you don\'t mind trying something that doesn\'t have the best browser support, you could substitute the `vw` unit with a `cqi`, which is a container query unit that gets the inline size of it\'s container. This does mean you need a container though. You can learn more about it <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank" rel="noopener noreferrer">in this video</a>.'
+								}
+							]
+						}
+					}
+				}
+			},
+			relativeToParent: {
+				question: {
+					title:
+						'Do you want it to be relative to the font-size of the parent element, or something more precise?',
+					items: {
+						fontSize: {
+							title: 'The font-size',
+							value: 'font-size',
+							hint: '',
+							to: '/questionaries/font-size/relative-to-parent/font-size',
+							answer: [
+								{
+									title: 'em',
+									description:
+										"The `em` unit, when used to declare font-size, will be relative it's ancestor's font-size.<br><br>For example, if you have a heading with a font-size of 3rem, and a span inside with a font-size of .5rem, the span will have a font-size of 1.5rem (3rem x .5)."
+								}
+							]
+						},
+						morePrecise: {
+							title: 'Something more precise',
+							value: 'more-precise',
+							hint: '',
+							to: '/questionaries/font-size/relative-to-parent/more-precise',
+							answer: [
+								{
+									title: 'lh',
+									description: 'Line-height'
+								},
+								{
+									title: 'ex',
+									description: 'Ex height'
+								},
+								{
+									title: 'cap',
+									description: 'Cap height'
 								}
 							]
 						}

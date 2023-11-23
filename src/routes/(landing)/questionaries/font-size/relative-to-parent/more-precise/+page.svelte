@@ -6,8 +6,8 @@
 
 <Answer
 	answers={Object.values(
-		$LL.questionaries.whichFontSize.question.items.textRelatedElement.question
-			.items.yes.question.items.morePrecise.answer
+		$LL.questionaries.whichFontSize.relativeToParent.question.items.morePrecise
+			.answer
 	)}
 	on:reset={() => goto('/')}
 />

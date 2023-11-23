@@ -143,7 +143,7 @@ const en: BaseTranslation = {
 									title: 'Yes!',
 									value: 'yes',
 									hint: '',
-									to: '/questionaries/responsive'
+									to: '/questionaries/font-size/responsive'
 								}
 							}
 						}
@@ -152,7 +152,7 @@ const en: BaseTranslation = {
 						title: 'The <body> element',
 						value: 'body',
 						hint: '',
-						to: '/questionaries/responsive'
+						to: '/questionaries/font-size/responsive'
 					},
 					textRelatedElement: {
 						title: 'Text related element',
@@ -167,7 +167,7 @@ const en: BaseTranslation = {
 									title: 'No, I guess not.',
 									value: 'no',
 									hint: '',
-									to: '/questionaries/responsive'
+									to: '/questionaries/font-size/responsive'
 								},
 								yes: {
 									title: 'Yes!',
@@ -194,7 +194,7 @@ const en: BaseTranslation = {
 							title: 'No!',
 							value: 'no',
 							hint: '',
-							to: '/questionaries/responsive/no',
+							to: '/questionaries/font-size/responsive/no',
 							answer: [
 								{
 									title: 'rem',
@@ -207,7 +207,7 @@ const en: BaseTranslation = {
 							title: 'Yes!',
 							value: 'yes',
 							hint: '',
-							to: '/questionaries/responsive/yes',
+							to: '/questionaries/font-size/responsive/yes',
 							answer: [
 								{
 									title: 'Clamp()',

@@ -340,7 +340,7 @@ type RootTranslation = {
 									value: string
 									hint: string
 									/**
-									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​r​e​s​p​o​n​s​i​v​e
+									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e
 									 */
 									to: string
 								}
@@ -358,7 +358,7 @@ type RootTranslation = {
 						value: string
 						hint: string
 						/**
-						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​r​e​s​p​o​n​s​i​v​e
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e
 						 */
 						to: string
 					}
@@ -396,7 +396,7 @@ type RootTranslation = {
 									value: string
 									hint: string
 									/**
-									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​r​e​s​p​o​n​s​i​v​e
+									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e
 									 */
 									to: string
 								}
@@ -456,7 +456,7 @@ type RootTranslation = {
 							value: string
 							hint: string
 							/**
-							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​r​e​s​p​o​n​s​i​v​e​/​n​o
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e​/​n​o
 							 */
 							to: string
 							answer: {
@@ -483,7 +483,7 @@ type RootTranslation = {
 							value: string
 							hint: string
 							/**
-							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​r​e​s​p​o​n​s​i​v​e​/​y​e​s
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e​/​y​e​s
 							 */
 							to: string
 							answer: {
@@ -934,7 +934,7 @@ export type TranslationFunctions = {
 									value: () => LocalizedString
 									hint: () => LocalizedString
 									/**
-									 * /questionaries/responsive
+									 * /questionaries/font-size/responsive
 									 */
 									to: () => LocalizedString
 								}
@@ -952,7 +952,7 @@ export type TranslationFunctions = {
 						value: () => LocalizedString
 						hint: () => LocalizedString
 						/**
-						 * /questionaries/responsive
+						 * /questionaries/font-size/responsive
 						 */
 						to: () => LocalizedString
 					}
@@ -990,7 +990,7 @@ export type TranslationFunctions = {
 									value: () => LocalizedString
 									hint: () => LocalizedString
 									/**
-									 * /questionaries/responsive
+									 * /questionaries/font-size/responsive
 									 */
 									to: () => LocalizedString
 								}
@@ -1050,7 +1050,7 @@ export type TranslationFunctions = {
 							value: () => LocalizedString
 							hint: () => LocalizedString
 							/**
-							 * /questionaries/responsive/no
+							 * /questionaries/font-size/responsive/no
 							 */
 							to: () => LocalizedString
 							answer: {
@@ -1077,7 +1077,7 @@ export type TranslationFunctions = {
 							value: () => LocalizedString
 							hint: () => LocalizedString
 							/**
-							 * /questionaries/responsive/yes
+							 * /questionaries/font-size/responsive/yes
 							 */
 							to: () => LocalizedString
 							answer: {

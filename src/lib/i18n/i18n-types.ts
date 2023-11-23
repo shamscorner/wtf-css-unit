@@ -295,6 +295,10 @@ type RootTranslation = {
 						 */
 						value: string
 						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l
+						 */
+						to: string
 						question: {
 							/**
 							 * D​o​ ​y​o​u​ ​n​e​e​d​ ​t​o​ ​s​e​t​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​h​e​r​e​?
@@ -311,6 +315,10 @@ type RootTranslation = {
 									 */
 									value: string
 									hint: string
+									/**
+									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​/​n​o
+									 */
+									to: string
 									answer: {
 										'0': {
 											title: string
@@ -331,6 +339,10 @@ type RootTranslation = {
 									 */
 									value: string
 									hint: string
+									/**
+									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​/​y​e​s
+									 */
+									to: string
 									question: {
 										/**
 										 * D​o​ ​y​o​u​ ​w​a​n​t​ ​i​t​ ​t​o​ ​b​e​ ​r​e​s​p​o​n​s​i​v​e​?
@@ -347,6 +359,10 @@ type RootTranslation = {
 												 */
 												value: string
 												hint: string
+												/**
+												 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​/​y​e​s​/​n​o
+												 */
+												to: string
 												answer: {
 													'0': {
 														/**
@@ -370,6 +386,10 @@ type RootTranslation = {
 												 */
 												value: string
 												hint: string
+												/**
+												 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​/​y​e​s​/​y​e​s
+												 */
+												to: string
 												answer: {
 													'0': {
 														/**
@@ -696,6 +716,10 @@ export type TranslationFunctions = {
 						 */
 						value: () => LocalizedString
 						hint: () => LocalizedString
+						/**
+						 * /questionaries/font-size/html
+						 */
+						to: () => LocalizedString
 						question: {
 							/**
 							 * Do you need to set a font-size here?
@@ -712,6 +736,10 @@ export type TranslationFunctions = {
 									 */
 									value: () => LocalizedString
 									hint: () => LocalizedString
+									/**
+									 * /questionaries/font-size/html/no
+									 */
+									to: () => LocalizedString
 									answer: {
 										'0': {
 											title: () => LocalizedString
@@ -732,6 +760,10 @@ export type TranslationFunctions = {
 									 */
 									value: () => LocalizedString
 									hint: () => LocalizedString
+									/**
+									 * /questionaries/font-size/html/yes
+									 */
+									to: () => LocalizedString
 									question: {
 										/**
 										 * Do you want it to be responsive?
@@ -748,6 +780,10 @@ export type TranslationFunctions = {
 												 */
 												value: () => LocalizedString
 												hint: () => LocalizedString
+												/**
+												 * /questionaries/font-size/html/yes/no
+												 */
+												to: () => LocalizedString
 												answer: {
 													'0': {
 														/**
@@ -771,6 +807,10 @@ export type TranslationFunctions = {
 												 */
 												value: () => LocalizedString
 												hint: () => LocalizedString
+												/**
+												 * /questionaries/font-size/html/yes/yes
+												 */
+												to: () => LocalizedString
 												answer: {
 													'0': {
 														/**

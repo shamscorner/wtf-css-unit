@@ -122,6 +122,7 @@ const en: BaseTranslation = {
 						title: 'The <html> element',
 						value: 'html',
 						hint: '',
+						to: '/questionaries/font-size/html',
 						question: {
 							title: 'Do you need to set a font-size here?',
 							items: {
@@ -129,6 +130,7 @@ const en: BaseTranslation = {
 									title: 'No, I guess not.',
 									value: 'no',
 									hint: '',
+									to: '/questionaries/font-size/html/no',
 									answer: [
 										{
 											title: '',
@@ -141,6 +143,7 @@ const en: BaseTranslation = {
 									title: 'Yes!',
 									value: 'yes',
 									hint: '',
+									to: '/questionaries/font-size/html/yes',
 									question: {
 										title: 'Do you want it to be responsive?',
 										items: {
@@ -148,6 +151,7 @@ const en: BaseTranslation = {
 												title: 'No!',
 												value: 'no',
 												hint: '',
+												to: '/questionaries/font-size/html/yes/no',
 												answer: [
 													{
 														title: 'rem',
@@ -160,6 +164,7 @@ const en: BaseTranslation = {
 												title: 'Yes!',
 												value: 'yes',
 												hint: '',
+												to: '/questionaries/font-size/html/yes/yes',
 												answer: [
 													{
 														title: 'Clamp()',

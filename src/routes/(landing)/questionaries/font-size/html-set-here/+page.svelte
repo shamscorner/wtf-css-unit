@@ -4,9 +4,9 @@
 </script>
 
 <Question
-	title={$LL.questionaries.whichFontSize.question.items.htmlSetHere.question.title()}
+	title={$LL.questionaries.whichFontSize.htmlSetHere.question.title()}
 	items={Object.values(
-		$LL.questionaries.whichFontSize.question.items.htmlSetHere.question.items
+		$LL.questionaries.whichFontSize.htmlSetHere.question.items
 	).map((i) => ({
 		title: i.title(),
 		value: i.value(),

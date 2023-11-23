@@ -285,7 +285,7 @@ type RootTranslation = {
 			title: string
 			question: {
 				items: {
-					htmlSetHere: {
+					htmlElement: {
 						/**
 						 * T​h​e​ ​<​h​t​m​l​>​ ​e​l​e​m​e​n​t
 						 */
@@ -296,56 +296,9 @@ type RootTranslation = {
 						value: string
 						hint: string
 						/**
-						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e
 						 */
 						to: string
-						question: {
-							/**
-							 * D​o​ ​y​o​u​ ​n​e​e​d​ ​t​o​ ​s​e​t​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​h​e​r​e​?
-							 */
-							title: string
-							items: {
-								no: {
-									/**
-									 * N​o​,​ ​I​ ​g​u​e​s​s​ ​n​o​t​.
-									 */
-									title: string
-									/**
-									 * n​o
-									 */
-									value: string
-									hint: string
-									/**
-									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​/​n​o
-									 */
-									to: string
-									answer: {
-										'0': {
-											title: string
-											/**
-											 * Y​o​u​ ​p​r​o​b​a​b​l​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​ ​(​a​n​d​ ​t​h​e​ ​6​2​.​5​%​ ​t​e​n​d​s​ ​t​o​ ​b​e​ ​s​o​m​e​t​h​i​n​g​ ​y​o​u​ ​s​h​o​u​l​d​ ​a​v​o​i​d​.​)
-											 */
-											description: string
-										}
-									}
-								}
-								yes: {
-									/**
-									 * Y​e​s​!
-									 */
-									title: string
-									/**
-									 * y​e​s
-									 */
-									value: string
-									hint: string
-									/**
-									 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e
-									 */
-									to: string
-								}
-							}
-						}
 					}
 					bodyElement: {
 						/**
@@ -424,7 +377,7 @@ type RootTranslation = {
 						 */
 						title: string
 						/**
-						 * i​n​l​i​n​e​-​e​l​e​m​e​n​t
+						 * i​n​l​i​n​e
 						 */
 						value: string
 						/**
@@ -435,6 +388,73 @@ type RootTranslation = {
 						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​l​a​t​i​v​e​-​t​o​-​p​a​r​e​n​t
 						 */
 						to: string
+					}
+					layoutElement: {
+						/**
+						 * L​a​y​o​u​t​ ​e​l​e​m​e​n​t
+						 */
+						title: string
+						/**
+						 * l​a​y​o​u​t
+						 */
+						value: string
+						/**
+						 * <​d​i​v​>​,​ ​<​n​a​v​>​,​ ​<​m​a​i​n​>​,​ ​<​a​s​i​d​e​>​,​ ​<​f​o​o​t​e​r​>​,​ ​e​t​c​.
+						 */
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e
+						 */
+						to: string
+					}
+				}
+			}
+			htmlSetHere: {
+				question: {
+					/**
+					 * D​o​ ​y​o​u​ ​n​e​e​d​ ​t​o​ ​s​e​t​ ​a​ ​f​o​n​t​-​s​i​z​e​ ​h​e​r​e​?
+					 */
+					title: string
+					items: {
+						no: {
+							/**
+							 * N​o​,​ ​I​ ​g​u​e​s​s​ ​n​o​t​.
+							 */
+							title: string
+							/**
+							 * n​o
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e​/​n​o
+							 */
+							to: string
+							answer: {
+								'0': {
+									title: string
+									/**
+									 * Y​o​u​ ​p​r​o​b​a​b​l​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​ ​(​a​n​d​ ​t​h​e​ ​6​2​.​5​%​ ​t​e​n​d​s​ ​t​o​ ​b​e​ ​s​o​m​e​t​h​i​n​g​ ​y​o​u​ ​s​h​o​u​l​d​ ​a​v​o​i​d​.​)
+									 */
+									description: string
+								}
+							}
+						}
+						yes: {
+							/**
+							 * Y​e​s​!
+							 */
+							title: string
+							/**
+							 * y​e​s
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​r​e​s​p​o​n​s​i​v​e
+							 */
+							to: string
+						}
 					}
 				}
 			}
@@ -879,7 +899,7 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			question: {
 				items: {
-					htmlSetHere: {
+					htmlElement: {
 						/**
 						 * The <html> element
 						 */
@@ -890,56 +910,9 @@ export type TranslationFunctions = {
 						value: () => LocalizedString
 						hint: () => LocalizedString
 						/**
-						 * /questionaries/font-size/html
+						 * /questionaries/font-size/html-set-here
 						 */
 						to: () => LocalizedString
-						question: {
-							/**
-							 * Do you need to set a font-size here?
-							 */
-							title: () => LocalizedString
-							items: {
-								no: {
-									/**
-									 * No, I guess not.
-									 */
-									title: () => LocalizedString
-									/**
-									 * no
-									 */
-									value: () => LocalizedString
-									hint: () => LocalizedString
-									/**
-									 * /questionaries/font-size/html/no
-									 */
-									to: () => LocalizedString
-									answer: {
-										'0': {
-											title: () => LocalizedString
-											/**
-											 * You probably don't need to bother (and the 62.5% tends to be something you should avoid.)
-											 */
-											description: () => LocalizedString
-										}
-									}
-								}
-								yes: {
-									/**
-									 * Yes!
-									 */
-									title: () => LocalizedString
-									/**
-									 * yes
-									 */
-									value: () => LocalizedString
-									hint: () => LocalizedString
-									/**
-									 * /questionaries/font-size/responsive
-									 */
-									to: () => LocalizedString
-								}
-							}
-						}
 					}
 					bodyElement: {
 						/**
@@ -1018,7 +991,7 @@ export type TranslationFunctions = {
 						 */
 						title: () => LocalizedString
 						/**
-						 * inline-element
+						 * inline
 						 */
 						value: () => LocalizedString
 						/**
@@ -1029,6 +1002,73 @@ export type TranslationFunctions = {
 						 * /questionaries/font-size/relative-to-parent
 						 */
 						to: () => LocalizedString
+					}
+					layoutElement: {
+						/**
+						 * Layout element
+						 */
+						title: () => LocalizedString
+						/**
+						 * layout
+						 */
+						value: () => LocalizedString
+						/**
+						 * <div>, <nav>, <main>, <aside>, <footer>, etc.
+						 */
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/font-size/html-set-here
+						 */
+						to: () => LocalizedString
+					}
+				}
+			}
+			htmlSetHere: {
+				question: {
+					/**
+					 * Do you need to set a font-size here?
+					 */
+					title: () => LocalizedString
+					items: {
+						no: {
+							/**
+							 * No, I guess not.
+							 */
+							title: () => LocalizedString
+							/**
+							 * no
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/font-size/html-set-here/no
+							 */
+							to: () => LocalizedString
+							answer: {
+								'0': {
+									title: () => LocalizedString
+									/**
+									 * You probably don't need to bother (and the 62.5% tends to be something you should avoid.)
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
+						yes: {
+							/**
+							 * Yes!
+							 */
+							title: () => LocalizedString
+							/**
+							 * yes
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/font-size/responsive
+							 */
+							to: () => LocalizedString
+						}
 					}
 				}
 			}

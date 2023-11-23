@@ -118,35 +118,11 @@ const en: BaseTranslation = {
 			title: 'Which of these are you selecting to declare the font-size?',
 			question: {
 				items: {
-					htmlSetHere: {
+					htmlElement: {
 						title: 'The <html> element',
 						value: 'html',
 						hint: '',
-						to: '/questionaries/font-size/html',
-						question: {
-							title: 'Do you need to set a font-size here?',
-							items: {
-								no: {
-									title: 'No, I guess not.',
-									value: 'no',
-									hint: '',
-									to: '/questionaries/font-size/html/no',
-									answer: [
-										{
-											title: '',
-											description:
-												"You probably don't need to bother (and the 62.5% tends to be something you should avoid.)"
-										}
-									]
-								},
-								yes: {
-									title: 'Yes!',
-									value: 'yes',
-									hint: '',
-									to: '/questionaries/font-size/responsive'
-								}
-							}
-						}
+						to: '/questionaries/font-size/html-set-here'
 					},
 					bodyElement: {
 						title: 'The <body> element',
@@ -180,9 +156,41 @@ const en: BaseTranslation = {
 					},
 					inlineElement: {
 						title: 'Inline element',
-						value: 'inline-element',
+						value: 'inline',
 						hint: '<a>, <span>, <strong>, etc.',
 						to: '/questionaries/font-size/relative-to-parent'
+					},
+					layoutElement: {
+						title: 'Layout element',
+						value: 'layout',
+						hint: '<div>, <nav>, <main>, <aside>, <footer>, etc.',
+						to: '/questionaries/font-size/html-set-here'
+					}
+				}
+			},
+			htmlSetHere: {
+				question: {
+					title: 'Do you need to set a font-size here?',
+					items: {
+						no: {
+							title: 'No, I guess not.',
+							value: 'no',
+							hint: '',
+							to: '/questionaries/font-size/html-set-here/no',
+							answer: [
+								{
+									title: '',
+									description:
+										"You probably don't need to bother (and the 62.5% tends to be something you should avoid.)"
+								}
+							]
+						},
+						yes: {
+							title: 'Yes!',
+							value: 'yes',
+							hint: '',
+							to: '/questionaries/font-size/responsive'
+						}
 					}
 				}
 			},

@@ -79,32 +79,38 @@ const en: BaseTranslation = {
 				{
 					title: 'Font size',
 					value: 'font-size',
-					hint: ''
+					hint: '',
+					to: '/questionaries/font-size'
 				},
 				{
 					title: 'Spacing',
 					value: 'spacing',
-					hint: 'Margin, padding, gap, etc.'
+					hint: 'Margin, padding, gap, etc.',
+					to: '/questionaries/spacing'
 				},
 				{
 					title: 'Positioning',
 					value: 'positioning',
-					hint: 'Top, right, bottom, left, etc.'
+					hint: 'Top, right, bottom, left, etc.',
+					to: '/questionaries/positioning'
 				},
 				{
 					title: 'Details/effects',
 					value: 'details-effects',
-					hint: 'Border, box-shadow, outlines, etc.'
+					hint: 'Border, box-shadow, outlines, etc.',
+					to: '/questionaries/details-effects'
 				},
 				{
 					title: 'Flex or grid',
 					value: 'flex-grid',
-					hint: ''
+					hint: '',
+					to: '/questionaries/flex-grid'
 				},
 				{
 					title: 'Width or height on an element',
 					value: 'width-height',
-					hint: ''
+					hint: '',
+					to: '/questionaries/width-height'
 				}
 			]
 		},

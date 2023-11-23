@@ -187,6 +187,10 @@ type RootTranslation = {
 					 */
 					value: string
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e
+					 */
+					to: string
 				}
 				'1': {
 					/**
@@ -201,6 +205,10 @@ type RootTranslation = {
 					 * M​a​r​g​i​n​,​ ​p​a​d​d​i​n​g​,​ ​g​a​p​,​ ​e​t​c​.
 					 */
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​s​p​a​c​i​n​g
+					 */
+					to: string
 				}
 				'2': {
 					/**
@@ -215,6 +223,10 @@ type RootTranslation = {
 					 * T​o​p​,​ ​r​i​g​h​t​,​ ​b​o​t​t​o​m​,​ ​l​e​f​t​,​ ​e​t​c​.
 					 */
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​p​o​s​i​t​i​o​n​i​n​g
+					 */
+					to: string
 				}
 				'3': {
 					/**
@@ -229,6 +241,10 @@ type RootTranslation = {
 					 * B​o​r​d​e​r​,​ ​b​o​x​-​s​h​a​d​o​w​,​ ​o​u​t​l​i​n​e​s​,​ ​e​t​c​.
 					 */
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​d​e​t​a​i​l​s​-​e​f​f​e​c​t​s
+					 */
+					to: string
 				}
 				'4': {
 					/**
@@ -240,6 +256,10 @@ type RootTranslation = {
 					 */
 					value: string
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​l​e​x​-​g​r​i​d
+					 */
+					to: string
 				}
 				'5': {
 					/**
@@ -251,6 +271,10 @@ type RootTranslation = {
 					 */
 					value: string
 					hint: string
+					/**
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​h​e​i​g​h​t
+					 */
+					to: string
 				}
 			}
 		}
@@ -564,6 +588,10 @@ export type TranslationFunctions = {
 					 */
 					value: () => LocalizedString
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/font-size
+					 */
+					to: () => LocalizedString
 				}
 				'1': {
 					/**
@@ -578,6 +606,10 @@ export type TranslationFunctions = {
 					 * Margin, padding, gap, etc.
 					 */
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/spacing
+					 */
+					to: () => LocalizedString
 				}
 				'2': {
 					/**
@@ -592,6 +624,10 @@ export type TranslationFunctions = {
 					 * Top, right, bottom, left, etc.
 					 */
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/positioning
+					 */
+					to: () => LocalizedString
 				}
 				'3': {
 					/**
@@ -606,6 +642,10 @@ export type TranslationFunctions = {
 					 * Border, box-shadow, outlines, etc.
 					 */
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/details-effects
+					 */
+					to: () => LocalizedString
 				}
 				'4': {
 					/**
@@ -617,6 +657,10 @@ export type TranslationFunctions = {
 					 */
 					value: () => LocalizedString
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/flex-grid
+					 */
+					to: () => LocalizedString
 				}
 				'5': {
 					/**
@@ -628,6 +672,10 @@ export type TranslationFunctions = {
 					 */
 					value: () => LocalizedString
 					hint: () => LocalizedString
+					/**
+					 * /questionaries/width-height
+					 */
+					to: () => LocalizedString
 				}
 			}
 		}

@@ -15,6 +15,10 @@
 	function reset() {
 		dispatch('reset');
 	}
+
+	function goBack() {
+		history.back();
+	}
 </script>
 
 {#each answers as answer (answer.title())}
@@ -26,6 +30,9 @@
 	</Alert.Root>
 {/each}
 
-<Button on:click={reset}>
+<Button class="mr-4" on:click={goBack}>
+	{$LL.common.back()}
+</Button>
+<Button variant="link" on:click={reset}>
 	{$LL.common.reset()}
 </Button>

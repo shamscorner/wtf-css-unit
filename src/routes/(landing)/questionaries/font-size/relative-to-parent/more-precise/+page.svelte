@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
 	import LL from '$lib/i18n/i18n-svelte';
 	import Answer from '$routes/(landing)/components/answer.svelte';
 </script>
@@ -9,5 +8,4 @@
 		$LL.questionaries.whichFontSize.relativeToParent.question.items.morePrecise
 			.answer
 	)}
-	on:reset={() => goto('/')}
 />

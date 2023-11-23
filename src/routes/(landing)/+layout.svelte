@@ -4,6 +4,9 @@
 	import { LL } from '$lib/i18n/i18n-svelte';
 	import { Button } from '$lib/components/ui/button';
 	import { Icons } from '$lib/components/icons';
+	import { page } from '$app/stores';
+
+	$: isHomepage = $page.url.pathname === '/';
 </script>
 
 <div class="flex h-full flex-col">
@@ -33,6 +36,17 @@
 			<div class="bg-background px-6 py-10">
 				<div class="md:mr-auto md:max-w-xl">
 					<slot />
+
+					{#if !isHomepage}
+						<div class="mt-10">
+							<Button class="mr-4" on:click={() => history.back()}>
+								{$LL.common.back()}
+							</Button>
+							<Button href="/" variant="link">
+								{$LL.common.reset()}
+							</Button>
+						</div>
+					{/if}
 				</div>
 			</div>
 		</section>

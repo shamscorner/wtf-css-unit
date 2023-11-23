@@ -10,6 +10,16 @@
 		<b>Shamim Hossain</b> - Full-stack developer @secureship
 	</p>
 	<Button
+		href="https://x.com/shamscorner"
+		target="_blank"
+		variant="complement"
+		size="icon"
+		class="shrink-0 border-secondary-foreground"
+		title="I am not going to change the icon, ok!"
+	>
+		<Icons.twitter class="h-4 w-4" />
+	</Button>
+	<Button
 		href="https://github.com/shamscorner"
 		target="_blank"
 		variant="complement"

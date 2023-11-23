@@ -13,7 +13,7 @@
 		</Button>
 
 		<Button
-			href="https://github.com/shamscorner/sveltekit-stackter"
+			href="https://github.com/shamscorner/wtf-css-unit"
 			target="_blank"
 			variant="outline"
 			size="icon"

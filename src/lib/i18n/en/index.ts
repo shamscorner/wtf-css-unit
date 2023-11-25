@@ -273,6 +273,31 @@ const en: BaseTranslation = {
 					}
 				}
 			}
+		},
+		whatSpacingTo: {
+			title: 'What are you adding spacing to?',
+			questions: {
+				items: {
+					text: {
+						title: 'Text',
+						value: 'text',
+						hint: '(like spacing between paragraphs)',
+						to: '/questionaries/font-size/html-set-here'
+					},
+					padding: {
+						title: 'Padding',
+						value: 'padding',
+						hint: '',
+						to: '/questionaries/font-size/html-set-here'
+					},
+					spaceBetween: {
+						title: 'Space between elements and/or components',
+						value: 'spaceBetween',
+						hint: '',
+						to: '/questionaries/font-size/html-set-here'
+					}
+				}
+			}
 		}
 	},
 

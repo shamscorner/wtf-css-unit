@@ -617,6 +617,64 @@ type RootTranslation = {
 				}
 			}
 		}
+		whatSpacingTo: {
+			/**
+			 * W​h​a​t​ ​a​r​e​ ​y​o​u​ ​a​d​d​i​n​g​ ​s​p​a​c​i​n​g​ ​t​o​?
+			 */
+			title: string
+			questions: {
+				items: {
+					text: {
+						/**
+						 * T​e​x​t
+						 */
+						title: string
+						/**
+						 * t​e​x​t
+						 */
+						value: string
+						/**
+						 * (​l​i​k​e​ ​s​p​a​c​i​n​g​ ​b​e​t​w​e​e​n​ ​p​a​r​a​g​r​a​p​h​s​)
+						 */
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e
+						 */
+						to: string
+					}
+					padding: {
+						/**
+						 * P​a​d​d​i​n​g
+						 */
+						title: string
+						/**
+						 * p​a​d​d​i​n​g
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e
+						 */
+						to: string
+					}
+					spaceBetween: {
+						/**
+						 * S​p​a​c​e​ ​b​e​t​w​e​e​n​ ​e​l​e​m​e​n​t​s​ ​a​n​d​/​o​r​ ​c​o​m​p​o​n​e​n​t​s
+						 */
+						title: string
+						/**
+						 * s​p​a​c​e​B​e​t​w​e​e​n
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e
+						 */
+						to: string
+					}
+				}
+			}
+		}
 	}
 	errors: {
 		/**
@@ -1227,6 +1285,64 @@ export type TranslationFunctions = {
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+		whatSpacingTo: {
+			/**
+			 * What are you adding spacing to?
+			 */
+			title: () => LocalizedString
+			questions: {
+				items: {
+					text: {
+						/**
+						 * Text
+						 */
+						title: () => LocalizedString
+						/**
+						 * text
+						 */
+						value: () => LocalizedString
+						/**
+						 * (like spacing between paragraphs)
+						 */
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/font-size/html-set-here
+						 */
+						to: () => LocalizedString
+					}
+					padding: {
+						/**
+						 * Padding
+						 */
+						title: () => LocalizedString
+						/**
+						 * padding
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/font-size/html-set-here
+						 */
+						to: () => LocalizedString
+					}
+					spaceBetween: {
+						/**
+						 * Space between elements and/or components
+						 */
+						title: () => LocalizedString
+						/**
+						 * spaceBetween
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/font-size/html-set-here
+						 */
+						to: () => LocalizedString
 					}
 				}
 			}

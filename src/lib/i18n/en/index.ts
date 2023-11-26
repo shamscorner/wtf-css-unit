@@ -340,13 +340,15 @@ const en: BaseTranslation = {
 			}
 		},
 		whatPositionAndDetailsTo: {
-			answers: [
-				{
-					title: 'px &nbsp;&nbsp; rem',
-					description:
-						"px is probably find and can be easier for small adjustments, but if your're using rem for most things, you could stay with that for consistency. You can use em too, if you prefer"
-				}
-			]
+			questions: {
+				answers: [
+					{
+						title: 'px &nbsp;&nbsp; rem',
+						description:
+							"px is probably find and can be easier for small adjustments, but if your're using rem for most things, you could stay with that for consistency. You can use em too, if you prefer"
+					}
+				]
+			}
 		}
 	},
 

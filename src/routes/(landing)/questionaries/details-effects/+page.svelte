@@ -4,5 +4,7 @@
 </script>
 
 <Answer
-	answers={Object.values($LL.questionaries.whatPositionAndDetailsTo.answers)}
+	answers={Object.values(
+		$LL.questionaries.whatPositionAndDetailsTo.questions.answers
+	)}
 />

@@ -751,6 +751,22 @@ type RootTranslation = {
 				}
 			}
 		}
+		whatPositionAndDetailsTo: {
+			questions: {
+				answers: {
+					'0': {
+						/**
+						 * p​x​ ​&​n​b​s​p​;​&​n​b​s​p​;​ ​r​e​m
+						 */
+						title: string
+						/**
+						 * p​x​ ​i​s​ ​p​r​o​b​a​b​l​y​ ​f​i​n​d​ ​a​n​d​ ​c​a​n​ ​b​e​ ​e​a​s​i​e​r​ ​f​o​r​ ​s​m​a​l​l​ ​a​d​j​u​s​t​m​e​n​t​s​,​ ​b​u​t​ ​i​f​ ​y​o​u​r​'​r​e​ ​u​s​i​n​g​ ​r​e​m​ ​f​o​r​ ​m​o​s​t​ ​t​h​i​n​g​s​,​ ​y​o​u​ ​c​o​u​l​d​ ​s​t​a​y​ ​w​i​t​h​ ​t​h​a​t​ ​f​o​r​ ​c​o​n​s​i​s​t​e​n​c​y​.​ ​Y​o​u​ ​c​a​n​ ​u​s​e​ ​e​m​ ​t​o​o​,​ ​i​f​ ​y​o​u​ ​p​r​e​f​e​r​.
+						 */
+						description: string
+					}
+				}
+			}
+		}
 	}
 	errors: {
 		/**
@@ -1495,6 +1511,22 @@ export type TranslationFunctions = {
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+		whatPositionAndDetailsTo: {
+			questions: {
+				answers: {
+					'0': {
+						/**
+						 * px &nbsp;&nbsp; rem
+						 */
+						title: () => LocalizedString
+						/**
+						 * px is probably find and can be easier for small adjustments, but if your're using rem for most things, you could stay with that for consistency. You can use em too, if you prefer.
+						 */
+						description: () => LocalizedString
 					}
 				}
 			}

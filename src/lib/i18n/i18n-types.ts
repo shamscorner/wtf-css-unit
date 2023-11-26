@@ -648,7 +648,7 @@ type RootTranslation = {
 								 */
 								title: string
 								/**
-								 * T​h​e​r​e​ ​a​r​e​ ​t​i​m​e​s​ ​y​o​u​ ​c​a​n​ ​u​s​e​ ​r​e​m​ ​a​s​ ​w​e​l​l​,​ ​b​u​t​ ​b​y​ ​u​s​i​n​g​ ​e​m​,​y​o​u​ ​k​e​e​p​ ​t​h​e​ ​s​p​a​c​i​n​g​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​t​h​e​ ​f​o​n​t​ ​s​i​z​e​ ​o​f​ ​t​h​e​ ​t​e​x​t​,​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​G​x​0​i​Z​r​N​-​0​L​4​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​m​a​k​i​n​g​ ​f​o​r​ ​a​ ​b​e​t​t​e​r​ ​o​v​e​r​a​l​l​ ​f​l​o​w​.​<​/​a​>​ 
+								 * T​h​e​r​e​ ​a​r​e​ ​t​i​m​e​s​ ​y​o​u​ ​c​a​n​ ​u​s​e​ ​r​e​m​ ​a​s​ ​w​e​l​l​,​ ​b​u​t​ ​b​y​ ​u​s​i​n​g​ ​e​m​,​y​o​u​ ​k​e​e​p​ ​t​h​e​ ​s​p​a​c​i​n​g​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​t​h​e​ ​f​o​n​t​ ​s​i​z​e​ ​o​f​ ​t​h​e​ ​t​e​x​t​,​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​G​x​0​i​Z​r​N​-​0​L​4​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​m​a​k​i​n​g​ ​f​o​r​ ​a​ ​b​e​t​t​e​r​ ​o​v​e​r​a​l​l​ ​f​l​o​w​<​/​a​>​.
 								 */
 								description: string
 							}
@@ -1396,7 +1396,7 @@ export type TranslationFunctions = {
 								 */
 								title: () => LocalizedString
 								/**
-								 * There are times you can use rem as well, but by using em,you keep the spacing relative to the font size of the text, <a href="https://www.youtube.com/watch?v=Gx0iZrN-0L4" target="_blank" rel="noopener noreferrer">making for a better overall flow.</a> 
+								 * There are times you can use rem as well, but by using em,you keep the spacing relative to the font size of the text, <a href="https://www.youtube.com/watch?v=Gx0iZrN-0L4" target="_blank" rel="noopener noreferrer">making for a better overall flow</a>.
 								 */
 								description: () => LocalizedString
 							}

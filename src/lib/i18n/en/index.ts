@@ -287,7 +287,7 @@ const en: BaseTranslation = {
 							{
 								title: 'em &nbsp;&nbsp; rem',
 								description:
-									'There are times you can use rem as well, but by using em,you keep the spacing relative to the font size of the text, <a href="https://www.youtube.com/watch?v=Gx0iZrN-0L4" target="_blank" rel="noopener noreferrer">making for a better overall flow.</a> '
+									'There are times you can use rem as well, but by using em,you keep the spacing relative to the font size of the text, <a href="https://www.youtube.com/watch?v=Gx0iZrN-0L4" target="_blank" rel="noopener noreferrer">making for a better overall flow</a>.'
 							}
 						]
 					},

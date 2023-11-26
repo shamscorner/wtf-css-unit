@@ -11,9 +11,9 @@ This project is created from this awesome [sveltekit starter template](https://g
 ## TODOs
 
 - [x] Font size
-- [ ] Spacing
-- [ ] Positioning
-- [ ] Details/effects
+- [x] Spacing
+- [x] Positioning
+- [x] Details/effects
 - [ ] Flex or grid
 - [ ] Width or height on an element
 

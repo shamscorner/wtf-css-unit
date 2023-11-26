@@ -644,7 +644,7 @@ type RootTranslation = {
 						answers: {
 							'0': {
 								/**
-								 * e​m​ ​r​e​m
+								 * e​m​ ​&​n​b​s​p​;​&​n​b​s​p​;​ ​r​e​m
 								 */
 								title: string
 								/**
@@ -710,11 +710,11 @@ type RootTranslation = {
 							answers: {
 								'0': {
 									/**
-									 * v​w​/​v​h​ ​+​ ​m​a​i​n​(​)​ ​c​l​a​m​p​(​)
+									 * v​w​/​v​h​ ​+​ ​m​a​i​n​(​)​ ​&​n​b​s​p​;​&​n​b​s​p​;​ ​c​l​a​m​p​(​)
 									 */
 									title: string
 									/**
-									 * Y​o​u​ ​m​a​y​ ​w​a​n​t​ ​t​o​ ​a​d​j​u​s​t​ ​t​h​e​ ​s​i​z​e​ ​a​c​c​o​r​d​i​n​g​ ​t​o​ ​h​o​w​ ​m​u​c​h​ ​s​p​a​c​e​ ​i​s​ ​a​v​a​i​l​a​b​l​e​,​ ​f​o​r​ ​e​x​a​m​p​l​e​,​ ​h​a​v​i​n​g​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​7​k​h​S​a​A​9​1​e​0​4​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​m​o​r​e​ ​p​a​d​d​i​n​g​ ​a​t​ ​l​a​r​g​e​r​ ​s​c​r​e​e​n​ ​s​i​z​e​s​.​<​/​a​>​ ​I​n​ ​t​h​o​s​e​ ​c​a​s​e​s​ ​w​e​ ​c​a​n​ ​u​s​e​ ​v​i​e​w​p​o​r​t​ ​u​n​i​t​s​ ​(​c​o​n​t​a​i​n​e​r​ ​q​u​e​r​y​ ​u​n​i​t​s​)​,​ ​b​u​t​ ​u​s​u​a​l​l​y​ ​b​e​s​t​ ​t​o​ ​d​o​ ​s​o​ ​i​n​s​i​d​e​ ​a​ ​c​l​a​m​p​ ​t​o​ ​a​v​o​i​d​ ​t​h​e​ ​s​p​a​c​i​n​g​ ​f​r​o​m​ ​g​e​t​t​i​n​g​ ​t​o​o​ ​b​i​g​ ​o​r​ ​t​o​o​ ​s​m​a​l​l​.​ 
+									 * Y​o​u​ ​m​a​y​ ​w​a​n​t​ ​t​o​ ​a​d​j​u​s​t​ ​t​h​e​ ​s​i​z​e​ ​a​c​c​o​r​d​i​n​g​ ​t​o​ ​h​o​w​ ​m​u​c​h​ ​s​p​a​c​e​ ​i​s​ ​a​v​a​i​l​a​b​l​e​,​ ​f​o​r​ ​e​x​a​m​p​l​e​,​ ​h​a​v​i​n​g​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​7​k​h​S​a​A​9​1​e​0​4​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​m​o​r​e​ ​p​a​d​d​i​n​g​ ​a​t​ ​l​a​r​g​e​r​ ​s​c​r​e​e​n​ ​s​i​z​e​s​<​/​a​>​.​ ​I​n​ ​t​h​o​s​e​ ​c​a​s​e​s​ ​w​e​ ​c​a​n​ ​u​s​e​ ​v​i​e​w​p​o​r​t​ ​u​n​i​t​s​ ​(​c​o​n​t​a​i​n​e​r​ ​q​u​e​r​y​ ​u​n​i​t​s​)​,​ ​b​u​t​ ​i​t​'​s​ ​u​s​u​a​l​l​y​ ​b​e​s​t​ ​t​o​ ​d​o​ ​s​o​ ​i​n​s​i​d​e​ ​a​ ​c​l​a​m​p​ ​t​o​ ​a​v​o​i​d​ ​t​h​e​ ​s​p​a​c​i​n​g​ ​f​r​o​m​ ​g​e​t​t​i​n​g​ ​t​o​o​ ​b​i​g​ ​o​r​ ​t​o​o​ ​s​m​a​l​l​.
 									 */
 									description: string
 								}
@@ -737,7 +737,7 @@ type RootTranslation = {
 							answers: {
 								'0': {
 									/**
-									 * e​m​ ​r​e​m​ ​p​x
+									 * e​m​ ​&​n​b​s​p​;​&​n​b​s​p​;​ ​r​e​m​ ​&​n​b​s​p​;​&​n​b​s​p​;​ ​p​x
 									 */
 									title: string
 									/**
@@ -1392,7 +1392,7 @@ export type TranslationFunctions = {
 						answers: {
 							'0': {
 								/**
-								 * em rem
+								 * em &nbsp;&nbsp; rem
 								 */
 								title: () => LocalizedString
 								/**
@@ -1458,11 +1458,11 @@ export type TranslationFunctions = {
 							answers: {
 								'0': {
 									/**
-									 * vw/vh + main() clamp()
+									 * vw/vh + main() &nbsp;&nbsp; clamp()
 									 */
 									title: () => LocalizedString
 									/**
-									 * You may want to adjust the size according to how much space is available, for example, having <a href="https://www.youtube.com/watch?v=7khSaA91e04" target="_blank" rel="noopener noreferrer">more padding at larger screen sizes.</a> In those cases we can use viewport units (container query units), but usually best to do so inside a clamp to avoid the spacing from getting too big or too small. 
+									 * You may want to adjust the size according to how much space is available, for example, having <a href="https://www.youtube.com/watch?v=7khSaA91e04" target="_blank" rel="noopener noreferrer">more padding at larger screen sizes</a>. In those cases we can use viewport units (container query units), but it's usually best to do so inside a clamp to avoid the spacing from getting too big or too small.
 									 */
 									description: () => LocalizedString
 								}
@@ -1485,7 +1485,7 @@ export type TranslationFunctions = {
 							answers: {
 								'0': {
 									/**
-									 * em rem px
+									 * em &nbsp;&nbsp; rem &nbsp;&nbsp; px
 									 */
 									title: () => LocalizedString
 									/**

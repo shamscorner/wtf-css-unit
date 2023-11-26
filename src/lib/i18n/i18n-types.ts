@@ -638,9 +638,21 @@ type RootTranslation = {
 						 */
 						hint: string
 						/**
-						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​s​p​a​c​i​n​g​/​t​e​x​t
 						 */
 						to: string
+						answers: {
+							'0': {
+								/**
+								 * e​m​ ​r​e​m
+								 */
+								title: string
+								/**
+								 * T​h​e​r​e​ ​a​r​e​ ​t​i​m​e​s​ ​y​o​u​ ​c​a​n​ ​u​s​e​ ​r​e​m​ ​a​s​ ​w​e​l​l​,​ ​b​u​t​ ​b​y​ ​u​s​i​n​g​ ​e​m​,​y​o​u​ ​k​e​e​p​ ​t​h​e​ ​s​p​a​c​i​n​g​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​t​h​e​ ​f​o​n​t​ ​s​i​z​e​ ​o​f​ ​t​h​e​ ​t​e​x​t​,​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​G​x​0​i​Z​r​N​-​0​L​4​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​m​a​k​i​n​g​ ​f​o​r​ ​a​ ​b​e​t​t​e​r​ ​o​v​e​r​a​l​l​ ​f​l​o​w​.​<​/​a​>​ 
+								 */
+								description: string
+							}
+						}
 					}
 					padding: {
 						/**
@@ -653,7 +665,7 @@ type RootTranslation = {
 						value: string
 						hint: string
 						/**
-						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​s​p​a​c​i​n​g​/​s​p​a​c​e​-​f​o​r​-​f​i​x​e​d​-​s​i​z​e
 						 */
 						to: string
 					}
@@ -668,9 +680,73 @@ type RootTranslation = {
 						value: string
 						hint: string
 						/**
-						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​o​n​t​-​s​i​z​e​/​h​t​m​l​-​s​e​t​-​h​e​r​e
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​s​p​a​c​i​n​g​/​s​p​a​c​e​-​f​o​r​-​f​i​x​e​d​-​s​i​z​e
 						 */
 						to: string
+					}
+				}
+			}
+			spaceForFixedSize: {
+				questions: {
+					/**
+					 * D​o​ ​y​o​u​ ​w​a​n​t​ ​t​h​e​ ​s​p​a​c​e​ ​t​o​ ​b​e​ ​a​ ​f​i​x​e​d​ ​s​i​z​e​?
+					 */
+					title: string
+					items: {
+						no: {
+							/**
+							 * N​o
+							 */
+							title: string
+							/**
+							 * n​o
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​s​p​a​c​i​n​g​/​s​p​a​c​e​-​f​o​r​-​f​i​x​e​d​-​s​i​z​e​/​n​o
+							 */
+							to: string
+							answers: {
+								'0': {
+									/**
+									 * v​w​/​v​h​ ​+​ ​m​a​i​n​(​)​ ​c​l​a​m​p​(​)
+									 */
+									title: string
+									/**
+									 * Y​o​u​ ​m​a​y​ ​w​a​n​t​ ​t​o​ ​a​d​j​u​s​t​ ​t​h​e​ ​s​i​z​e​ ​a​c​c​o​r​d​i​n​g​ ​t​o​ ​h​o​w​ ​m​u​c​h​ ​s​p​a​c​e​ ​i​s​ ​a​v​a​i​l​a​b​l​e​,​ ​f​o​r​ ​e​x​a​m​p​l​e​,​ ​h​a​v​i​n​g​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​7​k​h​S​a​A​9​1​e​0​4​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​ ​r​e​l​=​"​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​>​m​o​r​e​ ​p​a​d​d​i​n​g​ ​a​t​ ​l​a​r​g​e​r​ ​s​c​r​e​e​n​ ​s​i​z​e​s​.​<​/​a​>​ ​I​n​ ​t​h​o​s​e​ ​c​a​s​e​s​ ​w​e​ ​c​a​n​ ​u​s​e​ ​v​i​e​w​p​o​r​t​ ​u​n​i​t​s​ ​(​c​o​n​t​a​i​n​e​r​ ​q​u​e​r​y​ ​u​n​i​t​s​)​,​ ​b​u​t​ ​u​s​u​a​l​l​y​ ​b​e​s​t​ ​t​o​ ​d​o​ ​s​o​ ​i​n​s​i​d​e​ ​a​ ​c​l​a​m​p​ ​t​o​ ​a​v​o​i​d​ ​t​h​e​ ​s​p​a​c​i​n​g​ ​f​r​o​m​ ​g​e​t​t​i​n​g​ ​t​o​o​ ​b​i​g​ ​o​r​ ​t​o​o​ ​s​m​a​l​l​.​ 
+									 */
+									description: string
+								}
+							}
+						}
+						yes: {
+							/**
+							 * Y​e​s
+							 */
+							title: string
+							/**
+							 * y​e​s
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​s​p​a​c​i​n​g​/​s​p​a​c​e​-​f​o​r​-​f​i​x​e​d​-​s​i​z​e​/​y​e​s
+							 */
+							to: string
+							answers: {
+								'0': {
+									/**
+									 * e​m​ ​r​e​m​ ​p​x
+									 */
+									title: string
+									/**
+									 * I​t​ ​d​e​p​e​n​d​s​ ​a​ ​l​o​t​ ​o​n​ ​t​h​e​ ​u​s​e​ ​c​a​s​e​.​ ​I​f​ ​y​o​u​ ​w​a​n​t​ ​a​ ​f​i​x​e​d​ ​v​a​l​u​e​,​ ​r​e​m​ ​o​r​ ​p​x​ ​a​r​e​ ​f​i​n​e​.​ ​I​f​ ​y​o​u​ ​w​a​n​t​ ​s​o​m​e​t​h​i​n​g​ ​t​h​a​t​ ​i​s​ ​a​ ​b​i​t​ ​m​o​r​e​ ​a​d​a​p​t​a​b​l​e​,​ ​e​m​ ​i​s​ ​g​r​e​a​t​.​ ​I​ ​l​o​v​e​ ​u​s​i​n​g​ ​i​t​ ​f​o​r​ ​b​u​t​t​o​n​s​,​ ​s​o​ ​t​h​a​t​ ​t​h​e​ ​p​a​d​d​i​n​g​ ​a​d​j​u​s​t​s​ ​a​u​t​o​m​a​t​i​c​a​l​l​y​ ​i​f​ ​I​ ​m​a​k​e​ ​s​m​a​l​l​ ​a​n​d​ ​l​a​r​g​e​ ​v​a​r​i​a​n​t​s​ ​b​y​ ​c​h​a​n​g​i​n​g​ ​t​h​e​ ​f​o​n​t​ ​s​i​z​e​.
+									 */
+									description: string
+								}
+							}
+						}
 					}
 				}
 			}
@@ -1310,9 +1386,21 @@ export type TranslationFunctions = {
 						 */
 						hint: () => LocalizedString
 						/**
-						 * /questionaries/font-size/html-set-here
+						 * /questionaries/spacing/text
 						 */
 						to: () => LocalizedString
+						answers: {
+							'0': {
+								/**
+								 * em rem
+								 */
+								title: () => LocalizedString
+								/**
+								 * There are times you can use rem as well, but by using em,you keep the spacing relative to the font size of the text, <a href="https://www.youtube.com/watch?v=Gx0iZrN-0L4" target="_blank" rel="noopener noreferrer">making for a better overall flow.</a> 
+								 */
+								description: () => LocalizedString
+							}
+						}
 					}
 					padding: {
 						/**
@@ -1325,7 +1413,7 @@ export type TranslationFunctions = {
 						value: () => LocalizedString
 						hint: () => LocalizedString
 						/**
-						 * /questionaries/font-size/html-set-here
+						 * /questionaries/spacing/space-for-fixed-size
 						 */
 						to: () => LocalizedString
 					}
@@ -1340,9 +1428,73 @@ export type TranslationFunctions = {
 						value: () => LocalizedString
 						hint: () => LocalizedString
 						/**
-						 * /questionaries/font-size/html-set-here
+						 * /questionaries/spacing/space-for-fixed-size
 						 */
 						to: () => LocalizedString
+					}
+				}
+			}
+			spaceForFixedSize: {
+				questions: {
+					/**
+					 * Do you want the space to be a fixed size?
+					 */
+					title: () => LocalizedString
+					items: {
+						no: {
+							/**
+							 * No
+							 */
+							title: () => LocalizedString
+							/**
+							 * no
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/spacing/space-for-fixed-size/no
+							 */
+							to: () => LocalizedString
+							answers: {
+								'0': {
+									/**
+									 * vw/vh + main() clamp()
+									 */
+									title: () => LocalizedString
+									/**
+									 * You may want to adjust the size according to how much space is available, for example, having <a href="https://www.youtube.com/watch?v=7khSaA91e04" target="_blank" rel="noopener noreferrer">more padding at larger screen sizes.</a> In those cases we can use viewport units (container query units), but usually best to do so inside a clamp to avoid the spacing from getting too big or too small. 
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
+						yes: {
+							/**
+							 * Yes
+							 */
+							title: () => LocalizedString
+							/**
+							 * yes
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/spacing/space-for-fixed-size/yes
+							 */
+							to: () => LocalizedString
+							answers: {
+								'0': {
+									/**
+									 * em rem px
+									 */
+									title: () => LocalizedString
+									/**
+									 * It depends a lot on the use case. If you want a fixed value, rem or px are fine. If you want something that is a bit more adaptable, em is great. I love using it for buttons, so that the padding adjusts automatically if I make small and large variants by changing the font size.
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
 					}
 				}
 			}

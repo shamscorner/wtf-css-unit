@@ -282,19 +282,59 @@ const en: BaseTranslation = {
 						title: 'Text',
 						value: 'text',
 						hint: '(like spacing between paragraphs)',
-						to: '/questionaries/font-size/html-set-here'
+						to: '/questionaries/spacing/text',
+						answers: [
+							{
+								title: 'em rem',
+								description:
+									'There are times you can use rem as well, but by using em,you keep the spacing relative to the font size of the text, <a href="https://www.youtube.com/watch?v=Gx0iZrN-0L4" target="_blank" rel="noopener noreferrer">making for a better overall flow.</a> '
+							}
+						]
 					},
 					padding: {
 						title: 'Padding',
 						value: 'padding',
 						hint: '',
-						to: '/questionaries/font-size/html-set-here'
+						to: '/questionaries/spacing/space-for-fixed-size'
 					},
 					spaceBetween: {
 						title: 'Space between elements and/or components',
 						value: 'spaceBetween',
 						hint: '',
-						to: '/questionaries/font-size/html-set-here'
+						to: '/questionaries/spacing/space-for-fixed-size'
+					}
+				}
+			},
+			spaceForFixedSize: {
+				questions: {
+					title: 'Do you want the space to be a fixed size?',
+					items: {
+						no: {
+							title: 'No',
+							value: 'no',
+							hint: '',
+							to: '/questionaries/spacing/space-for-fixed-size/no',
+							answers: [
+								{
+									title: 'vw/vh + main() clamp()',
+									description:
+										'You may want to adjust the size according to how much space is available, for example, having <a href="https://www.youtube.com/watch?v=7khSaA91e04" target="_blank" rel="noopener noreferrer">more padding at larger screen sizes.</a> In those cases we can use viewport units (container query units), but usually best to do so inside a clamp to avoid the spacing from getting too big or too small. '
+								}
+							]
+						},
+						yes: {
+							title: 'Yes',
+							value: 'yes',
+							hint: '',
+							to: '/questionaries/spacing/space-for-fixed-size/yes',
+							answers: [
+								{
+									title: 'em rem px',
+									description:
+										'It depends a lot on the use case. If you want a fixed value, rem or px are fine. If you want something that is a bit more adaptable, em is great. I love using it for buttons, so that the padding adjusts automatically if I make small and large variants by changing the font size.'
+								}
+							]
+						}
 					}
 				}
 			}

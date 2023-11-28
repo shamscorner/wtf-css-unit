@@ -767,6 +767,72 @@ type RootTranslation = {
 				}
 			}
 		}
+		whichFlexOrGrid: {
+			questions: {
+				items: {
+					'0': {
+						/**
+						 * a​ ​g​a​p​ ​b​e​t​w​e​e​n​ ​t​h​e​ ​e​l​e​m​e​n​t​s​ 
+						 */
+						title: string
+						/**
+						 * g​a​p​-​e​l​e​m​e​n​t
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/
+						 */
+						to: string
+					}
+					'1': {
+						/**
+						 * g​r​i​d​ ​c​o​l​u​m​n​s​ 
+						 */
+						title: string
+						/**
+						 * g​r​i​d​-​c​o​l​u​m​n​s
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/
+						 */
+						to: string
+					}
+					'2': {
+						/**
+						 * g​r​i​d​ ​r​o​w​s​ 
+						 */
+						title: string
+						/**
+						 * g​r​i​d​-​r​o​w​s
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/
+						 */
+						to: string
+					}
+					'3': {
+						/**
+						 * f​l​e​x​ ​i​t​e​m​s​ ​w​i​d​t​h​s​ 
+						 */
+						title: string
+						/**
+						 * i​t​e​m​s​-​w​i​d​t​h​s
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/
+						 */
+						to: string
+					}
+				}
+			}
+		}
 	}
 	errors: {
 		/**
@@ -1527,6 +1593,72 @@ export type TranslationFunctions = {
 						 * px is probably find and can be easier for small adjustments, but if your're using rem for most things, you could stay with that for consistency. You can use em too, if you prefer.
 						 */
 						description: () => LocalizedString
+					}
+				}
+			}
+		}
+		whichFlexOrGrid: {
+			questions: {
+				items: {
+					'0': {
+						/**
+						 * a gap between the elements 
+						 */
+						title: () => LocalizedString
+						/**
+						 * gap-element
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/
+						 */
+						to: () => LocalizedString
+					}
+					'1': {
+						/**
+						 * grid columns 
+						 */
+						title: () => LocalizedString
+						/**
+						 * grid-columns
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/
+						 */
+						to: () => LocalizedString
+					}
+					'2': {
+						/**
+						 * grid rows 
+						 */
+						title: () => LocalizedString
+						/**
+						 * grid-rows
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/
+						 */
+						to: () => LocalizedString
+					}
+					'3': {
+						/**
+						 * flex items widths 
+						 */
+						title: () => LocalizedString
+						/**
+						 * items-widths
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/
+						 */
+						to: () => LocalizedString
 					}
 				}
 			}

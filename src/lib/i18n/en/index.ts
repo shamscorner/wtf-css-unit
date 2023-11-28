@@ -349,6 +349,36 @@ const en: BaseTranslation = {
 					}
 				]
 			}
+		},
+		whichFlexOrGrid: {
+			questions: {
+				items: [
+					{
+						title: 'a gap between the elements ',
+						value: 'gap-element',
+						hint: '',
+						to: '/questionaries/'
+					},
+					{
+						title: 'grid columns ',
+						value: 'grid-columns',
+						hint: '',
+						to: '/questionaries/'
+					},
+					{
+						title: 'grid rows ',
+						value: 'grid-rows',
+						hint: '',
+						to: '/questionaries/'
+					},
+					{
+						title: 'flex items widths ',
+						value: 'items-widths',
+						hint: '',
+						to: '/questionaries/'
+					}
+				]
+			}
 		}
 	},
 

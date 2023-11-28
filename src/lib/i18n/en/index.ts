@@ -357,7 +357,7 @@ const en: BaseTranslation = {
 						title: 'a gap between the elements ',
 						value: 'gap-element',
 						hint: '',
-						to: '/questionaries/'
+						to: '/questionaries/spacing/space-for-fixed-size'
 					},
 					{
 						title: 'grid columns ',

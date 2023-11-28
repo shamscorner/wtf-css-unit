@@ -781,7 +781,7 @@ type RootTranslation = {
 						value: string
 						hint: string
 						/**
-						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​s​p​a​c​i​n​g​/​s​p​a​c​e​-​f​o​r​-​f​i​x​e​d​-​s​i​z​e
 						 */
 						to: string
 					}
@@ -1611,7 +1611,7 @@ export type TranslationFunctions = {
 						value: () => LocalizedString
 						hint: () => LocalizedString
 						/**
-						 * /questionaries/
+						 * /questionaries/spacing/space-for-fixed-size
 						 */
 						to: () => LocalizedString
 					}

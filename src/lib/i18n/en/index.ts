@@ -349,6 +349,135 @@ const en: BaseTranslation = {
 					}
 				]
 			}
+		},
+		whichFlexOrGrid: {
+			questions: {
+				items: [
+					{
+						title: 'a gap between the elements ',
+						value: 'gap-element',
+						hint: '',
+						to: '/questionaries/spacing/space-for-fixed-size'
+					},
+					{
+						title: 'grid columns ',
+						value: 'grid-columns',
+						hint: '',
+						to: '/questionaries/flex-grid/grid-columns-rows/'
+					},
+					{
+						title: 'grid rows ',
+						value: 'grid-rows',
+						hint: '',
+						to: '/questionaries/flex-grid/grid-columns-rows/'
+					},
+					{
+						title: 'flex item widths ',
+						value: 'items-widths',
+						hint: '',
+						to: '/questionaries/flex-grid/flex-item-widths'
+					}
+				]
+			},
+
+			fixedOrFluid: {
+				questions: {
+					title: 'Do you want them to be fixed sizes, of fluid? ',
+					items: {
+						fixedSized: {
+							title: 'Fixed sizes',
+							value: 'fixed-size',
+							hint: '',
+							to: '/questionaries/flex-grid/grid-columns-rows/fixed-sizes',
+							answers: [
+								{
+									title: 'px &nbsp;&nbsp;rem',
+									description:
+										"px is probably fine, but if yo're using rem for most things,you could stay with that for consistency. "
+								}
+							]
+						},
+						fluid: {
+							title: 'Fluid',
+							value: 'fluid',
+							hint: '',
+							to: '/questionaries/flex-grid/grid-columns-rows/fluid',
+							answers: [
+								{
+									title: 'fr',
+									description:
+										"The fr unit uses the leftover space. If you have three columns each with 1fr, they will adapt to whatever space is available, and generally all be the same size. It tends to be the best choice. % can also work, but can lead to overflow if you don't take into account gaps, whereas fr avoids that issue. "
+								}
+							]
+						},
+						someFixedFluid: {
+							title: 'Some fixed, some fluid',
+							value: 'fixed-fluid',
+							hint: '',
+							to: '/questionaries/flex-grid/grid-columns-rows/some-fixed-fluid',
+							answers: [
+								{
+									title:
+										'fr &nbsp;&nbsp;px &nbsp;&nbsp;rem &nbsp;&nbsp;auto &nbsp;&nbsp;min-content ',
+									description:
+										' The fluid stuff can use fr to take up available space, or auto or min-content if you want it to match the size of the content in a given column/row.Other parts can be defined with px or rem, if you want fixed sizes.'
+								}
+							]
+						}
+					}
+				}
+			},
+			flexItemsWidths: {
+				questions: {
+					title:
+						"Flex item sizing can be hard, but that's sort of the point of using flex, we want things to be flexible. what do you prefer?",
+					items: {
+						preventLargerSize: {
+							title:
+								'I want to prevent an element getting larger than a specific size',
+							value: 'prevent-size',
+							hint: '',
+							to: '/questionaries/flex-grid/flex-item-widths/larger-size',
+							answers: [
+								{
+									title:
+										'max-width  + px&nbsp;&nbsp; rem &nbsp;&nbsp; or &nbsp;&nbsp; %',
+									description:
+										'Flex items, by default, will not grow, so normally you only need this if you have declared a flex-grow other than O on your flex items. In that scenario, if they are allowed to grow, but if you also declare a max-width, they will not be able to grow bigger than that size. '
+								}
+							]
+						},
+						preventSmallerSize: {
+							title:
+								'I want to prevent an element getting smaller than a specific size',
+							value: 'prevent-size',
+							hint: '',
+							to: '/questionaries/flex-grid/flex-item-widths/smaller-size',
+							answers: [
+								{
+									title: 'min-width + rem &nbsp;&nbsp; or &nbsp;&nbsp; %',
+									description:
+										'Flex items, by default, will not grow, so normally you only need this if you have declared a flex-grow other than O on your flex items. In that scenario, if they are allowed to grow, but if you also declare a max-width, they will not be able to grow bigger than that size. '
+								}
+							]
+						},
+						specificSize: {
+							title: 'I want an element to be a specific size',
+							value: 'specific-size',
+							hint: '',
+							to: '/questionaries/flex-grid/flex-item-widths/specific-size',
+							answers: [
+								{
+									title:
+										'flex-grow and flex-shrink: 0 + px &nbsp;&nbsp;  rem &nbsp; or &nbsp; % ',
+									description:
+										'Flex items, by default, will not grow, so normally you only need this if you have declared a flex-grow other than O on your flex items. In that scenario, if they are allowed to grow, but if you also declare a max-width, they will not be able to grow bigger than that size. '
+								}
+							]
+						}
+					}
+				}
+			}
 		}
 	},
 

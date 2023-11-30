@@ -11,7 +11,7 @@
 {#each answers as answer (answer.title())}
 	<Alert.Root class="mb-5">
 		<Alert.Title>{@html answer.title()}</Alert.Title>
-		<Alert.Description class="[&_a]:underline [&_a]:underline-offset-4">
+		<Alert.Description class="mt-4 [&_a]:underline [&_a]:underline-offset-4">
 			{@html answer.description()}
 		</Alert.Description>
 	</Alert.Root>

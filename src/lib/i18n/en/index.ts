@@ -372,7 +372,7 @@ const en: BaseTranslation = {
 						to: '/questionaries/flex-grid/grid-columns-rows/'
 					},
 					{
-						title: 'flex items widths ',
+						title: 'flex item widths ',
 						value: 'items-widths',
 						hint: '',
 						to: '/questionaries/flex-grid/flex-item-widths'
@@ -430,7 +430,7 @@ const en: BaseTranslation = {
 			flexItemsWidths: {
 				questions: {
 					title:
-						"Flex item sizing can be hard, but that's sort of the point of using flex, we want things to be flexible.",
+						"Flex item sizing can be hard, but that's sort of the point of using flex, we want things to be flexible. what do you prefer?",
 					items: {
 						preventLargerSize: {
 							title:
@@ -441,7 +441,7 @@ const en: BaseTranslation = {
 							answers: [
 								{
 									title:
-										'max-width&nbsp  + px&nbsp;&nbsp; rem&nbsp;&nbsp; or&nbsp;&nbsp %',
+										'max-width  + px&nbsp;&nbsp; rem &nbsp;&nbsp; or &nbsp;&nbsp; %',
 									description:
 										'Flex items, by default, will not grow, so normally you only need this if you have declared a flex-grow other than O on your flex items. In that scenario, if they are allowed to grow, but if you also declare a max-width, they will not be able to grow bigger than that size. '
 								}
@@ -455,8 +455,7 @@ const en: BaseTranslation = {
 							to: '/questionaries/flex-grid/flex-item-widths/smaller-size',
 							answers: [
 								{
-									title:
-										'min-width <br> +&nbsp;&nbsp; rem&nbsp;&nbsp; or&nbsp:&nbsp %',
+									title: 'min-width + rem &nbsp;&nbsp; or &nbsp;&nbsp; %',
 									description:
 										'Flex items, by default, will not grow, so normally you only need this if you have declared a flex-grow other than O on your flex items. In that scenario, if they are allowed to grow, but if you also declare a max-width, they will not be able to grow bigger than that size. '
 								}
@@ -470,7 +469,7 @@ const en: BaseTranslation = {
 							answers: [
 								{
 									title:
-										'flex-grow &nbsp; and &nbsp; flex-shrink: &nbsp 0 &nbsp; +px &nbsp;  rem &nbsp; or &nbsp; % <br>',
+										'flex-grow and flex-shrink: 0 + px &nbsp;&nbsp;  rem &nbsp; or &nbsp; % ',
 									description:
 										'Flex items, by default, will not grow, so normally you only need this if you have declared a flex-grow other than O on your flex items. In that scenario, if they are allowed to grow, but if you also declare a max-width, they will not be able to grow bigger than that size. '
 								}

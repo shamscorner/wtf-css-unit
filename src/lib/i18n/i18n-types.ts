@@ -817,7 +817,7 @@ type RootTranslation = {
 					}
 					'3': {
 						/**
-						 * f​l​e​x​ ​i​t​e​m​s​ ​w​i​d​t​h​s​ 
+						 * f​l​e​x​ ​i​t​e​m​ ​w​i​d​t​h​s​ 
 						 */
 						title: string
 						/**
@@ -926,7 +926,7 @@ type RootTranslation = {
 			flexItemsWidths: {
 				questions: {
 					/**
-					 * F​l​e​x​ ​i​t​e​m​ ​s​i​z​i​n​g​ ​c​a​n​ ​b​e​ ​h​a​r​d​,​ ​b​u​t​ ​t​h​a​t​'​s​ ​s​o​r​t​ ​o​f​ ​t​h​e​ ​p​o​i​n​t​ ​o​f​ ​u​s​i​n​g​ ​f​l​e​x​,​ ​w​e​ ​w​a​n​t​ ​t​h​i​n​g​s​ ​t​o​ ​b​e​ ​f​l​e​x​i​b​l​e​.
+					 * F​l​e​x​ ​i​t​e​m​ ​s​i​z​i​n​g​ ​c​a​n​ ​b​e​ ​h​a​r​d​,​ ​b​u​t​ ​t​h​a​t​'​s​ ​s​o​r​t​ ​o​f​ ​t​h​e​ ​p​o​i​n​t​ ​o​f​ ​u​s​i​n​g​ ​f​l​e​x​,​ ​w​e​ ​w​a​n​t​ ​t​h​i​n​g​s​ ​t​o​ ​b​e​ ​f​l​e​x​i​b​l​e​.​ ​w​h​a​t​ ​d​o​ ​y​o​u​ ​p​r​e​f​e​r​?
 					 */
 					title: string
 					items: {
@@ -947,7 +947,7 @@ type RootTranslation = {
 							answers: {
 								'0': {
 									/**
-									 * m​a​x​-​w​i​d​t​h​&​n​b​s​p​ ​ ​+​ ​p​x​&​n​b​s​p​;​&​n​b​s​p​;​ ​r​e​m​&​n​b​s​p​;​&​n​b​s​p​;​ ​o​r​&​n​b​s​p​;​&​n​b​s​p​ ​%
+									 * m​a​x​-​w​i​d​t​h​ ​ ​+​ ​p​x​&​n​b​s​p​;​&​n​b​s​p​;​ ​r​e​m​ ​&​n​b​s​p​;​&​n​b​s​p​;​ ​o​r​ ​&​n​b​s​p​;​&​n​b​s​p​;​ ​%
 									 */
 									title: string
 									/**
@@ -974,7 +974,7 @@ type RootTranslation = {
 							answers: {
 								'0': {
 									/**
-									 * m​i​n​-​w​i​d​t​h​ ​<​b​r​>​ ​+​&​n​b​s​p​;​&​n​b​s​p​;​ ​r​e​m​&​n​b​s​p​;​&​n​b​s​p​;​ ​o​r​&​n​b​s​p​:​&​n​b​s​p​ ​%
+									 * m​i​n​-​w​i​d​t​h​ ​+​ ​r​e​m​ ​&​n​b​s​p​;​&​n​b​s​p​;​ ​o​r​ ​&​n​b​s​p​;​&​n​b​s​p​;​ ​%
 									 */
 									title: string
 									/**
@@ -1001,7 +1001,7 @@ type RootTranslation = {
 							answers: {
 								'0': {
 									/**
-									 * f​l​e​x​-​g​r​o​w​ ​&​n​b​s​p​;​ ​a​n​d​ ​&​n​b​s​p​;​ ​f​l​e​x​-​s​h​r​i​n​k​:​ ​&​n​b​s​p​ ​0​ ​&​n​b​s​p​;​ ​+​p​x​ ​&​n​b​s​p​;​ ​ ​r​e​m​ ​&​n​b​s​p​;​ ​o​r​ ​&​n​b​s​p​;​ ​%​ ​<​b​r​>
+									 * f​l​e​x​-​g​r​o​w​ ​a​n​d​ ​f​l​e​x​-​s​h​r​i​n​k​:​ ​0​ ​+​ ​p​x​ ​&​n​b​s​p​;​&​n​b​s​p​;​ ​ ​r​e​m​ ​&​n​b​s​p​;​ ​o​r​ ​&​n​b​s​p​;​ ​%​ 
 									 */
 									title: string
 									/**
@@ -1829,7 +1829,7 @@ export type TranslationFunctions = {
 					}
 					'3': {
 						/**
-						 * flex items widths 
+						 * flex item widths 
 						 */
 						title: () => LocalizedString
 						/**
@@ -1938,7 +1938,7 @@ export type TranslationFunctions = {
 			flexItemsWidths: {
 				questions: {
 					/**
-					 * Flex item sizing can be hard, but that's sort of the point of using flex, we want things to be flexible.
+					 * Flex item sizing can be hard, but that's sort of the point of using flex, we want things to be flexible. what do you prefer?
 					 */
 					title: () => LocalizedString
 					items: {
@@ -1959,7 +1959,7 @@ export type TranslationFunctions = {
 							answers: {
 								'0': {
 									/**
-									 * max-width&nbsp  + px&nbsp;&nbsp; rem&nbsp;&nbsp; or&nbsp;&nbsp %
+									 * max-width  + px&nbsp;&nbsp; rem &nbsp;&nbsp; or &nbsp;&nbsp; %
 									 */
 									title: () => LocalizedString
 									/**
@@ -1986,7 +1986,7 @@ export type TranslationFunctions = {
 							answers: {
 								'0': {
 									/**
-									 * min-width <br> +&nbsp;&nbsp; rem&nbsp;&nbsp; or&nbsp:&nbsp %
+									 * min-width + rem &nbsp;&nbsp; or &nbsp;&nbsp; %
 									 */
 									title: () => LocalizedString
 									/**
@@ -2013,7 +2013,7 @@ export type TranslationFunctions = {
 							answers: {
 								'0': {
 									/**
-									 * flex-grow &nbsp; and &nbsp; flex-shrink: &nbsp 0 &nbsp; +px &nbsp;  rem &nbsp; or &nbsp; % <br>
+									 * flex-grow and flex-shrink: 0 + px &nbsp;&nbsp;  rem &nbsp; or &nbsp; % 
 									 */
 									title: () => LocalizedString
 									/**

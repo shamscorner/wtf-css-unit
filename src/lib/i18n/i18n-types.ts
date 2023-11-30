@@ -796,7 +796,7 @@ type RootTranslation = {
 						value: string
 						hint: string
 						/**
-						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​l​e​x​-​g​r​i​d​/​g​r​i​d​-​c​o​l​u​m​n​s​-​r​o​w​s​/
 						 */
 						to: string
 					}
@@ -811,7 +811,7 @@ type RootTranslation = {
 						value: string
 						hint: string
 						/**
-						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​l​e​x​-​g​r​i​d​/​g​r​i​d​-​c​o​l​u​m​n​s​-​r​o​w​s​/
 						 */
 						to: string
 					}
@@ -826,9 +826,191 @@ type RootTranslation = {
 						value: string
 						hint: string
 						/**
-						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​l​e​x​-​g​r​i​d​/​f​l​e​x​-​i​t​e​m​-​w​i​d​t​h​s
 						 */
 						to: string
+					}
+				}
+			}
+			fixedOrFluid: {
+				questions: {
+					/**
+					 * D​o​ ​y​o​u​ ​w​a​n​t​ ​t​h​e​m​ ​t​o​ ​b​e​ ​f​i​x​e​d​ ​s​i​z​e​s​,​ ​o​f​ ​f​l​u​i​d​?​ 
+					 */
+					title: string
+					items: {
+						fixedSized: {
+							/**
+							 * F​i​x​e​d​ ​s​i​z​e​s
+							 */
+							title: string
+							/**
+							 * f​i​x​e​d​-​s​i​z​e
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​l​e​x​-​g​r​i​d​/​g​r​i​d​-​c​o​l​u​m​n​s​-​r​o​w​s​/​f​i​x​e​d​-​s​i​z​e​s
+							 */
+							to: string
+							answers: {
+								'0': {
+									/**
+									 * p​x​ ​&​n​b​s​p​;​&​n​b​s​p​;​r​e​m
+									 */
+									title: string
+									/**
+									 * p​x​ ​i​s​ ​p​r​o​b​a​b​l​y​ ​f​i​n​e​,​ ​b​u​t​ ​i​f​ ​y​o​'​r​e​ ​u​s​i​n​g​ ​r​e​m​ ​f​o​r​ ​m​o​s​t​ ​t​h​i​n​g​s​,​y​o​u​ ​c​o​u​l​d​ ​s​t​a​y​ ​w​i​t​h​ ​t​h​a​t​ ​f​o​r​ ​c​o​n​s​i​s​t​e​n​c​y​.​ 
+									 */
+									description: string
+								}
+							}
+						}
+						fluid: {
+							/**
+							 * F​l​u​i​d
+							 */
+							title: string
+							/**
+							 * f​l​u​i​d
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​l​e​x​-​g​r​i​d​/​g​r​i​d​-​c​o​l​u​m​n​s​-​r​o​w​s​/​f​l​u​i​d
+							 */
+							to: string
+							answers: {
+								'0': {
+									/**
+									 * f​r
+									 */
+									title: string
+									/**
+									 * T​h​e​ ​f​r​ ​u​n​i​t​ ​u​s​e​s​ ​t​h​e​ ​l​e​f​t​o​v​e​r​ ​s​p​a​c​e​.​ ​I​f​ ​y​o​u​ ​h​a​v​e​ ​t​h​r​e​e​ ​c​o​l​u​m​n​s​ ​e​a​c​h​ ​w​i​t​h​ ​1​f​r​,​ ​t​h​e​y​ ​w​i​l​l​ ​a​d​a​p​t​ ​t​o​ ​w​h​a​t​e​v​e​r​ ​s​p​a​c​e​ ​i​s​ ​a​v​a​i​l​a​b​l​e​,​ ​a​n​d​ ​g​e​n​e​r​a​l​l​y​ ​a​l​l​ ​b​e​ ​t​h​e​ ​s​a​m​e​ ​s​i​z​e​.​ ​I​t​ ​t​e​n​d​s​ ​t​o​ ​b​e​ ​t​h​e​ ​b​e​s​t​ ​c​h​o​i​c​e​.​ ​%​ ​c​a​n​ ​a​l​s​o​ ​w​o​r​k​,​ ​b​u​t​ ​c​a​n​ ​l​e​a​d​ ​t​o​ ​o​v​e​r​f​l​o​w​ ​i​f​ ​y​o​u​ ​d​o​n​'​t​ ​t​a​k​e​ ​i​n​t​o​ ​a​c​c​o​u​n​t​ ​g​a​p​s​,​ ​w​h​e​r​e​a​s​ ​f​r​ ​a​v​o​i​d​s​ ​t​h​a​t​ ​i​s​s​u​e​.​ 
+									 */
+									description: string
+								}
+							}
+						}
+						someFixedFluid: {
+							/**
+							 * S​o​m​e​ ​f​i​x​e​d​,​ ​s​o​m​e​ ​f​l​u​i​d
+							 */
+							title: string
+							/**
+							 * f​i​x​e​d​-​f​l​u​i​d
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​l​e​x​-​g​r​i​d​/​g​r​i​d​-​c​o​l​u​m​n​s​-​r​o​w​s​/​s​o​m​e​-​f​i​x​e​d​-​f​l​u​i​d
+							 */
+							to: string
+							answers: {
+								'0': {
+									/**
+									 * f​r​ ​&​n​b​s​p​;​&​n​b​s​p​;​p​x​ ​&​n​b​s​p​;​&​n​b​s​p​;​r​e​m​ ​&​n​b​s​p​;​&​n​b​s​p​;​a​u​t​o​ ​&​n​b​s​p​;​&​n​b​s​p​;​m​i​n​-​c​o​n​t​e​n​t​ 
+									 */
+									title: string
+									/**
+									 *  ​T​h​e​ ​f​l​u​i​d​ ​s​t​u​f​f​ ​c​a​n​ ​u​s​e​ ​f​r​ ​t​o​ ​t​a​k​e​ ​u​p​ ​a​v​a​i​l​a​b​l​e​ ​s​p​a​c​e​,​ ​o​r​ ​a​u​t​o​ ​o​r​ ​m​i​n​-​c​o​n​t​e​n​t​ ​i​f​ ​y​o​u​ ​w​a​n​t​ ​i​t​ ​t​o​ ​m​a​t​c​h​ ​t​h​e​ ​s​i​z​e​ ​o​f​ ​t​h​e​ ​c​o​n​t​e​n​t​ ​i​n​ ​a​ ​g​i​v​e​n​ ​c​o​l​u​m​n​/​r​o​w​.​O​t​h​e​r​ ​p​a​r​t​s​ ​c​a​n​ ​b​e​ ​d​e​f​i​n​e​d​ ​w​i​t​h​ ​p​x​ ​o​r​ ​r​e​m​,​ ​i​f​ ​y​o​u​ ​w​a​n​t​ ​f​i​x​e​d​ ​s​i​z​e​s​.
+									 */
+									description: string
+								}
+							}
+						}
+					}
+				}
+			}
+			flexItemsWidths: {
+				questions: {
+					/**
+					 * F​l​e​x​ ​i​t​e​m​ ​s​i​z​i​n​g​ ​c​a​n​ ​b​e​ ​h​a​r​d​,​ ​b​u​t​ ​t​h​a​t​'​s​ ​s​o​r​t​ ​o​f​ ​t​h​e​ ​p​o​i​n​t​ ​o​f​ ​u​s​i​n​g​ ​f​l​e​x​,​ ​w​e​ ​w​a​n​t​ ​t​h​i​n​g​s​ ​t​o​ ​b​e​ ​f​l​e​x​i​b​l​e​.
+					 */
+					title: string
+					items: {
+						preventLargerSize: {
+							/**
+							 * I​ ​w​a​n​t​ ​t​o​ ​p​r​e​v​e​n​t​ ​a​n​ ​e​l​e​m​e​n​t​ ​g​e​t​t​i​n​g​ ​l​a​r​g​e​r​ ​t​h​a​n​ ​a​ ​s​p​e​c​i​f​i​c​ ​s​i​z​e
+							 */
+							title: string
+							/**
+							 * p​r​e​v​e​n​t​-​s​i​z​e
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​l​e​x​-​g​r​i​d​/​f​l​e​x​-​i​t​e​m​-​w​i​d​t​h​s​/​l​a​r​g​e​r​-​s​i​z​e
+							 */
+							to: string
+							answers: {
+								'0': {
+									/**
+									 * m​a​x​-​w​i​d​t​h​&​n​b​s​p​ ​ ​+​ ​p​x​&​n​b​s​p​;​&​n​b​s​p​;​ ​r​e​m​&​n​b​s​p​;​&​n​b​s​p​;​ ​o​r​&​n​b​s​p​;​&​n​b​s​p​ ​%
+									 */
+									title: string
+									/**
+									 * F​l​e​x​ ​i​t​e​m​s​,​ ​b​y​ ​d​e​f​a​u​l​t​,​ ​w​i​l​l​ ​n​o​t​ ​g​r​o​w​,​ ​s​o​ ​n​o​r​m​a​l​l​y​ ​y​o​u​ ​o​n​l​y​ ​n​e​e​d​ ​t​h​i​s​ ​i​f​ ​y​o​u​ ​h​a​v​e​ ​d​e​c​l​a​r​e​d​ ​a​ ​f​l​e​x​-​g​r​o​w​ ​o​t​h​e​r​ ​t​h​a​n​ ​O​ ​o​n​ ​y​o​u​r​ ​f​l​e​x​ ​i​t​e​m​s​.​ ​I​n​ ​t​h​a​t​ ​s​c​e​n​a​r​i​o​,​ ​i​f​ ​t​h​e​y​ ​a​r​e​ ​a​l​l​o​w​e​d​ ​t​o​ ​g​r​o​w​,​ ​b​u​t​ ​i​f​ ​y​o​u​ ​a​l​s​o​ ​d​e​c​l​a​r​e​ ​a​ ​m​a​x​-​w​i​d​t​h​,​ ​t​h​e​y​ ​w​i​l​l​ ​n​o​t​ ​b​e​ ​a​b​l​e​ ​t​o​ ​g​r​o​w​ ​b​i​g​g​e​r​ ​t​h​a​n​ ​t​h​a​t​ ​s​i​z​e​.​ 
+									 */
+									description: string
+								}
+							}
+						}
+						preventSmallerSize: {
+							/**
+							 * I​ ​w​a​n​t​ ​t​o​ ​p​r​e​v​e​n​t​ ​a​n​ ​e​l​e​m​e​n​t​ ​g​e​t​t​i​n​g​ ​s​m​a​l​l​e​r​ ​t​h​a​n​ ​a​ ​s​p​e​c​i​f​i​c​ ​s​i​z​e
+							 */
+							title: string
+							/**
+							 * p​r​e​v​e​n​t​-​s​i​z​e
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​l​e​x​-​g​r​i​d​/​f​l​e​x​-​i​t​e​m​-​w​i​d​t​h​s​/​s​m​a​l​l​e​r​-​s​i​z​e
+							 */
+							to: string
+							answers: {
+								'0': {
+									/**
+									 * m​i​n​-​w​i​d​t​h​ ​<​b​r​>​ ​+​&​n​b​s​p​;​&​n​b​s​p​;​ ​r​e​m​&​n​b​s​p​;​&​n​b​s​p​;​ ​o​r​&​n​b​s​p​:​&​n​b​s​p​ ​%
+									 */
+									title: string
+									/**
+									 * F​l​e​x​ ​i​t​e​m​s​,​ ​b​y​ ​d​e​f​a​u​l​t​,​ ​w​i​l​l​ ​n​o​t​ ​g​r​o​w​,​ ​s​o​ ​n​o​r​m​a​l​l​y​ ​y​o​u​ ​o​n​l​y​ ​n​e​e​d​ ​t​h​i​s​ ​i​f​ ​y​o​u​ ​h​a​v​e​ ​d​e​c​l​a​r​e​d​ ​a​ ​f​l​e​x​-​g​r​o​w​ ​o​t​h​e​r​ ​t​h​a​n​ ​O​ ​o​n​ ​y​o​u​r​ ​f​l​e​x​ ​i​t​e​m​s​.​ ​I​n​ ​t​h​a​t​ ​s​c​e​n​a​r​i​o​,​ ​i​f​ ​t​h​e​y​ ​a​r​e​ ​a​l​l​o​w​e​d​ ​t​o​ ​g​r​o​w​,​ ​b​u​t​ ​i​f​ ​y​o​u​ ​a​l​s​o​ ​d​e​c​l​a​r​e​ ​a​ ​m​a​x​-​w​i​d​t​h​,​ ​t​h​e​y​ ​w​i​l​l​ ​n​o​t​ ​b​e​ ​a​b​l​e​ ​t​o​ ​g​r​o​w​ ​b​i​g​g​e​r​ ​t​h​a​n​ ​t​h​a​t​ ​s​i​z​e​.​ 
+									 */
+									description: string
+								}
+							}
+						}
+						specificSize: {
+							/**
+							 * I​ ​w​a​n​t​ ​a​n​ ​e​l​e​m​e​n​t​ ​t​o​ ​b​e​ ​a​ ​s​p​e​c​i​f​i​c​ ​s​i​z​e
+							 */
+							title: string
+							/**
+							 * s​p​e​c​i​f​i​c​-​s​i​z​e
+							 */
+							value: string
+							hint: string
+							/**
+							 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​f​l​e​x​-​g​r​i​d​/​f​l​e​x​-​i​t​e​m​-​w​i​d​t​h​s​/​s​p​e​c​i​f​i​c​-​s​i​z​e
+							 */
+							to: string
+							answers: {
+								'0': {
+									/**
+									 * f​l​e​x​-​g​r​o​w​ ​&​n​b​s​p​;​ ​a​n​d​ ​&​n​b​s​p​;​ ​f​l​e​x​-​s​h​r​i​n​k​:​ ​&​n​b​s​p​ ​0​ ​&​n​b​s​p​;​ ​+​p​x​ ​&​n​b​s​p​;​ ​ ​r​e​m​ ​&​n​b​s​p​;​ ​o​r​ ​&​n​b​s​p​;​ ​%​ ​<​b​r​>
+									 */
+									title: string
+									/**
+									 * F​l​e​x​ ​i​t​e​m​s​,​ ​b​y​ ​d​e​f​a​u​l​t​,​ ​w​i​l​l​ ​n​o​t​ ​g​r​o​w​,​ ​s​o​ ​n​o​r​m​a​l​l​y​ ​y​o​u​ ​o​n​l​y​ ​n​e​e​d​ ​t​h​i​s​ ​i​f​ ​y​o​u​ ​h​a​v​e​ ​d​e​c​l​a​r​e​d​ ​a​ ​f​l​e​x​-​g​r​o​w​ ​o​t​h​e​r​ ​t​h​a​n​ ​O​ ​o​n​ ​y​o​u​r​ ​f​l​e​x​ ​i​t​e​m​s​.​ ​I​n​ ​t​h​a​t​ ​s​c​e​n​a​r​i​o​,​ ​i​f​ ​t​h​e​y​ ​a​r​e​ ​a​l​l​o​w​e​d​ ​t​o​ ​g​r​o​w​,​ ​b​u​t​ ​i​f​ ​y​o​u​ ​a​l​s​o​ ​d​e​c​l​a​r​e​ ​a​ ​m​a​x​-​w​i​d​t​h​,​ ​t​h​e​y​ ​w​i​l​l​ ​n​o​t​ ​b​e​ ​a​b​l​e​ ​t​o​ ​g​r​o​w​ ​b​i​g​g​e​r​ ​t​h​a​n​ ​t​h​a​t​ ​s​i​z​e​.​ 
+									 */
+									description: string
+								}
+							}
+						}
 					}
 				}
 			}
@@ -1626,7 +1808,7 @@ export type TranslationFunctions = {
 						value: () => LocalizedString
 						hint: () => LocalizedString
 						/**
-						 * /questionaries/
+						 * /questionaries/flex-grid/grid-columns-rows/
 						 */
 						to: () => LocalizedString
 					}
@@ -1641,7 +1823,7 @@ export type TranslationFunctions = {
 						value: () => LocalizedString
 						hint: () => LocalizedString
 						/**
-						 * /questionaries/
+						 * /questionaries/flex-grid/grid-columns-rows/
 						 */
 						to: () => LocalizedString
 					}
@@ -1656,9 +1838,191 @@ export type TranslationFunctions = {
 						value: () => LocalizedString
 						hint: () => LocalizedString
 						/**
-						 * /questionaries/
+						 * /questionaries/flex-grid/flex-item-widths
 						 */
 						to: () => LocalizedString
+					}
+				}
+			}
+			fixedOrFluid: {
+				questions: {
+					/**
+					 * Do you want them to be fixed sizes, of fluid? 
+					 */
+					title: () => LocalizedString
+					items: {
+						fixedSized: {
+							/**
+							 * Fixed sizes
+							 */
+							title: () => LocalizedString
+							/**
+							 * fixed-size
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/flex-grid/grid-columns-rows/fixed-sizes
+							 */
+							to: () => LocalizedString
+							answers: {
+								'0': {
+									/**
+									 * px &nbsp;&nbsp;rem
+									 */
+									title: () => LocalizedString
+									/**
+									 * px is probably fine, but if yo're using rem for most things,you could stay with that for consistency. 
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
+						fluid: {
+							/**
+							 * Fluid
+							 */
+							title: () => LocalizedString
+							/**
+							 * fluid
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/flex-grid/grid-columns-rows/fluid
+							 */
+							to: () => LocalizedString
+							answers: {
+								'0': {
+									/**
+									 * fr
+									 */
+									title: () => LocalizedString
+									/**
+									 * The fr unit uses the leftover space. If you have three columns each with 1fr, they will adapt to whatever space is available, and generally all be the same size. It tends to be the best choice. % can also work, but can lead to overflow if you don't take into account gaps, whereas fr avoids that issue. 
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
+						someFixedFluid: {
+							/**
+							 * Some fixed, some fluid
+							 */
+							title: () => LocalizedString
+							/**
+							 * fixed-fluid
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/flex-grid/grid-columns-rows/some-fixed-fluid
+							 */
+							to: () => LocalizedString
+							answers: {
+								'0': {
+									/**
+									 * fr &nbsp;&nbsp;px &nbsp;&nbsp;rem &nbsp;&nbsp;auto &nbsp;&nbsp;min-content 
+									 */
+									title: () => LocalizedString
+									/**
+									 *  The fluid stuff can use fr to take up available space, or auto or min-content if you want it to match the size of the content in a given column/row.Other parts can be defined with px or rem, if you want fixed sizes.
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
+					}
+				}
+			}
+			flexItemsWidths: {
+				questions: {
+					/**
+					 * Flex item sizing can be hard, but that's sort of the point of using flex, we want things to be flexible.
+					 */
+					title: () => LocalizedString
+					items: {
+						preventLargerSize: {
+							/**
+							 * I want to prevent an element getting larger than a specific size
+							 */
+							title: () => LocalizedString
+							/**
+							 * prevent-size
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/flex-grid/flex-item-widths/larger-size
+							 */
+							to: () => LocalizedString
+							answers: {
+								'0': {
+									/**
+									 * max-width&nbsp  + px&nbsp;&nbsp; rem&nbsp;&nbsp; or&nbsp;&nbsp %
+									 */
+									title: () => LocalizedString
+									/**
+									 * Flex items, by default, will not grow, so normally you only need this if you have declared a flex-grow other than O on your flex items. In that scenario, if they are allowed to grow, but if you also declare a max-width, they will not be able to grow bigger than that size. 
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
+						preventSmallerSize: {
+							/**
+							 * I want to prevent an element getting smaller than a specific size
+							 */
+							title: () => LocalizedString
+							/**
+							 * prevent-size
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/flex-grid/flex-item-widths/smaller-size
+							 */
+							to: () => LocalizedString
+							answers: {
+								'0': {
+									/**
+									 * min-width <br> +&nbsp;&nbsp; rem&nbsp;&nbsp; or&nbsp:&nbsp %
+									 */
+									title: () => LocalizedString
+									/**
+									 * Flex items, by default, will not grow, so normally you only need this if you have declared a flex-grow other than O on your flex items. In that scenario, if they are allowed to grow, but if you also declare a max-width, they will not be able to grow bigger than that size. 
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
+						specificSize: {
+							/**
+							 * I want an element to be a specific size
+							 */
+							title: () => LocalizedString
+							/**
+							 * specific-size
+							 */
+							value: () => LocalizedString
+							hint: () => LocalizedString
+							/**
+							 * /questionaries/flex-grid/flex-item-widths/specific-size
+							 */
+							to: () => LocalizedString
+							answers: {
+								'0': {
+									/**
+									 * flex-grow &nbsp; and &nbsp; flex-shrink: &nbsp 0 &nbsp; +px &nbsp;  rem &nbsp; or &nbsp; % <br>
+									 */
+									title: () => LocalizedString
+									/**
+									 * Flex items, by default, will not grow, so normally you only need this if you have declared a flex-grow other than O on your flex items. In that scenario, if they are allowed to grow, but if you also declare a max-width, they will not be able to grow bigger than that size. 
+									 */
+									description: () => LocalizedString
+								}
+							}
+						}
 					}
 				}
 			}

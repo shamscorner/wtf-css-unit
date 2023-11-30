@@ -14,7 +14,7 @@ This project is created from this awesome [sveltekit starter template](https://g
 - [x] Spacing
 - [x] Positioning
 - [x] Details/effects
-- [ ] Flex or grid
+- [x] Flex or grid
 - [ ] Width or height on an element
 
 ## Run on your local?

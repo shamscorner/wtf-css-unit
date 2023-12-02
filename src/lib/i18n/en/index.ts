@@ -110,7 +110,7 @@ const en: BaseTranslation = {
 					title: 'Width or height on an element',
 					value: 'width-height',
 					hint: '',
-					to: '/questionaries/width-height'
+					to: '/questionaries/width-or-height'
 				}
 			]
 		},
@@ -475,6 +475,130 @@ const en: BaseTranslation = {
 								}
 							]
 						}
+					}
+				}
+			}
+		},
+		whichWidthOrHeight: {
+			title: 'width or height?',
+			questions: {
+				items: {
+					width: {
+						title: 'width',
+						value: 'width',
+						hint: '',
+						to: '/questionaries'
+					},
+					height: {
+						title: 'height',
+						value: 'height',
+						hint: '',
+						to: '/questionaries/width-or-height/type-of-height'
+					}
+				}
+			},
+			typeOFHeights: {
+				items: [
+					{
+						title: 'min-height',
+						value: 'min-height',
+						hint: '',
+						to: '/questionaries/width-or-height/type-of-height/min-height'
+					},
+					{
+						title: 'max-height',
+						value: 'max-height',
+						hint: '',
+						to: '/questionaries/width-or-height/type-of-height/whether-need'
+					},
+					{
+						title: 'height',
+						value: 'height',
+						hint: '',
+						to: '/questionaries/'
+					}
+				],
+				fixedOrRelativeHeights: {
+					questions: {
+						title:
+							'Does it need to be a fixed height, or relative to somethings? ',
+						items: {
+							fixedSize: {
+								title: 'fixed size',
+								value: 'fixed-size',
+								hint: '',
+								to: '/questionaries/width-or-height/type-of-height/min-height/fixed-size2',
+								answers: [
+									{
+										title: 'px &nbsp; rem ',
+										description: ' '
+									}
+								]
+							},
+							relativeHeight: {
+								title: 'relative to the height of the another element',
+								value: 'relative-height',
+								hint: '',
+								to: '/questionaries/width-or-height/type-of-height/min-height/relative-height',
+								answers: [
+									{
+										title: '% ',
+										description:
+											"But this can be tricky, because then <a href='https://www.youtube.com/watch?v=SjYYfd7obug' target='blank'>that element needs a declared height in it as well</a>."
+									}
+								]
+							},
+							relativeViewport: {
+								title: 'relative to the viewport',
+								value: 'relative-viewport',
+								hint: '',
+								to: '/questionaries/width-or-height/type-of-height/min-height/relative-viewport',
+								answers: [
+									{
+										title: 'vh &nbsp; svh &nbsp; dvh &nbsp; 1vh ',
+										description:
+											" These are all Viewport Height units, with the first one being just that, the second being the small viewport height, then the dynamic viewport height. If you're unfamiliar with these, you can <a href='https://www.youtube.com/watch?v=ru3U8MHbFFI' target='blank'>learn more about them in this video</a>."
+									}
+								]
+							}
+						}
+					}
+				},
+				whetherYOuNeed: {
+					questions: {
+						title: 'You you absolutely sure you need one?',
+						items: [
+							{
+								title: 'Yes',
+								value: 'yes',
+								hint: '',
+								to: '/questionaries/width-or-height/type-of-height/whether-need/fixed-or-not'
+							},
+							{
+								title: 'Uhh, I think so?',
+								value: 'think-so',
+								hint: '',
+								to: '/questionaries'
+							}
+						]
+					},
+					fixedOrNot: {
+						title:
+							'Having a fixed height (including a fixed max-height) often leads to overflow issues. Not declaring a height is often best as <a href="" target=blank>the default behavior </a> is pretty great. ',
+						items: [
+							{
+								title: ' I really do need to declare one ',
+								value: 'need-one',
+								hint: '',
+								to: '/questionaries/width-or-height/type-of-height/min-height'
+							},
+							{
+								title: "I guess I don't need to bother",
+								value: "do't-need",
+								hint: '',
+								to: '/questionaries'
+							}
+						]
 					}
 				}
 			}

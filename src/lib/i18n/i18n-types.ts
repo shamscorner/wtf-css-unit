@@ -272,7 +272,7 @@ type RootTranslation = {
 					value: string
 					hint: string
 					/**
-					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​h​e​i​g​h​t
+					 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​o​r​-​h​e​i​g​h​t
 					 */
 					to: string
 				}
@@ -1015,6 +1015,264 @@ type RootTranslation = {
 				}
 			}
 		}
+		whichWidthOrHeight: {
+			/**
+			 * w​i​d​t​h​ ​o​r​ ​h​e​i​g​h​t​?
+			 */
+			title: string
+			questions: {
+				items: {
+					width: {
+						/**
+						 * w​i​d​t​h
+						 */
+						title: string
+						/**
+						 * w​i​d​t​h
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s
+						 */
+						to: string
+					}
+					height: {
+						/**
+						 * h​e​i​g​h​t
+						 */
+						title: string
+						/**
+						 * h​e​i​g​h​t
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​o​r​-​h​e​i​g​h​t​/​t​y​p​e​-​o​f​-​h​e​i​g​h​t
+						 */
+						to: string
+					}
+				}
+			}
+			typeOFHeights: {
+				items: {
+					'0': {
+						/**
+						 * m​i​n​-​h​e​i​g​h​t
+						 */
+						title: string
+						/**
+						 * m​i​n​-​h​e​i​g​h​t
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​o​r​-​h​e​i​g​h​t​/​t​y​p​e​-​o​f​-​h​e​i​g​h​t​/​m​i​n​-​h​e​i​g​h​t
+						 */
+						to: string
+					}
+					'1': {
+						/**
+						 * m​a​x​-​h​e​i​g​h​t
+						 */
+						title: string
+						/**
+						 * m​a​x​-​h​e​i​g​h​t
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​o​r​-​h​e​i​g​h​t​/​t​y​p​e​-​o​f​-​h​e​i​g​h​t​/​w​h​e​t​h​e​r​-​n​e​e​d
+						 */
+						to: string
+					}
+					'2': {
+						/**
+						 * h​e​i​g​h​t
+						 */
+						title: string
+						/**
+						 * h​e​i​g​h​t
+						 */
+						value: string
+						hint: string
+						/**
+						 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/
+						 */
+						to: string
+					}
+				}
+				fixedOrRelativeHeights: {
+					questions: {
+						/**
+						 * D​o​e​s​ ​i​t​ ​n​e​e​d​ ​t​o​ ​b​e​ ​a​ ​f​i​x​e​d​ ​h​e​i​g​h​t​,​ ​o​r​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​s​o​m​e​t​h​i​n​g​s​?​ 
+						 */
+						title: string
+						items: {
+							fixedSize: {
+								/**
+								 * f​i​x​e​d​ ​s​i​z​e
+								 */
+								title: string
+								/**
+								 * f​i​x​e​d​-​s​i​z​e
+								 */
+								value: string
+								hint: string
+								/**
+								 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​o​r​-​h​e​i​g​h​t​/​t​y​p​e​-​o​f​-​h​e​i​g​h​t​/​m​i​n​-​h​e​i​g​h​t​/​f​i​x​e​d​-​s​i​z​e​2
+								 */
+								to: string
+								answers: {
+									'0': {
+										/**
+										 * p​x​ ​&​n​b​s​p​;​ ​r​e​m​ 
+										 */
+										title: string
+										/**
+										 *  
+										 */
+										description: string
+									}
+								}
+							}
+							relativeHeight: {
+								/**
+								 * r​e​l​a​t​i​v​e​ ​t​o​ ​t​h​e​ ​h​e​i​g​h​t​ ​o​f​ ​t​h​e​ ​a​n​o​t​h​e​r​ ​e​l​e​m​e​n​t
+								 */
+								title: string
+								/**
+								 * r​e​l​a​t​i​v​e​-​h​e​i​g​h​t
+								 */
+								value: string
+								hint: string
+								/**
+								 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​o​r​-​h​e​i​g​h​t​/​t​y​p​e​-​o​f​-​h​e​i​g​h​t​/​m​i​n​-​h​e​i​g​h​t​/​r​e​l​a​t​i​v​e​-​h​e​i​g​h​t
+								 */
+								to: string
+								answers: {
+									'0': {
+										/**
+										 * %​ 
+										 */
+										title: string
+										/**
+										 * B​u​t​ ​t​h​i​s​ ​c​a​n​ ​b​e​ ​t​r​i​c​k​y​,​ ​b​e​c​a​u​s​e​ ​t​h​e​n​ ​<​a​ ​h​r​e​f​=​'​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​S​j​Y​Y​f​d​7​o​b​u​g​'​ ​t​a​r​g​e​t​=​'​b​l​a​n​k​'​>​t​h​a​t​ ​e​l​e​m​e​n​t​ ​n​e​e​d​s​ ​a​ ​d​e​c​l​a​r​e​d​ ​h​e​i​g​h​t​ ​i​n​ ​i​t​ ​a​s​ ​w​e​l​l​<​/​a​>​.
+										 */
+										description: string
+									}
+								}
+							}
+							relativeViewport: {
+								/**
+								 * r​e​l​a​t​i​v​e​ ​t​o​ ​t​h​e​ ​v​i​e​w​p​o​r​t
+								 */
+								title: string
+								/**
+								 * r​e​l​a​t​i​v​e​-​v​i​e​w​p​o​r​t
+								 */
+								value: string
+								hint: string
+								/**
+								 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​o​r​-​h​e​i​g​h​t​/​t​y​p​e​-​o​f​-​h​e​i​g​h​t​/​m​i​n​-​h​e​i​g​h​t​/​r​e​l​a​t​i​v​e​-​v​i​e​w​p​o​r​t
+								 */
+								to: string
+								answers: {
+									'0': {
+										/**
+										 * v​h​ ​&​n​b​s​p​;​ ​s​v​h​ ​&​n​b​s​p​;​ ​d​v​h​ ​&​n​b​s​p​;​ ​1​v​h​ 
+										 */
+										title: string
+										/**
+										 *  ​T​h​e​s​e​ ​a​r​e​ ​a​l​l​ ​V​i​e​w​p​o​r​t​ ​H​e​i​g​h​t​ ​u​n​i​t​s​,​ ​w​i​t​h​ ​t​h​e​ ​f​i​r​s​t​ ​o​n​e​ ​b​e​i​n​g​ ​j​u​s​t​ ​t​h​a​t​,​ ​t​h​e​ ​s​e​c​o​n​d​ ​b​e​i​n​g​ ​t​h​e​ ​s​m​a​l​l​ ​v​i​e​w​p​o​r​t​ ​h​e​i​g​h​t​,​ ​t​h​e​n​ ​t​h​e​ ​d​y​n​a​m​i​c​ ​v​i​e​w​p​o​r​t​ ​h​e​i​g​h​t​.​ ​I​f​ ​y​o​u​'​r​e​ ​u​n​f​a​m​i​l​i​a​r​ ​w​i​t​h​ ​t​h​e​s​e​,​ ​y​o​u​ ​c​a​n​ ​<​a​ ​h​r​e​f​=​'​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​r​u​3​U​8​M​H​b​F​F​I​'​ ​t​a​r​g​e​t​=​'​b​l​a​n​k​'​>​l​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​t​h​e​m​ ​i​n​ ​t​h​i​s​ ​v​i​d​e​o​<​/​a​>​.
+										 */
+										description: string
+									}
+								}
+							}
+						}
+					}
+				}
+				whetherYOuNeed: {
+					questions: {
+						/**
+						 * Y​o​u​ ​y​o​u​ ​a​b​s​o​l​u​t​e​l​y​ ​s​u​r​e​ ​y​o​u​ ​n​e​e​d​ ​o​n​e​?
+						 */
+						title: string
+						items: {
+							'0': {
+								/**
+								 * Y​e​s
+								 */
+								title: string
+								/**
+								 * y​e​s
+								 */
+								value: string
+								hint: string
+								/**
+								 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​o​r​-​h​e​i​g​h​t​/​t​y​p​e​-​o​f​-​h​e​i​g​h​t​/​w​h​e​t​h​e​r​-​n​e​e​d​/​f​i​x​e​d​-​o​r​-​n​o​t
+								 */
+								to: string
+							}
+							'1': {
+								/**
+								 * U​h​h​,​ ​I​ ​t​h​i​n​k​ ​s​o​?
+								 */
+								title: string
+								/**
+								 * t​h​i​n​k​-​s​o
+								 */
+								value: string
+								hint: string
+								/**
+								 * /​q​u​e​s​t​i​o​n​a​r​i​e​s
+								 */
+								to: string
+							}
+						}
+					}
+					fixedOrNot: {
+						/**
+						 * H​a​v​i​n​g​ ​a​ ​f​i​x​e​d​ ​h​e​i​g​h​t​ ​(​i​n​c​l​u​d​i​n​g​ ​a​ ​f​i​x​e​d​ ​m​a​x​-​h​e​i​g​h​t​)​ ​o​f​t​e​n​ ​l​e​a​d​s​ ​t​o​ ​o​v​e​r​f​l​o​w​ ​i​s​s​u​e​s​.​ ​N​o​t​ ​d​e​c​l​a​r​i​n​g​ ​a​ ​h​e​i​g​h​t​ ​i​s​ ​o​f​t​e​n​ ​b​e​s​t​ ​a​s​ ​<​a​ ​h​r​e​f​=​"​"​ ​t​a​r​g​e​t​=​b​l​a​n​k​>​t​h​e​ ​d​e​f​a​u​l​t​ ​b​e​h​a​v​i​o​r​ ​<​/​a​>​ ​i​s​ ​p​r​e​t​t​y​ ​g​r​e​a​t​.​ 
+						 */
+						title: string
+						items: {
+							'0': {
+								/**
+								 *  ​I​ ​r​e​a​l​l​y​ ​d​o​ ​n​e​e​d​ ​t​o​ ​d​e​c​l​a​r​e​ ​o​n​e​ 
+								 */
+								title: string
+								/**
+								 * n​e​e​d​-​o​n​e
+								 */
+								value: string
+								hint: string
+								/**
+								 * /​q​u​e​s​t​i​o​n​a​r​i​e​s​/​w​i​d​t​h​-​o​r​-​h​e​i​g​h​t​/​t​y​p​e​-​o​f​-​h​e​i​g​h​t​/​m​i​n​-​h​e​i​g​h​t
+								 */
+								to: string
+							}
+							'1': {
+								/**
+								 * I​ ​g​u​e​s​s​ ​I​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r
+								 */
+								title: string
+								/**
+								 * d​o​'​t​-​n​e​e​d
+								 */
+								value: string
+								hint: string
+								/**
+								 * /​q​u​e​s​t​i​o​n​a​r​i​e​s
+								 */
+								to: string
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	errors: {
 		/**
@@ -1284,7 +1542,7 @@ export type TranslationFunctions = {
 					value: () => LocalizedString
 					hint: () => LocalizedString
 					/**
-					 * /questionaries/width-height
+					 * /questionaries/width-or-height
 					 */
 					to: () => LocalizedString
 				}
@@ -2021,6 +2279,264 @@ export type TranslationFunctions = {
 									 */
 									description: () => LocalizedString
 								}
+							}
+						}
+					}
+				}
+			}
+		}
+		whichWidthOrHeight: {
+			/**
+			 * width or height?
+			 */
+			title: () => LocalizedString
+			questions: {
+				items: {
+					width: {
+						/**
+						 * width
+						 */
+						title: () => LocalizedString
+						/**
+						 * width
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries
+						 */
+						to: () => LocalizedString
+					}
+					height: {
+						/**
+						 * height
+						 */
+						title: () => LocalizedString
+						/**
+						 * height
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/width-or-height/type-of-height
+						 */
+						to: () => LocalizedString
+					}
+				}
+			}
+			typeOFHeights: {
+				items: {
+					'0': {
+						/**
+						 * min-height
+						 */
+						title: () => LocalizedString
+						/**
+						 * min-height
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/width-or-height/type-of-height/min-height
+						 */
+						to: () => LocalizedString
+					}
+					'1': {
+						/**
+						 * max-height
+						 */
+						title: () => LocalizedString
+						/**
+						 * max-height
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/width-or-height/type-of-height/whether-need
+						 */
+						to: () => LocalizedString
+					}
+					'2': {
+						/**
+						 * height
+						 */
+						title: () => LocalizedString
+						/**
+						 * height
+						 */
+						value: () => LocalizedString
+						hint: () => LocalizedString
+						/**
+						 * /questionaries/
+						 */
+						to: () => LocalizedString
+					}
+				}
+				fixedOrRelativeHeights: {
+					questions: {
+						/**
+						 * Does it need to be a fixed height, or relative to somethings? 
+						 */
+						title: () => LocalizedString
+						items: {
+							fixedSize: {
+								/**
+								 * fixed size
+								 */
+								title: () => LocalizedString
+								/**
+								 * fixed-size
+								 */
+								value: () => LocalizedString
+								hint: () => LocalizedString
+								/**
+								 * /questionaries/width-or-height/type-of-height/min-height/fixed-size2
+								 */
+								to: () => LocalizedString
+								answers: {
+									'0': {
+										/**
+										 * px &nbsp; rem 
+										 */
+										title: () => LocalizedString
+										/**
+										 *  
+										 */
+										description: () => LocalizedString
+									}
+								}
+							}
+							relativeHeight: {
+								/**
+								 * relative to the height of the another element
+								 */
+								title: () => LocalizedString
+								/**
+								 * relative-height
+								 */
+								value: () => LocalizedString
+								hint: () => LocalizedString
+								/**
+								 * /questionaries/width-or-height/type-of-height/min-height/relative-height
+								 */
+								to: () => LocalizedString
+								answers: {
+									'0': {
+										/**
+										 * % 
+										 */
+										title: () => LocalizedString
+										/**
+										 * But this can be tricky, because then <a href='https://www.youtube.com/watch?v=SjYYfd7obug' target='blank'>that element needs a declared height in it as well</a>.
+										 */
+										description: () => LocalizedString
+									}
+								}
+							}
+							relativeViewport: {
+								/**
+								 * relative to the viewport
+								 */
+								title: () => LocalizedString
+								/**
+								 * relative-viewport
+								 */
+								value: () => LocalizedString
+								hint: () => LocalizedString
+								/**
+								 * /questionaries/width-or-height/type-of-height/min-height/relative-viewport
+								 */
+								to: () => LocalizedString
+								answers: {
+									'0': {
+										/**
+										 * vh &nbsp; svh &nbsp; dvh &nbsp; 1vh 
+										 */
+										title: () => LocalizedString
+										/**
+										 *  These are all Viewport Height units, with the first one being just that, the second being the small viewport height, then the dynamic viewport height. If you're unfamiliar with these, you can <a href='https://www.youtube.com/watch?v=ru3U8MHbFFI' target='blank'>learn more about them in this video</a>.
+										 */
+										description: () => LocalizedString
+									}
+								}
+							}
+						}
+					}
+				}
+				whetherYOuNeed: {
+					questions: {
+						/**
+						 * You you absolutely sure you need one?
+						 */
+						title: () => LocalizedString
+						items: {
+							'0': {
+								/**
+								 * Yes
+								 */
+								title: () => LocalizedString
+								/**
+								 * yes
+								 */
+								value: () => LocalizedString
+								hint: () => LocalizedString
+								/**
+								 * /questionaries/width-or-height/type-of-height/whether-need/fixed-or-not
+								 */
+								to: () => LocalizedString
+							}
+							'1': {
+								/**
+								 * Uhh, I think so?
+								 */
+								title: () => LocalizedString
+								/**
+								 * think-so
+								 */
+								value: () => LocalizedString
+								hint: () => LocalizedString
+								/**
+								 * /questionaries
+								 */
+								to: () => LocalizedString
+							}
+						}
+					}
+					fixedOrNot: {
+						/**
+						 * Having a fixed height (including a fixed max-height) often leads to overflow issues. Not declaring a height is often best as <a href="" target=blank>the default behavior </a> is pretty great. 
+						 */
+						title: () => LocalizedString
+						items: {
+							'0': {
+								/**
+								 *  I really do need to declare one 
+								 */
+								title: () => LocalizedString
+								/**
+								 * need-one
+								 */
+								value: () => LocalizedString
+								hint: () => LocalizedString
+								/**
+								 * /questionaries/width-or-height/type-of-height/min-height
+								 */
+								to: () => LocalizedString
+							}
+							'1': {
+								/**
+								 * I guess I don't need to bother
+								 */
+								title: () => LocalizedString
+								/**
+								 * do't-need
+								 */
+								value: () => LocalizedString
+								hint: () => LocalizedString
+								/**
+								 * /questionaries
+								 */
+								to: () => LocalizedString
 							}
 						}
 					}

@@ -110,7 +110,7 @@ const en: BaseTranslation = {
 					title: 'Width or height on an element',
 					value: 'width-height',
 					hint: '',
-					to: '/questionaries/width-height'
+					to: '/questionaries/width-or-height'
 				}
 			]
 		},
@@ -475,6 +475,278 @@ const en: BaseTranslation = {
 								}
 							]
 						}
+					}
+				}
+			}
+		},
+		whichWidthOrHeight: {
+			title: 'width or height?',
+			questions: {
+				items: {
+					width: {
+						title: 'width',
+						value: 'width',
+						hint: '',
+						to: '/questionaries/width-or-height/type-of-width'
+					},
+					height: {
+						title: 'height',
+						value: 'height',
+						hint: '',
+						to: '/questionaries/width-or-height/type-of-height'
+					}
+				}
+			},
+			typeOFHeights: {
+				items: [
+					{
+						title: 'min-height',
+						value: 'min-height',
+						hint: '',
+						to: '/questionaries/width-or-height/type-of-height/min-height'
+					},
+					{
+						title: 'max-height',
+						value: 'max-height',
+						hint: '',
+						to: '/questionaries/width-or-height/type-of-height/whether-need'
+					},
+					{
+						title: 'height',
+						value: 'height',
+						hint: '',
+						to: '/questionaries/'
+					}
+				],
+				fixedOrRelativeHeights: {
+					questions: {
+						title:
+							'Does it need to be a fixed height, or relative to somethings? ',
+						items: {
+							fixedSize: {
+								title: 'fixed size',
+								value: 'fixed-size',
+								hint: '',
+								to: '/questionaries/width-or-height/type-of-height/min-height/fixed-size2',
+								answers: [
+									{
+										title: 'px &nbsp; rem ',
+										description: ' '
+									}
+								]
+							},
+							relativeHeight: {
+								title: 'relative to the height of the another element',
+								value: 'relative-height',
+								hint: '',
+								to: '/questionaries/width-or-height/type-of-height/min-height/relative-height',
+								answers: [
+									{
+										title: '% ',
+										description:
+											"But this can be tricky, because then <a href='https://www.youtube.com/watch?v=SjYYfd7obug' target='blank'>that element needs a declared height in it as well</a>."
+									}
+								]
+							},
+							relativeViewport: {
+								title: 'relative to the viewport',
+								value: 'relative-viewport',
+								hint: '',
+								to: '/questionaries/width-or-height/type-of-height/min-height/relative-viewport',
+								answers: [
+									{
+										title: 'vh &nbsp; svh &nbsp; dvh &nbsp; 1vh ',
+										description:
+											" These are all Viewport Height units, with the first one being just that, the second being the small viewport height, then the dynamic viewport height. If you're unfamiliar with these, you can <a href='https://www.youtube.com/watch?v=ru3U8MHbFFI' target='blank'>learn more about them in this video</a>."
+									}
+								]
+							}
+						}
+					}
+				},
+				whetherYOuNeed: {
+					questions: {
+						title: 'You you absolutely sure you need one?',
+						items: [
+							{
+								title: 'Yes',
+								value: 'yes',
+								hint: '',
+								to: '/questionaries/width-or-height/type-of-height/whether-need/fixed-or-not'
+							},
+							{
+								title: 'Uhh, I think so?',
+								value: 'think-so',
+								hint: '',
+								to: '/questionaries'
+							}
+						]
+					},
+					fixedOrNot: {
+						title:
+							'Having a fixed height (including a fixed max-height) often leads to overflow issues. Not declaring a height is often best as <a href="" target=blank>the default behavior </a> is pretty great. ',
+						items: [
+							{
+								title: ' I really do need to declare one ',
+								value: 'need-one',
+								hint: '',
+								to: '/questionaries/width-or-height/type-of-height/min-height'
+							},
+							{
+								title: "I guess I don't need to bother",
+								value: "do't-need",
+								hint: '',
+								to: '/questionaries'
+							}
+						]
+					}
+				}
+			},
+			typeOfWidth: {
+				items: {
+					width: {
+						title: 'width',
+						value: 'width',
+						hint: '',
+						to: '/questionaries/width-or-height/type-of-width/need-width'
+					},
+					minWidth: {
+						title: 'min-width',
+						value: 'min-width',
+						hint: '',
+						to: '/questionaries/width-or-height/type-of-width/need-width'
+					},
+					maxWidth: {
+						title: 'max-width',
+						value: 'maxWidth',
+						hint: '',
+						to: '/questionaries/width-or-height/type-of-width/max-width',
+						answers: [
+							{
+								title: 'px &nbsp; rem &nbsp; ch',
+								description:
+									"px is probably fine, but if you're using rem for most things, you could stay with that for consistency.ch is always very handy, as it's equivalent to roughly 1 character wide, and can make it easy to set max widths for line-lengths. if you've never used ch, you can <a href='https://www.youtube.com/watch?v=dgbFtMBOMlA' target='blank'>learn more about the ch unit in this video</a>.  "
+							}
+						]
+					}
+				},
+				needWidth: {
+					questions: {
+						title:
+							'Are you sure you need a width at all? One mistake people often make is declaring a width when they don\'t need one.(watch this <a href="">video for more info)</a>) ',
+						items: [
+							{
+								title: 'Yes',
+								value: 'yes',
+								hint: '',
+								to: '/questionaries/width-or-height/type-of-width/need-width/fixed-or-relative-width'
+							},
+							{
+								title: 'Oh, I guess not',
+								value: '',
+								hint: '',
+								to: ''
+							}
+						]
+					}
+				},
+				fixedOrRelativeWidth: {
+					title: ' Does it need to be a fixed width, or relative to something?',
+					items: {
+						widthOfAnotherElement: {
+							title: 'relative to the width of another element',
+							value: 'relative-element',
+							hint: '',
+							to: '/questionaries/width-or-height/type-of-width/need-width/fixed-or-relative-width/need-not-bother'
+						},
+						fixedWidthSize: {
+							title: 'fixed size',
+							value: 'fixed-size',
+							hint: '',
+							to: '/questionaries/width-or-height/type-of-width/need-width/fixed-or-relative-width/fixed-width-size',
+							answers: [
+								{
+									title: 'px &nbsp; rem',
+									description: ''
+								}
+							]
+						},
+						relativeViewPort: {
+							title: 'relative to the viewport',
+							value: 'viewport',
+							hint: '',
+							to: '/questionaries/width-or-height/type-of-width/need-width/fixed-or-relative-width/full-width-viewport'
+						}
+					},
+					fullWidthViewPort: {
+						questions: {
+							title: 'Do you want it to be the full width of the viewport?',
+							items: [
+								{
+									title: 'Yes',
+									value: 'yes',
+									hint: '',
+									to: '/questionaries/width-or-height/type-of-width/need-width/fixed-or-relative-width/full-width-viewport/element-default'
+								},
+								{
+									title: 'No',
+									value: '',
+									hint: '',
+									to: '/questionaries/width-or-height/type-of-width/need-width/fixed-or-relative-width/full-width-viewport/not-another-element'
+								}
+							]
+						},
+						elementDefault: {
+							questions: {
+								title:
+									"Are you even need to bother?<a href=''>Elements normally do this as a default</a>",
+								items: {
+									guessNot: {
+										title: 'oh, I guess not ',
+										value: 'guess-not',
+										hint: '',
+										to: '/questionaries'
+									},
+									needNot: {
+										title: 'Yes,I really need to',
+										value: '',
+										hint: '',
+										to: '/questionaries'
+									}
+								}
+							}
+						},
+						notAnotherElement: {
+							questions: {
+								title:
+									'Are you sure want it to be relative to the viewport and not another element? <small>(most of the time, % is a better option))</small>',
+								items: [
+									{
+										title: 'Oh, I guess not',
+										value: '',
+										hint: '',
+										to: '/questionaries'
+									},
+									{
+										title: 'Yes, I really need to ',
+										value: '',
+										hint: '',
+										to: '/questionaries'
+									}
+								]
+							}
+						}
+					},
+					needNotBother: {
+						items: [
+							{
+								title:
+									"% <br> But if it's 100%, <a href=''>you probably don't need to bother </a>",
+								value: '',
+								hint: '',
+								to: '/questionaries'
+							}
+						]
 					}
 				}
 			}

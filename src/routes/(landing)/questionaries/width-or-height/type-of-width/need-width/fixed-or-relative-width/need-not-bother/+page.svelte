@@ -1,16 +1,11 @@
 <script lang="ts">
 	import LL from '$lib/i18n/i18n-svelte';
-	import Question from '$routes/(landing)/components/question.svelte';
+	import Answer from '$routes/(landing)/components/answer.svelte';
 </script>
 
-<Question
-	items={Object.values(
+<Answer
+	answers={Object.values(
 		$LL.questionaries.whichWidthOrHeight.typeOfWidth.fixedOrRelativeWidth
-			.needNotBother.items
-	).map((i) => ({
-		title: i.title(),
-		value: i.value(),
-		hint: i.hint(),
-		to: i.to()
-	}))}
+			.needNotBother.answers
+	)}
 />

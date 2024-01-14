@@ -480,7 +480,7 @@ const en: BaseTranslation = {
 			}
 		},
 		whichWidthOrHeight: {
-			title: 'width or height?',
+			title: 'Width or height?',
 			questions: {
 				items: {
 					width: {
@@ -633,7 +633,7 @@ const en: BaseTranslation = {
 				needWidth: {
 					questions: {
 						title:
-							'Are you sure you need a width at all? One mistake people often make is declaring a width when they don\'t need one.(watch this <a href="">video for more info)</a>) ',
+							"Are you sure you need a width at all? One mistake people often make is declaring a width when they don't need one.",
 						items: [
 							{
 								title: 'Yes',
@@ -738,13 +738,16 @@ const en: BaseTranslation = {
 						}
 					},
 					needNotBother: {
-						items: [
+						answers: [
 							{
-								title:
-									"% <br> But if it's 100%, <a href=''>you probably don't need to bother </a>",
-								value: '',
-								hint: '',
-								to: '/questionaries'
+								title: '&#37;',
+								description:
+									'But if it\'s 100%, <a href="https://www.youtube.com/watch?v=-st14lUQD3U" target="_blank">you probably don\'t need to bother </a>'
+							},
+							{
+								title: 'cqi',
+								description:
+									'If you don\'t mind trying something that doesn\'t have the best browser support, you could try `cqi`, which is a container query unit that gets the inline size of it\'s container. This does mean you need a container through. You can <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank">learn more about how it works in this video.</a>'
 							}
 						]
 					}

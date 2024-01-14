@@ -1017,7 +1017,7 @@ type RootTranslation = {
 		}
 		whichWidthOrHeight: {
 			/**
-			 * w​i​d​t​h​ ​o​r​ ​h​e​i​g​h​t​?
+			 * W​i​d​t​h​ ​o​r​ ​h​e​i​g​h​t​?
 			 */
 			title: string
 			questions: {
@@ -1335,7 +1335,7 @@ type RootTranslation = {
 				needWidth: {
 					questions: {
 						/**
-						 * A​r​e​ ​y​o​u​ ​s​u​r​e​ ​y​o​u​ ​n​e​e​d​ ​a​ ​w​i​d​t​h​ ​a​t​ ​a​l​l​?​ ​O​n​e​ ​m​i​s​t​a​k​e​ ​p​e​o​p​l​e​ ​o​f​t​e​n​ ​m​a​k​e​ ​i​s​ ​d​e​c​l​a​r​i​n​g​ ​a​ ​w​i​d​t​h​ ​w​h​e​n​ ​t​h​e​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​o​n​e​.​(​w​a​t​c​h​ ​t​h​i​s​ ​<​a​ ​h​r​e​f​=​"​"​>​v​i​d​e​o​ ​f​o​r​ ​m​o​r​e​ ​i​n​f​o​)​<​/​a​>​)​ 
+						 * A​r​e​ ​y​o​u​ ​s​u​r​e​ ​y​o​u​ ​n​e​e​d​ ​a​ ​w​i​d​t​h​ ​a​t​ ​a​l​l​?​ ​O​n​e​ ​m​i​s​t​a​k​e​ ​p​e​o​p​l​e​ ​o​f​t​e​n​ ​m​a​k​e​ ​i​s​ ​d​e​c​l​a​r​i​n​g​ ​a​ ​w​i​d​t​h​ ​w​h​e​n​ ​t​h​e​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​o​n​e​.
 						 */
 						title: string
 						items: {
@@ -1536,18 +1536,26 @@ type RootTranslation = {
 						}
 					}
 					needNotBother: {
-						items: {
+						answers: {
 							'0': {
 								/**
-								 * %​ ​<​b​r​>​ ​B​u​t​ ​i​f​ ​i​t​'​s​ ​1​0​0​%​,​ ​<​a​ ​h​r​e​f​=​'​'​>​y​o​u​ ​p​r​o​b​a​b​l​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​ ​<​/​a​>
+								 * &​#​3​7​;
 								 */
 								title: string
-								value: string
-								hint: string
 								/**
-								 * /​q​u​e​s​t​i​o​n​a​r​i​e​s
+								 * B​u​t​ ​i​f​ ​i​t​'​s​ ​1​0​0​%​,​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​-​s​t​1​4​l​U​Q​D​3​U​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​y​o​u​ ​p​r​o​b​a​b​l​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​ ​<​/​a​>
 								 */
-								to: string
+								description: string
+							}
+							'1': {
+								/**
+								 * c​q​i
+								 */
+								title: string
+								/**
+								 * I​f​ ​y​o​u​ ​d​o​n​'​t​ ​m​i​n​d​ ​t​r​y​i​n​g​ ​s​o​m​e​t​h​i​n​g​ ​t​h​a​t​ ​d​o​e​s​n​'​t​ ​h​a​v​e​ ​t​h​e​ ​b​e​s​t​ ​b​r​o​w​s​e​r​ ​s​u​p​p​o​r​t​,​ ​y​o​u​ ​c​o​u​l​d​ ​t​r​y​ ​`​c​q​i​`​,​ ​w​h​i​c​h​ ​i​s​ ​a​ ​c​o​n​t​a​i​n​e​r​ ​q​u​e​r​y​ ​u​n​i​t​ ​t​h​a​t​ ​g​e​t​s​ ​t​h​e​ ​i​n​l​i​n​e​ ​s​i​z​e​ ​o​f​ ​i​t​'​s​ ​c​o​n​t​a​i​n​e​r​.​ ​T​h​i​s​ ​d​o​e​s​ ​m​e​a​n​ ​y​o​u​ ​n​e​e​d​ ​a​ ​c​o​n​t​a​i​n​e​r​ ​t​h​r​o​u​g​h​.​ ​Y​o​u​ ​c​a​n​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​Z​S​a​A​H​b​5​d​R​w​Q​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​l​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​h​o​w​ ​i​t​ ​w​o​r​k​s​ ​i​n​ ​t​h​i​s​ ​v​i​d​e​o​.​<​/​a​>
+								 */
+								description: string
 							}
 						}
 					}
@@ -2568,7 +2576,7 @@ export type TranslationFunctions = {
 		}
 		whichWidthOrHeight: {
 			/**
-			 * width or height?
+			 * Width or height?
 			 */
 			title: () => LocalizedString
 			questions: {
@@ -2886,7 +2894,7 @@ export type TranslationFunctions = {
 				needWidth: {
 					questions: {
 						/**
-						 * Are you sure you need a width at all? One mistake people often make is declaring a width when they don't need one.(watch this <a href="">video for more info)</a>) 
+						 * Are you sure you need a width at all? One mistake people often make is declaring a width when they don't need one.
 						 */
 						title: () => LocalizedString
 						items: {
@@ -3087,18 +3095,26 @@ export type TranslationFunctions = {
 						}
 					}
 					needNotBother: {
-						items: {
+						answers: {
 							'0': {
 								/**
-								 * % <br> But if it's 100%, <a href=''>you probably don't need to bother </a>
+								 * &#37;
 								 */
 								title: () => LocalizedString
-								value: () => LocalizedString
-								hint: () => LocalizedString
 								/**
-								 * /questionaries
+								 * But if it's 100%, <a href="https://www.youtube.com/watch?v=-st14lUQD3U" target="_blank">you probably don't need to bother </a>
 								 */
-								to: () => LocalizedString
+								description: () => LocalizedString
+							}
+							'1': {
+								/**
+								 * cqi
+								 */
+								title: () => LocalizedString
+								/**
+								 * If you don't mind trying something that doesn't have the best browser support, you could try `cqi`, which is a container query unit that gets the inline size of it's container. This does mean you need a container through. You can <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank">learn more about how it works in this video.</a>
+								 */
+								description: () => LocalizedString
 							}
 						}
 					}

@@ -15,7 +15,7 @@
 
 <div {...$$restProps} class={cn($$restProps.class)}>
 	<Heading element="h2">
-		{title}
+		{@html title}
 	</Heading>
 	<ul class="mt-5 max-w-sm space-y-4">
 		{#each items as item (item.title)}

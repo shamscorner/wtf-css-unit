@@ -5,6 +5,7 @@
 
 <Question
 	title={$LL.questionaries.whichWidthOrHeight.typeOfWidth.fixedOrRelativeWidth.fullWidthViewPort.notAnotherElement.questions.title()}
+	subtitle={$LL.questionaries.whichWidthOrHeight.typeOfWidth.fixedOrRelativeWidth.fullWidthViewPort.notAnotherElement.questions.subtitle()}
 	items={Object.values(
 		$LL.questionaries.whichWidthOrHeight.typeOfWidth.fixedOrRelativeWidth
 			.fullWidthViewPort.notAnotherElement.questions.items

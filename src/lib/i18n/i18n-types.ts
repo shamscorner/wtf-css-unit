@@ -1017,7 +1017,7 @@ type RootTranslation = {
 		}
 		whichWidthOrHeight: {
 			/**
-			 * w​i​d​t​h​ ​o​r​ ​h​e​i​g​h​t​?
+			 * W​i​d​t​h​ ​o​r​ ​h​e​i​g​h​t​?
 			 */
 			title: string
 			questions: {
@@ -1335,7 +1335,7 @@ type RootTranslation = {
 				needWidth: {
 					questions: {
 						/**
-						 * A​r​e​ ​y​o​u​ ​s​u​r​e​ ​y​o​u​ ​n​e​e​d​ ​a​ ​w​i​d​t​h​ ​a​t​ ​a​l​l​?​ ​O​n​e​ ​m​i​s​t​a​k​e​ ​p​e​o​p​l​e​ ​o​f​t​e​n​ ​m​a​k​e​ ​i​s​ ​d​e​c​l​a​r​i​n​g​ ​a​ ​w​i​d​t​h​ ​w​h​e​n​ ​t​h​e​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​o​n​e​.​(​w​a​t​c​h​ ​t​h​i​s​ ​<​a​ ​h​r​e​f​=​"​"​>​v​i​d​e​o​ ​f​o​r​ ​m​o​r​e​ ​i​n​f​o​)​<​/​a​>​)​ 
+						 * A​r​e​ ​y​o​u​ ​s​u​r​e​ ​y​o​u​ ​n​e​e​d​ ​a​ ​w​i​d​t​h​ ​a​t​ ​a​l​l​?​ ​O​n​e​ ​m​i​s​t​a​k​e​ ​p​e​o​p​l​e​ ​o​f​t​e​n​ ​m​a​k​e​ ​i​s​ ​d​e​c​l​a​r​i​n​g​ ​a​ ​w​i​d​t​h​ ​w​h​e​n​ ​t​h​e​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​o​n​e​.
 						 */
 						title: string
 						items: {
@@ -1466,9 +1466,13 @@ type RootTranslation = {
 						elementDefault: {
 							questions: {
 								/**
-								 * A​r​e​ ​y​o​u​ ​e​v​e​n​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​?​<​a​ ​h​r​e​f​=​'​'​>​E​l​e​m​e​n​t​s​ ​n​o​r​m​a​l​l​y​ ​d​o​ ​t​h​i​s​ ​a​s​ ​a​ ​d​e​f​a​u​l​t​<​/​a​>
+								 * A​r​e​ ​y​o​u​ ​s​u​r​e​ ​e​v​e​n​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​?
 								 */
 								title: string
+								/**
+								 * <​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​-​s​t​1​4​l​U​Q​D​3​U​"​>​E​l​e​m​e​n​t​s​ ​n​o​r​m​a​l​l​y​ ​d​o​ ​t​h​i​s​ ​a​s​ ​a​ ​d​e​f​a​u​l​t​.​<​/​a​>
+								 */
+								subtitle: string
 								items: {
 									guessNot: {
 										/**
@@ -1503,9 +1507,13 @@ type RootTranslation = {
 						notAnotherElement: {
 							questions: {
 								/**
-								 * A​r​e​ ​y​o​u​ ​s​u​r​e​ ​w​a​n​t​ ​i​t​ ​t​o​ ​b​e​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​t​h​e​ ​v​i​e​w​p​o​r​t​ ​a​n​d​ ​n​o​t​ ​a​n​o​t​h​e​r​ ​e​l​e​m​e​n​t​?​ ​<​s​m​a​l​l​>​(​m​o​s​t​ ​o​f​ ​t​h​e​ ​t​i​m​e​,​ ​%​ ​i​s​ ​a​ ​b​e​t​t​e​r​ ​o​p​t​i​o​n​)​)​<​/​s​m​a​l​l​>
+								 * A​r​e​ ​y​o​u​ ​s​u​r​e​ ​w​a​n​t​ ​i​t​ ​t​o​ ​b​e​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​t​h​e​ ​v​i​e​w​p​o​r​t​ ​a​n​d​ ​n​o​t​ ​a​n​o​t​h​e​r​ ​e​l​e​m​e​n​t​?
 								 */
 								title: string
+								/**
+								 * (​m​o​s​t​ ​o​f​ ​t​h​e​ ​t​i​m​e​,​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​v​e​E​q​Y​Q​l​f​N​x​8​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​%​ ​i​s​ ​a​ ​b​e​t​t​e​r​ ​o​p​t​i​o​n​<​/​a​>​)
+								 */
+								subtitle: string
 								items: {
 									'0': {
 										/**
@@ -1536,18 +1544,26 @@ type RootTranslation = {
 						}
 					}
 					needNotBother: {
-						items: {
+						answers: {
 							'0': {
 								/**
-								 * %​ ​<​b​r​>​ ​B​u​t​ ​i​f​ ​i​t​'​s​ ​1​0​0​%​,​ ​<​a​ ​h​r​e​f​=​'​'​>​y​o​u​ ​p​r​o​b​a​b​l​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​ ​<​/​a​>
+								 * &​#​3​7​;
 								 */
 								title: string
-								value: string
-								hint: string
 								/**
-								 * /​q​u​e​s​t​i​o​n​a​r​i​e​s
+								 * B​u​t​ ​i​f​ ​i​t​'​s​ ​1​0​0​%​,​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​-​s​t​1​4​l​U​Q​D​3​U​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​y​o​u​ ​p​r​o​b​a​b​l​y​ ​d​o​n​'​t​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​ ​<​/​a​>
 								 */
-								to: string
+								description: string
+							}
+							'1': {
+								/**
+								 * c​q​i
+								 */
+								title: string
+								/**
+								 * I​f​ ​y​o​u​ ​d​o​n​'​t​ ​m​i​n​d​ ​t​r​y​i​n​g​ ​s​o​m​e​t​h​i​n​g​ ​t​h​a​t​ ​d​o​e​s​n​'​t​ ​h​a​v​e​ ​t​h​e​ ​b​e​s​t​ ​b​r​o​w​s​e​r​ ​s​u​p​p​o​r​t​,​ ​y​o​u​ ​c​o​u​l​d​ ​t​r​y​ ​`​c​q​i​`​,​ ​w​h​i​c​h​ ​i​s​ ​a​ ​c​o​n​t​a​i​n​e​r​ ​q​u​e​r​y​ ​u​n​i​t​ ​t​h​a​t​ ​g​e​t​s​ ​t​h​e​ ​i​n​l​i​n​e​ ​s​i​z​e​ ​o​f​ ​i​t​'​s​ ​c​o​n​t​a​i​n​e​r​.​ ​T​h​i​s​ ​d​o​e​s​ ​m​e​a​n​ ​y​o​u​ ​n​e​e​d​ ​a​ ​c​o​n​t​a​i​n​e​r​ ​t​h​r​o​u​g​h​.​ ​Y​o​u​ ​c​a​n​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​Z​S​a​A​H​b​5​d​R​w​Q​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​l​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​h​o​w​ ​i​t​ ​w​o​r​k​s​ ​i​n​ ​t​h​i​s​ ​v​i​d​e​o​.​<​/​a​>
+								 */
+								description: string
 							}
 						}
 					}
@@ -2568,7 +2584,7 @@ export type TranslationFunctions = {
 		}
 		whichWidthOrHeight: {
 			/**
-			 * width or height?
+			 * Width or height?
 			 */
 			title: () => LocalizedString
 			questions: {
@@ -2886,7 +2902,7 @@ export type TranslationFunctions = {
 				needWidth: {
 					questions: {
 						/**
-						 * Are you sure you need a width at all? One mistake people often make is declaring a width when they don't need one.(watch this <a href="">video for more info)</a>) 
+						 * Are you sure you need a width at all? One mistake people often make is declaring a width when they don't need one.
 						 */
 						title: () => LocalizedString
 						items: {
@@ -3017,9 +3033,13 @@ export type TranslationFunctions = {
 						elementDefault: {
 							questions: {
 								/**
-								 * Are you even need to bother?<a href=''>Elements normally do this as a default</a>
+								 * Are you sure even need to bother?
 								 */
 								title: () => LocalizedString
+								/**
+								 * <a href="https://www.youtube.com/watch?v=-st14lUQD3U">Elements normally do this as a default.</a>
+								 */
+								subtitle: () => LocalizedString
 								items: {
 									guessNot: {
 										/**
@@ -3054,9 +3074,13 @@ export type TranslationFunctions = {
 						notAnotherElement: {
 							questions: {
 								/**
-								 * Are you sure want it to be relative to the viewport and not another element? <small>(most of the time, % is a better option))</small>
+								 * Are you sure want it to be relative to the viewport and not another element?
 								 */
 								title: () => LocalizedString
+								/**
+								 * (most of the time, <a href="https://www.youtube.com/watch?v=veEqYQlfNx8" target="_blank">% is a better option</a>)
+								 */
+								subtitle: () => LocalizedString
 								items: {
 									'0': {
 										/**
@@ -3087,18 +3111,26 @@ export type TranslationFunctions = {
 						}
 					}
 					needNotBother: {
-						items: {
+						answers: {
 							'0': {
 								/**
-								 * % <br> But if it's 100%, <a href=''>you probably don't need to bother </a>
+								 * &#37;
 								 */
 								title: () => LocalizedString
-								value: () => LocalizedString
-								hint: () => LocalizedString
 								/**
-								 * /questionaries
+								 * But if it's 100%, <a href="https://www.youtube.com/watch?v=-st14lUQD3U" target="_blank">you probably don't need to bother </a>
 								 */
-								to: () => LocalizedString
+								description: () => LocalizedString
+							}
+							'1': {
+								/**
+								 * cqi
+								 */
+								title: () => LocalizedString
+								/**
+								 * If you don't mind trying something that doesn't have the best browser support, you could try `cqi`, which is a container query unit that gets the inline size of it's container. This does mean you need a container through. You can <a href="https://www.youtube.com/watch?v=ZSaAHb5dRwQ" target="_blank">learn more about how it works in this video.</a>
+								 */
+								description: () => LocalizedString
 							}
 						}
 					}

@@ -1466,9 +1466,13 @@ type RootTranslation = {
 						elementDefault: {
 							questions: {
 								/**
-								 * A​r​e​ ​y​o​u​ ​e​v​e​n​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​?​<​a​ ​h​r​e​f​=​'​'​>​E​l​e​m​e​n​t​s​ ​n​o​r​m​a​l​l​y​ ​d​o​ ​t​h​i​s​ ​a​s​ ​a​ ​d​e​f​a​u​l​t​<​/​a​>
+								 * A​r​e​ ​y​o​u​ ​s​u​r​e​ ​e​v​e​n​ ​n​e​e​d​ ​t​o​ ​b​o​t​h​e​r​?
 								 */
 								title: string
+								/**
+								 * <​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​-​s​t​1​4​l​U​Q​D​3​U​"​>​E​l​e​m​e​n​t​s​ ​n​o​r​m​a​l​l​y​ ​d​o​ ​t​h​i​s​ ​a​s​ ​a​ ​d​e​f​a​u​l​t​.​<​/​a​>
+								 */
+								subtitle: string
 								items: {
 									guessNot: {
 										/**
@@ -1503,9 +1507,13 @@ type RootTranslation = {
 						notAnotherElement: {
 							questions: {
 								/**
-								 * A​r​e​ ​y​o​u​ ​s​u​r​e​ ​w​a​n​t​ ​i​t​ ​t​o​ ​b​e​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​t​h​e​ ​v​i​e​w​p​o​r​t​ ​a​n​d​ ​n​o​t​ ​a​n​o​t​h​e​r​ ​e​l​e​m​e​n​t​?​ ​<​s​m​a​l​l​>​(​m​o​s​t​ ​o​f​ ​t​h​e​ ​t​i​m​e​,​ ​%​ ​i​s​ ​a​ ​b​e​t​t​e​r​ ​o​p​t​i​o​n​)​)​<​/​s​m​a​l​l​>
+								 * A​r​e​ ​y​o​u​ ​s​u​r​e​ ​w​a​n​t​ ​i​t​ ​t​o​ ​b​e​ ​r​e​l​a​t​i​v​e​ ​t​o​ ​t​h​e​ ​v​i​e​w​p​o​r​t​ ​a​n​d​ ​n​o​t​ ​a​n​o​t​h​e​r​ ​e​l​e​m​e​n​t​?
 								 */
 								title: string
+								/**
+								 * (​m​o​s​t​ ​o​f​ ​t​h​e​ ​t​i​m​e​,​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​y​o​u​t​u​b​e​.​c​o​m​/​w​a​t​c​h​?​v​=​v​e​E​q​Y​Q​l​f​N​x​8​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​%​ ​i​s​ ​a​ ​b​e​t​t​e​r​ ​o​p​t​i​o​n​<​/​a​>​)
+								 */
+								subtitle: string
 								items: {
 									'0': {
 										/**
@@ -3025,9 +3033,13 @@ export type TranslationFunctions = {
 						elementDefault: {
 							questions: {
 								/**
-								 * Are you even need to bother?<a href=''>Elements normally do this as a default</a>
+								 * Are you sure even need to bother?
 								 */
 								title: () => LocalizedString
+								/**
+								 * <a href="https://www.youtube.com/watch?v=-st14lUQD3U">Elements normally do this as a default.</a>
+								 */
+								subtitle: () => LocalizedString
 								items: {
 									guessNot: {
 										/**
@@ -3062,9 +3074,13 @@ export type TranslationFunctions = {
 						notAnotherElement: {
 							questions: {
 								/**
-								 * Are you sure want it to be relative to the viewport and not another element? <small>(most of the time, % is a better option))</small>
+								 * Are you sure want it to be relative to the viewport and not another element?
 								 */
 								title: () => LocalizedString
+								/**
+								 * (most of the time, <a href="https://www.youtube.com/watch?v=veEqYQlfNx8" target="_blank">% is a better option</a>)
+								 */
+								subtitle: () => LocalizedString
 								items: {
 									'0': {
 										/**

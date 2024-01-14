@@ -11,12 +11,18 @@
 
 	export let items: ItemType[];
 	export let title = '';
+	export let subtitle = '';
 </script>
 
 <div {...$$restProps} class={cn($$restProps.class)}>
 	<Heading element="h2">
 		{@html title}
 	</Heading>
+	{#if subtitle}
+		<Heading element="h3" class="mt-1 text-muted md:text-sm">
+			{@html subtitle}
+		</Heading>
+	{/if}
 	<ul class="mt-5 max-w-sm space-y-4">
 		{#each items as item (item.title)}
 			<li>

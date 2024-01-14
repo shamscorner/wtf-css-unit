@@ -698,8 +698,9 @@ const en: BaseTranslation = {
 						},
 						elementDefault: {
 							questions: {
-								title:
-									"Are you even need to bother?<a href=''>Elements normally do this as a default</a>",
+								title: 'Are you sure even need to bother?',
+								subtitle:
+									'<a href="https://www.youtube.com/watch?v=-st14lUQD3U">Elements normally do this as a default.</a>',
 								items: {
 									guessNot: {
 										title: 'oh, I guess not ',
@@ -719,7 +720,9 @@ const en: BaseTranslation = {
 						notAnotherElement: {
 							questions: {
 								title:
-									'Are you sure want it to be relative to the viewport and not another element? <small>(most of the time, % is a better option))</small>',
+									'Are you sure want it to be relative to the viewport and not another element?',
+								subtitle:
+									'(most of the time, <a href="https://www.youtube.com/watch?v=veEqYQlfNx8" target="_blank">% is a better option</a>)',
 								items: [
 									{
 										title: 'Oh, I guess not',
